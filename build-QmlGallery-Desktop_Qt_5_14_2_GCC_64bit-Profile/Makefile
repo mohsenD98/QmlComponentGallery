@@ -52,9 +52,11 @@ OBJECTS_DIR   = ./
 
 ####### Files
 
-SOURCES       = ../QmlGallery/main.cpp main_qml.cpp \
+SOURCES       = ../QmlGallery/main.cpp Colors_qml.cpp \
+		main_qml.cpp \
 		qmlcache_loader.cpp
 OBJECTS       = main.o \
+		Colors_qml.o \
 		main_qml.o \
 		qmlcache_loader.o
 DIST          = ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_pre.prf \
@@ -261,6 +263,7 @@ DIST          = ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_post.prf \
+		../QmlGallery/.qmake.stash \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/default_pre.prf \
@@ -500,6 +503,7 @@ Makefile: ../QmlGallery/QmlGallery.pro ../../../../Applications/Qt5.14.2/5.14.2/
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/qt_config.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/toolchain.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/default_pre.prf \
@@ -728,6 +732,7 @@ Makefile: ../QmlGallery/QmlGallery.pro ../../../../Applications/Qt5.14.2/5.14.2/
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/qt_config.prf:
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/toolchain.prf:
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/default_pre.prf:
@@ -765,7 +770,7 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../QmlGallery/main.qml $(DISTDIR)/
+	$(COPY_FILE) --parents ../QmlGallery/Colors.qml ../QmlGallery/main.qml $(DISTDIR)/
 	$(COPY_FILE) --parents ../QmlGallery/qml.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../QmlGallery/main.cpp $(DISTDIR)/
@@ -792,9 +797,13 @@ check: first
 
 benchmark: first
 
-compiler_qmlcache_make_all: main_qml.cpp
+compiler_qmlcache_make_all: Colors_qml.cpp main_qml.cpp
 compiler_qmlcache_clean:
-	-$(DEL_FILE) main_qml.cpp
+	-$(DEL_FILE) Colors_qml.cpp main_qml.cpp
+Colors_qml.cpp: ../QmlGallery/Colors.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Colors_qml.cpp ../QmlGallery/Colors.qml
+
 main_qml.cpp: ../QmlGallery/main.qml \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
 	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o main_qml.cpp ../QmlGallery/main.qml
@@ -925,6 +934,9 @@ main.o: ../QmlGallery/main.cpp ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/i
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtCore/qmetaobject.h \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtQml/qqmlerror.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../QmlGallery/main.cpp
+
+Colors_qml.o: Colors_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Colors_qml.o Colors_qml.cpp
 
 main_qml.o: main_qml.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_qml.o main_qml.cpp
