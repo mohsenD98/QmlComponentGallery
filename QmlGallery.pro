@@ -28,3 +28,21 @@ QML_DESIGNER_IMPORT_PATH =
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+android {
+    QT += androidextras
+    ANDROID_PACKAGE_SOURCE_DIR = $$PWD
+
+    DISTFILES += \
+        $$PWD/AndroidManifest.xml \
+        $$PWD/gradle.properties
+}
+
+DISTFILES += \
+    AndroidManifest.xml \
+    build.gradle \
+    gradle/wrapper/gradle-wrapper.jar \
+    gradle/wrapper/gradle-wrapper.properties \
+    gradlew \
+    gradlew.bat \
+    res/values/libs.xml

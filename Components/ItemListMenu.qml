@@ -11,6 +11,7 @@ Rectangle {
     height: opened ? (40 * subComponentList.count) + 100 : 50
     radius: 8
     color: materialColors.grey_95
+    clip: true
 
     property bool opened: false
 
@@ -38,6 +39,7 @@ Rectangle {
     }
 
     Rectangle{
+        id:newComponentNotif
         width: dropDownIcon.width/2.79
         height: width
         radius: width
@@ -70,6 +72,7 @@ Rectangle {
                 dropDownIcon.anchors.topMargin = 25
 
                 dropDownIcon.doRotate = true
+                newComponentNotif.visible = false
             } else {
                 subComponentList.visible = false
                 listIconLoader.anchors.top = undefined
@@ -81,6 +84,7 @@ Rectangle {
                 dropDownIcon.anchors.verticalCenter = parent.verticalCenter
 
                 dropDownIcon.doRotate = false
+                newComponentNotif.visible = isNew
             }
         }
     }
