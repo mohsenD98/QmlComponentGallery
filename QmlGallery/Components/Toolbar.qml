@@ -2,25 +2,22 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import QtQuick.Shapes 1.12
 
-import "Drawables/"
+import "../Drawables/"
+import "../"
 
-Window {
-    visible: true
-    width: 480
-    height: 720
-    title: qsTr("Qml Gallery")
-    color: materialColors.grey_100_
-
+Item {
+    property real toolbarHeight
     Colors {
         id: materialColors
     }
+    height: ic_app.height + toolbar.height
 
     Rectangle {
         id: toolbar
         anchors.top: parent.top
         anchors.right: parent.right
         anchors.left: parent.left
-        height: 50
+        height: toolbarHeight
         color: materialColors.grey_100_
 
         Ic_menu {

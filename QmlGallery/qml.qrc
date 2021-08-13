@@ -132,5 +132,17 @@
         <file>images/photo_male_8.jpg</file>
         <file>images/photo_singer_female.jpg</file>
         <file>images/photo_singer_male.jpg</file>
+        <file>Components/Toolbar.qml</file>
+        <file>Drawables/AppLogo.qml</file>
+        <file>Drawables/Ic_menu.qml</file>
+        <file>Drawables/Ic_notification.qml</file>
+        <file>Drawables/Ic_search.qml</file>
+        <file>images/ic_github.png</file>
+        <file>images/ic_logo.png</file>
+        <file>Drawables.qml</file>
+        <file>main.cpp</file>
+        <file>qml.qrc</file>
+        <file>QmlGallery.pro</file>
+        <file>ShapeIcons.qrc</file>
     </qresource>
 </RCC>
