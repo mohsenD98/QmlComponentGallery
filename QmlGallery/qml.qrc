@@ -139,10 +139,12 @@
         <file>Drawables/Ic_search.qml</file>
         <file>images/ic_github.png</file>
         <file>images/ic_logo.png</file>
-        <file>Drawables.qml</file>
-        <file>main.cpp</file>
-        <file>qml.qrc</file>
-        <file>QmlGallery.pro</file>
-        <file>ShapeIcons.qrc</file>
+        <file>Components/ItemListMenu.qml</file>
+        <file>Tools/RippleLayout.qml</file>
+        <file>Drawables/Ic_arrowDrop.qml</file>
+        <file>Drawables/Ic_buttons.qml</file>
+        <file>Drawables/Ic_bottomSheet.qml</file>
+        <file>Drawables/Ic_bottomNavigation.qml</file>
+        <file>Components/ItemSubList.qml</file>
     </qresource>
 </RCC>

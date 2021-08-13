@@ -54,11 +54,37 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../QmlGallery/main.cpp Colors_qml.cpp \
 		main_qml.cpp \
-		qmlcache_loader.cpp
+		Tools_RippleLayout_qml.cpp \
+		Components_Toolbar_qml.cpp \
+		Components_ItemSubList_qml.cpp \
+		Components_ItemListMenu_qml.cpp \
+		Drawables_AppLogo_qml.cpp \
+		Drawables_Ic_menu_qml.cpp \
+		Drawables_Ic_search_qml.cpp \
+		Drawables_Ic_buttons_qml.cpp \
+		Drawables_Ic_arrowDrop_qml.cpp \
+		Drawables_Ic_bottomNavigation_qml.cpp \
+		Drawables_Ic_notification_qml.cpp \
+		Drawables_Ic_bottomSheet_qml.cpp \
+		qmlcache_loader.cpp \
+		qrc_qml_qmlcache.cpp
 OBJECTS       = main.o \
 		Colors_qml.o \
 		main_qml.o \
-		qmlcache_loader.o
+		Tools_RippleLayout_qml.o \
+		Components_Toolbar_qml.o \
+		Components_ItemSubList_qml.o \
+		Components_ItemListMenu_qml.o \
+		Drawables_AppLogo_qml.o \
+		Drawables_Ic_menu_qml.o \
+		Drawables_Ic_search_qml.o \
+		Drawables_Ic_buttons_qml.o \
+		Drawables_Ic_arrowDrop_qml.o \
+		Drawables_Ic_bottomNavigation_qml.o \
+		Drawables_Ic_notification_qml.o \
+		Drawables_Ic_bottomSheet_qml.o \
+		qmlcache_loader.o \
+		qrc_qml_qmlcache.o
 DIST          = ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_pre.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/common/unix.conf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/common/linux.conf \
@@ -526,7 +552,8 @@ Makefile: ../QmlGallery/QmlGallery.pro ../../../../Applications/Qt5.14.2/5.14.2/
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/exceptions.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/yacc.prf \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/lex.prf \
-		../QmlGallery/QmlGallery.pro
+		../QmlGallery/QmlGallery.pro \
+		qml_qmlcache.qrc
 	$(QMAKE) -o Makefile ../QmlGallery/QmlGallery.pro -spec linux-g++ CONFIG+=qml_debug CONFIG+=qtquickcompiler CONFIG+=force_debug_info CONFIG+=separate_debug_info
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/spec_pre.prf:
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/common/unix.conf:
@@ -756,6 +783,7 @@ Makefile: ../QmlGallery/QmlGallery.pro ../../../../Applications/Qt5.14.2/5.14.2/
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/yacc.prf:
 ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/lex.prf:
 ../QmlGallery/QmlGallery.pro:
+qml_qmlcache.qrc:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ../QmlGallery/QmlGallery.pro -spec linux-g++ CONFIG+=qml_debug CONFIG+=qtquickcompiler CONFIG+=force_debug_info CONFIG+=separate_debug_info
 
@@ -770,8 +798,9 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../QmlGallery/Colors.qml ../QmlGallery/main.qml $(DISTDIR)/
+	$(COPY_FILE) --parents ../QmlGallery/Colors.qml ../QmlGallery/main.qml ../QmlGallery/Tools/RippleLayout.qml ../QmlGallery/Components/Toolbar.qml ../QmlGallery/Components/ItemSubList.qml ../QmlGallery/Components/ItemListMenu.qml ../QmlGallery/Drawables/AppLogo.qml ../QmlGallery/Drawables/Ic_menu.qml ../QmlGallery/Drawables/Ic_search.qml ../QmlGallery/Drawables/Ic_buttons.qml ../QmlGallery/Drawables/Ic_arrowDrop.qml ../QmlGallery/Drawables/Ic_bottomNavigation.qml ../QmlGallery/Drawables/Ic_notification.qml ../QmlGallery/Drawables/Ic_bottomSheet.qml $(DISTDIR)/
 	$(COPY_FILE) --parents ../QmlGallery/qml.qrc $(DISTDIR)/
+	$(COPY_FILE) --parents qml_qmlcache.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
 	$(COPY_FILE) --parents ../QmlGallery/main.cpp $(DISTDIR)/
 
@@ -797,9 +826,9 @@ check: first
 
 benchmark: first
 
-compiler_qmlcache_make_all: Colors_qml.cpp main_qml.cpp
+compiler_qmlcache_make_all: Colors_qml.cpp main_qml.cpp Tools_RippleLayout_qml.cpp Components_Toolbar_qml.cpp Components_ItemSubList_qml.cpp Components_ItemListMenu_qml.cpp Drawables_AppLogo_qml.cpp Drawables_Ic_menu_qml.cpp Drawables_Ic_search_qml.cpp Drawables_Ic_buttons_qml.cpp Drawables_Ic_arrowDrop_qml.cpp Drawables_Ic_bottomNavigation_qml.cpp Drawables_Ic_notification_qml.cpp Drawables_Ic_bottomSheet_qml.cpp
 compiler_qmlcache_clean:
-	-$(DEL_FILE) Colors_qml.cpp main_qml.cpp
+	-$(DEL_FILE) Colors_qml.cpp main_qml.cpp Tools_RippleLayout_qml.cpp Components_Toolbar_qml.cpp Components_ItemSubList_qml.cpp Components_ItemListMenu_qml.cpp Drawables_AppLogo_qml.cpp Drawables_Ic_menu_qml.cpp Drawables_Ic_search_qml.cpp Drawables_Ic_buttons_qml.cpp Drawables_Ic_arrowDrop_qml.cpp Drawables_Ic_bottomNavigation_qml.cpp Drawables_Ic_notification_qml.cpp Drawables_Ic_bottomSheet_qml.cpp
 Colors_qml.cpp: ../QmlGallery/Colors.qml \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
 	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Colors_qml.cpp ../QmlGallery/Colors.qml
@@ -808,14 +837,199 @@ main_qml.cpp: ../QmlGallery/main.qml \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
 	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o main_qml.cpp ../QmlGallery/main.qml
 
+Tools_RippleLayout_qml.cpp: ../QmlGallery/Tools/RippleLayout.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Tools_RippleLayout_qml.cpp ../QmlGallery/Tools/RippleLayout.qml
+
+Components_Toolbar_qml.cpp: ../QmlGallery/Components/Toolbar.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Components_Toolbar_qml.cpp ../QmlGallery/Components/Toolbar.qml
+
+Components_ItemSubList_qml.cpp: ../QmlGallery/Components/ItemSubList.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Components_ItemSubList_qml.cpp ../QmlGallery/Components/ItemSubList.qml
+
+Components_ItemListMenu_qml.cpp: ../QmlGallery/Components/ItemListMenu.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Components_ItemListMenu_qml.cpp ../QmlGallery/Components/ItemListMenu.qml
+
+Drawables_AppLogo_qml.cpp: ../QmlGallery/Drawables/AppLogo.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_AppLogo_qml.cpp ../QmlGallery/Drawables/AppLogo.qml
+
+Drawables_Ic_menu_qml.cpp: ../QmlGallery/Drawables/Ic_menu.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_Ic_menu_qml.cpp ../QmlGallery/Drawables/Ic_menu.qml
+
+Drawables_Ic_search_qml.cpp: ../QmlGallery/Drawables/Ic_search.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_Ic_search_qml.cpp ../QmlGallery/Drawables/Ic_search.qml
+
+Drawables_Ic_buttons_qml.cpp: ../QmlGallery/Drawables/Ic_buttons.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_Ic_buttons_qml.cpp ../QmlGallery/Drawables/Ic_buttons.qml
+
+Drawables_Ic_arrowDrop_qml.cpp: ../QmlGallery/Drawables/Ic_arrowDrop.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_Ic_arrowDrop_qml.cpp ../QmlGallery/Drawables/Ic_arrowDrop.qml
+
+Drawables_Ic_bottomNavigation_qml.cpp: ../QmlGallery/Drawables/Ic_bottomNavigation.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_Ic_bottomNavigation_qml.cpp ../QmlGallery/Drawables/Ic_bottomNavigation.qml
+
+Drawables_Ic_notification_qml.cpp: ../QmlGallery/Drawables/Ic_notification.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_Ic_notification_qml.cpp ../QmlGallery/Drawables/Ic_notification.qml
+
+Drawables_Ic_bottomSheet_qml.cpp: ../QmlGallery/Drawables/Ic_bottomSheet.qml \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o Drawables_Ic_bottomSheet_qml.cpp ../QmlGallery/Drawables/Ic_bottomSheet.qml
+
 compiler_qmlcache_loader_make_all: qmlcache_loader.cpp
 compiler_qmlcache_loader_clean:
 	-$(DEL_FILE) qmlcache_loader.cpp
 qmlcache_loader.cpp: ../QmlGallery/qml.qrc ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen
-	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource-file-mapping=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc -o qmlcache_loader.cpp ../QmlGallery/qml.qrc
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/qmlcachegen --resource-file-mapping=/home/mohsen/Codes/QmlGallery/QmlGallery/QmlGallery/qml.qrc=/home/mohsen/Codes/QmlGallery/QmlGallery/build-QmlGallery-Desktop_Qt_5_14_2_GCC_64bit-Profile/qml_qmlcache.qrc -o qmlcache_loader.cpp ../QmlGallery/qml.qrc
 
-compiler_rcc_make_all:
+compiler_rcc_make_all: qrc_qml_qmlcache.cpp
 compiler_rcc_clean:
+	-$(DEL_FILE) qrc_qml_qmlcache.cpp
+qrc_qml_qmlcache.cpp: qml_qmlcache.qrc \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/bin/rcc \
+		../QmlGallery/images/image_5.jpg \
+		../QmlGallery/images/photo_male_2.jpg \
+		../QmlGallery/images/ic_visa.png \
+		../QmlGallery/images/coin_xrp.png \
+		../QmlGallery/images/image_shop_2.jpg \
+		../QmlGallery/images/img_social_apple.png \
+		../QmlGallery/images/image_3.jpg \
+		../QmlGallery/images/img_social_envato.png \
+		../QmlGallery/images/img_social_soundcould.png \
+		../QmlGallery/images/img_no_internet_satellite.png \
+		../QmlGallery/images/image_19.jpg \
+		../QmlGallery/images/image_1.jpg \
+		../QmlGallery/images/image_28.jpg \
+		../QmlGallery/images/badge_crown.png \
+		../QmlGallery/images/img_delivery.png \
+		../QmlGallery/images/coin_btc.png \
+		../QmlGallery/images/photo_female_7.jpg \
+		../QmlGallery/images/ic_notification.png \
+		../QmlGallery/images/badge_verified.png \
+		../QmlGallery/images/img_plant_13.jpg \
+		../QmlGallery/images/img_social_twitter.png \
+		../QmlGallery/images/image_17.jpg \
+		../QmlGallery/images/img_social_skype.png \
+		../QmlGallery/images/image_26.jpg \
+		../QmlGallery/images/img_plant_8.jpg \
+		../QmlGallery/images/photo_female_5.jpg \
+		../QmlGallery/images/img_social_youtube.png \
+		../QmlGallery/images/img_plant_11.jpg \
+		../QmlGallery/images/img_social_android.png \
+		../QmlGallery/images/image_15.jpg \
+		../QmlGallery/images/image_24.jpg \
+		../QmlGallery/images/image_shop_12.jpg \
+		../QmlGallery/images/img_plant_6.jpg \
+		../QmlGallery/images/image_shop_9.jpg \
+		../QmlGallery/images/photo_female_3.jpg \
+		../QmlGallery/images/coin_etc.png \
+		../QmlGallery/images/coin_ltc.png \
+		../QmlGallery/images/image_13.jpg \
+		../QmlGallery/images/image_22.jpg \
+		../QmlGallery/images/image_shop_10.jpg \
+		../QmlGallery/images/img_plant_4.jpg \
+		../QmlGallery/images/photo_male_7.jpg \
+		../QmlGallery/images/badge_goal.png \
+		../QmlGallery/images/image_31.jpg \
+		../QmlGallery/images/img_money.png \
+		../QmlGallery/images/image_shop_7.jpg \
+		../QmlGallery/images/photo_female_1.jpg \
+		../QmlGallery/images/image_11.jpg \
+		../QmlGallery/images/image_20.jpg \
+		../QmlGallery/images/photo_male_5.jpg \
+		../QmlGallery/images/img_plant_2.jpg \
+		../QmlGallery/images/image_8.jpg \
+		../QmlGallery/images/image_shop_5.jpg \
+		../QmlGallery/images/ic_logo.png \
+		../QmlGallery/images/bg_polygon.png \
+		../QmlGallery/images/img_social_facebook.png \
+		../QmlGallery/images/image_6.jpg \
+		../QmlGallery/images/photo_male_3.jpg \
+		../QmlGallery/images/img_social_deviantart.png \
+		../QmlGallery/images/img_no_feed.png \
+		../QmlGallery/images/img_social_blogger.png \
+		../QmlGallery/images/badge_ontime.png \
+		../QmlGallery/images/image_shop_3.jpg \
+		../QmlGallery/images/photo_singer_female.jpg \
+		../QmlGallery/images/img_social_vimeo.png \
+		../QmlGallery/images/ic_master_card.png \
+		../QmlGallery/images/image_4.jpg \
+		../QmlGallery/images/photo_male_1.jpg \
+		../QmlGallery/images/img_no_friend.png \
+		../QmlGallery/images/image_shop_1.jpg \
+		../QmlGallery/images/img_social_behance.png \
+		../QmlGallery/images/bg_no_item_cactus.png \
+		../QmlGallery/images/image_2.jpg \
+		../QmlGallery/images/image_29.jpg \
+		../QmlGallery/images/ic_mastercard_new.png \
+		../QmlGallery/images/img_number_verification.png \
+		../QmlGallery/images/coin_dash.png \
+		../QmlGallery/images/img_social_linkedin.png \
+		../QmlGallery/images/photo_female_8.jpg \
+		../QmlGallery/images/ic_visa_new.png \
+		../QmlGallery/images/coin_eth.png \
+		../QmlGallery/images/image_18.jpg \
+		../QmlGallery/images/image_27.jpg \
+		../QmlGallery/images/img_plant_9.jpg \
+		../QmlGallery/images/img_no_chat.png \
+		../QmlGallery/images/photo_female_6.jpg \
+		../QmlGallery/images/img_code_verification.png \
+		../QmlGallery/images/img_social_dribbble.png \
+		../QmlGallery/images/badge_trophy.png \
+		../QmlGallery/images/img_plant_12.jpg \
+		../QmlGallery/images/img_location.png \
+		../QmlGallery/images/image_16.jpg \
+		../QmlGallery/images/bg_no_item_city.png \
+		../QmlGallery/images/image_25.jpg \
+		../QmlGallery/images/image_shop_13.jpg \
+		../QmlGallery/images/img_plant_7.jpg \
+		../QmlGallery/images/photo_singer_male.jpg \
+		../QmlGallery/images/photo_female_4.jpg \
+		../QmlGallery/images/img_get_code.png \
+		../QmlGallery/images/ic_paypal.png \
+		../QmlGallery/images/ic_copper_card.png \
+		../QmlGallery/images/img_social_evernote.png \
+		../QmlGallery/images/img_plant_10.jpg \
+		../QmlGallery/images/image_14.jpg \
+		../QmlGallery/images/image_23.jpg \
+		../QmlGallery/images/image_shop_11.jpg \
+		../QmlGallery/images/image_maps.jpg \
+		../QmlGallery/images/photo_male_8.jpg \
+		../QmlGallery/images/img_plant_5.jpg \
+		../QmlGallery/images/image_32.jpg \
+		../QmlGallery/images/img_handle.png \
+		../QmlGallery/images/image_shop_8.jpg \
+		../QmlGallery/images/photo_female_2.jpg \
+		../QmlGallery/images/image_12.jpg \
+		../QmlGallery/images/img_social_instagram.png \
+		../QmlGallery/images/img_social_tumblr.png \
+		../QmlGallery/images/image_21.jpg \
+		../QmlGallery/images/img_plant_3.jpg \
+		../QmlGallery/images/image_9.jpg \
+		../QmlGallery/images/photo_male_6.jpg \
+		../QmlGallery/images/image_30.jpg \
+		../QmlGallery/images/badge_reward.png \
+		../QmlGallery/images/image_shop_6.jpg \
+		../QmlGallery/images/img_social_pinterest.png \
+		../QmlGallery/images/image_10.jpg \
+		../QmlGallery/images/image_7.jpg \
+		../QmlGallery/images/photo_male_4.jpg \
+		../QmlGallery/images/img_plant_1.jpg \
+		../QmlGallery/images/img_social_flickr.png \
+		../QmlGallery/images/img_order.png \
+		../QmlGallery/images/image_shop_4.jpg \
+		../QmlGallery/images/ic_github.png
+	/home/mohsen/Applications/Qt5.14.2/5.14.2/gcc_64/bin/rcc -name qml_qmlcache qml_qmlcache.qrc -o qrc_qml_qmlcache.cpp
+
 compiler_moc_predefs_make_all: moc_predefs.h
 compiler_moc_predefs_clean:
 	-$(DEL_FILE) moc_predefs.h
@@ -834,7 +1048,7 @@ compiler_yacc_impl_make_all:
 compiler_yacc_impl_clean:
 compiler_lex_make_all:
 compiler_lex_clean:
-compiler_clean: compiler_qmlcache_clean compiler_qmlcache_loader_clean compiler_moc_predefs_clean 
+compiler_clean: compiler_qmlcache_clean compiler_qmlcache_loader_clean compiler_rcc_clean compiler_moc_predefs_clean 
 
 ####### Compile
 
@@ -932,7 +1146,9 @@ main.o: ../QmlGallery/main.cpp ../../../../Applications/Qt5.14.2/5.14.2/gcc_64/i
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtQml/qqmlpropertyvaluesource.h \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtQml/qqmllist.h \
 		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtCore/qmetaobject.h \
-		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtQml/qqmlerror.h
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtQml/qqmlerror.h \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtGui/QSurfaceFormat \
+		../../../../Applications/Qt5.14.2/5.14.2/gcc_64/include/QtGui/qsurfaceformat.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../QmlGallery/main.cpp
 
 Colors_qml.o: Colors_qml.cpp 
@@ -941,8 +1157,47 @@ Colors_qml.o: Colors_qml.cpp
 main_qml.o: main_qml.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_qml.o main_qml.cpp
 
+Tools_RippleLayout_qml.o: Tools_RippleLayout_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Tools_RippleLayout_qml.o Tools_RippleLayout_qml.cpp
+
+Components_Toolbar_qml.o: Components_Toolbar_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Components_Toolbar_qml.o Components_Toolbar_qml.cpp
+
+Components_ItemSubList_qml.o: Components_ItemSubList_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Components_ItemSubList_qml.o Components_ItemSubList_qml.cpp
+
+Components_ItemListMenu_qml.o: Components_ItemListMenu_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Components_ItemListMenu_qml.o Components_ItemListMenu_qml.cpp
+
+Drawables_AppLogo_qml.o: Drawables_AppLogo_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_AppLogo_qml.o Drawables_AppLogo_qml.cpp
+
+Drawables_Ic_menu_qml.o: Drawables_Ic_menu_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_Ic_menu_qml.o Drawables_Ic_menu_qml.cpp
+
+Drawables_Ic_search_qml.o: Drawables_Ic_search_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_Ic_search_qml.o Drawables_Ic_search_qml.cpp
+
+Drawables_Ic_buttons_qml.o: Drawables_Ic_buttons_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_Ic_buttons_qml.o Drawables_Ic_buttons_qml.cpp
+
+Drawables_Ic_arrowDrop_qml.o: Drawables_Ic_arrowDrop_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_Ic_arrowDrop_qml.o Drawables_Ic_arrowDrop_qml.cpp
+
+Drawables_Ic_bottomNavigation_qml.o: Drawables_Ic_bottomNavigation_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_Ic_bottomNavigation_qml.o Drawables_Ic_bottomNavigation_qml.cpp
+
+Drawables_Ic_notification_qml.o: Drawables_Ic_notification_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_Ic_notification_qml.o Drawables_Ic_notification_qml.cpp
+
+Drawables_Ic_bottomSheet_qml.o: Drawables_Ic_bottomSheet_qml.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o Drawables_Ic_bottomSheet_qml.o Drawables_Ic_bottomSheet_qml.cpp
+
 qmlcache_loader.o: qmlcache_loader.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qmlcache_loader.o qmlcache_loader.cpp
+
+qrc_qml_qmlcache.o: qrc_qml_qmlcache.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o qrc_qml_qmlcache.o qrc_qml_qmlcache.cpp
 
 ####### Install
 
