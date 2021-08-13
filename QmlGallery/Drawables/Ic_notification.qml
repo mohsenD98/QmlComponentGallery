@@ -13,7 +13,6 @@ Item {
         id: shapeControllerBox
         width: parent.width
         height: parent.height
-
         color: "transparent"
 
         Shape {
@@ -30,10 +29,20 @@ Item {
             }
         }
 
+
+        Rectangle{
+            width: 8
+            height: width
+            radius: width
+            visible: true
+            anchors.right: parent.right
+            anchors.top: parent.top
+            color: materialColors.colorAccentDark
+        }
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                onControllerClicked("clicked")
+                controllerClicked("clicked")
             }
         }
     }

@@ -69,35 +69,25 @@ Window {
             spacing: 8
 
             model: ListModel {
+
                 ListElement {
                     name: "Bottom Navigation"
+                    subModels: "Basic,Shifting,Light,Dark,Icon,Primary,MapBlue,LightSimple,Article,shop,Small,Main"
                     ic_name: "Ic_bottomNavigation"
+                    isNew:true
                 }
 
                 ListElement {
                     name: "Bottom Sheet"
+                    subModels: "Basic,List,Map,Floating,Full,Filter,Menu"
                     ic_name: "Ic_bottomSheet"
+                    isNew:false
                 }
                 ListElement {
                     name: "Buttons"
+                    subModels: "Basic,ButtonInUtilities,FabMiddle,FabMore,FabMoreText,ToggleBasic,FabExtend"
                     ic_name: "Ic_buttons"
-                }
-
-                ListElement {
-                    name: "Bottom Sheet"
-                    ic_name: "Ic_bottomSheet"
-                }
-                ListElement {
-                    name: "Buttons"
-                    ic_name: "Ic_buttons"
-                }
-                ListElement {
-                    name: "Bottom Sheet"
-                    ic_name: "Ic_bottomSheet"
-                }
-                ListElement {
-                    name: "Buttons"
-                    ic_name: "Ic_buttons"
+                    isNew:true
                 }
             }
             delegate: ItemListMenu {}

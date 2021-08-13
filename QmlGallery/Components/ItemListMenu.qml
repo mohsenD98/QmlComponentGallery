@@ -14,11 +14,18 @@ Rectangle {
 
     property bool opened: false
 
-    Behavior on height {
-        NumberAnimation {
-            duration: 135
+    Component.onCompleted: {
+        var subMod= subModels.split(",")
+        for (var i = 0; i < 5; ++i) {
+            subComponentList.model.append({subModelName:subMod[i]})
         }
     }
+
+//    Behavior on height {
+//        NumberAnimation {
+//            duration: 135
+//        }
+//    }
 
     Ic_arrowDrop {
         id: dropDownIcon
@@ -28,6 +35,17 @@ Rectangle {
         controller.fillColor: materialColors.colorPrimary
         controller.strokeColor: "transparent"
         controller.strokeWidth: 1
+    }
+
+    Rectangle{
+        width: dropDownIcon.width/2.79
+        height: width
+        radius: width
+        visible: isNew
+        anchors.right: dropDownIcon.left
+        anchors.rightMargin: 10
+        anchors.verticalCenter: parent.verticalCenter
+        color: materialColors.colorAccentDark
     }
 
     MouseArea {
@@ -73,25 +91,10 @@ Rectangle {
         anchors.topMargin: 65
         anchors.leftMargin: itemName.x
         spacing: 8
+        model:ListModel{
 
-        model: ListModel {
-
-            ListElement {
-                subModelName: "Bottom Navigation"
-            }
-            ListElement {
-                subModelName: "Bottom Sheet"
-            }
-            ListElement {
-                subModelName: "Buttons"
-            }
-            ListElement {
-                subModelName: "Buttons"
-            }
-            ListElement {
-                subModelName: "Buttons"
-            }
         }
+
         delegate: ItemSubList {
             width: item.width - itemName.x - 24
         }
@@ -106,6 +109,7 @@ Rectangle {
                         "qrc:/Drawables/" + ic_name + ".qml")
             sourceComponent = component
         }
+        onLoaded: listIconLoader.item.controller.fillColor = materialColors.colorPrimary
     }
 
     Text {
@@ -116,10 +120,11 @@ Rectangle {
         anchors.leftMargin: 24
         anchors.verticalCenter: parent.verticalCenter
         font.pixelSize: 14
+        font.bold: true
     }
 
-    RippleLayout {
-        mouseArea: itemMouseArea
-        anchors.fill: item
-    }
+//    RippleLayout {
+//        mouseArea: itemMouseArea
+//        anchors.fill: item
+//    }
 }

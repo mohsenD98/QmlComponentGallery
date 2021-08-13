@@ -18,7 +18,7 @@ Rectangle {
         anchors.left: parent.left
         anchors.leftMargin: 24
         anchors.verticalCenter: parent.verticalCenter
-        font.pixelSize: 10
+        font.pixelSize: 12
     }
     RippleLayout {
         mouseArea: baseModelNameArea

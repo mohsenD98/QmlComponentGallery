@@ -33,7 +33,7 @@ Item {
         MouseArea {
             anchors.fill: parent
             onClicked: {
-                onControllerClicked("clicked")
+                controllerClicked("clicked")
             }
         }
     }
