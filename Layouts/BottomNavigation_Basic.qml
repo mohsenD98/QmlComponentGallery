@@ -74,6 +74,7 @@ Item {
                 anchors.fill: parent
                 backgroundColor: materialColors.grey_60
                 unFocusedColor: materialColors.grey_40
+                maxWidth:width
                 focusedColor: "white"
                 currIndex: 1
                 model: [{

@@ -5,11 +5,10 @@ import "../Drawables/"
 import ".."
 
 Item {
-    property color backgroundColor
     property color focusedColor
     property color unFocusedColor
     property real maxWidth
-    property var currIndex
+    property var currIndex: -1
     property var model
 
     signal currentNavIndexChanged(var newIndex)
@@ -23,6 +22,8 @@ Item {
             menuList.model.append({
                                       "le_btnName": model[i].name,
                                       "le_btnIconPath": model[i].icon,
+                                      "le_background": model[i].backgroundColor.toString(
+                                          ),
                                       "le_focusedColor": focusedColor.toString(
                                                              ),
                                       "le_unFocusedColor": unFocusedColor.toString(
@@ -35,8 +36,16 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: backgroundColor
+        color: !menuList.model.get(
+                   currIndex) ? materialColors.blue_grey_700 : menuList.model.get(
+                                    currIndex)["le_background"]
         clip: true
+
+        Behavior on color {
+            ColorAnimation {
+                duration: 200
+            }
+        }
 
         ListView {
             id: menuList
@@ -48,7 +57,7 @@ Item {
             orientation: ListView.Horizontal
             clip: true
             model: ListModel {}
-            delegate: ItemBottomNavigation1 {
+            delegate: ItemBottomNavigation2 {
                 width: maxWidth / menuList.model.count
                 onBtnPressed: {
                     for (var i = 0; i < menuList.model.count; ++i) {
