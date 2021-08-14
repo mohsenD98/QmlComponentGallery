@@ -36,7 +36,7 @@ Item {
             id: tabStore
             anchors.top: searchBar.bottom
             anchors.topMargin: 20
-            anchors.bottom: bottomNavigationBasicBox.top
+            anchors.bottom: parent.bottom
             anchors.bottomMargin: 8
             anchors.left: parent.left
             anchors.leftMargin: 12
@@ -62,13 +62,33 @@ Item {
             height: 50
             anchors.bottom: parent.bottom
             anchors.left: parent.left
-            anchors.leftMargin: 12
             anchors.right: parent.right
-            anchors.rightMargin: 12
-            color: materialColors.grey_10
+            color: "transparent"
             Behavior on height {
                 NumberAnimation {
                     duration: 100
+                }
+            }
+
+            CompBottomNavigation1 {
+                anchors.fill: parent
+                backgroundColor: materialColors.grey_60
+                unFocusedColor: materialColors.grey_40
+                focusedColor: "white"
+                currIndex: 1
+                model: [{
+                        "name": "Recents",
+                        "icon": "qrc:/Drawables/Ic_recent.qml"
+                    }, {
+                        "name": "Favorites",
+                        "icon": "qrc:/Drawables/Ic_favorites.qml"
+                    }, {
+                        "name": "Nearby",
+                        "icon": "qrc:/Drawables/Ic_nearby.qml"
+                    }]
+
+                onCurrentNavIndexChanged: {
+                    console.log(newIndex)
                 }
             }
         }

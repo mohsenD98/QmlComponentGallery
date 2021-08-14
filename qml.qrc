@@ -166,5 +166,10 @@
         <file>Components/ItemStore1.qml</file>
         <file>Drawables/Ic_more3Dot.qml</file>
         <file>Components/ItemStore2.qml</file>
+        <file>Components/CompBottomNavigation1.qml</file>
+        <file>Components/ItemBottomNavigation1.qml</file>
+        <file>Drawables/Ic_recent.qml</file>
+        <file>Drawables/Ic_nearby.qml</file>
+        <file>Drawables/Ic_favorites.qml</file>
     </qresource>
 </RCC>

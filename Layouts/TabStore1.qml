@@ -23,6 +23,8 @@ Item {
             // searchbar and bottomNavigationBasicBox
             if (contentY < 0)
                 return
+            if (contentY > contentHeight)
+                return
 
             if (verticalVelocity > 157) {
                 //dragging up  :

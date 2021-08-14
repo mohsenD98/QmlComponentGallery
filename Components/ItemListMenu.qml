@@ -30,7 +30,7 @@ Rectangle {
 
     Behavior on height {
         NumberAnimation {
-            duration: 100
+            duration: 135
         }
     }
     Ic_arrowDrop {
@@ -106,7 +106,7 @@ Rectangle {
             width: item.width - itemName.x - 24
 
             onLayoutSelected: {
-                // call from main.qml :
+                // call from main.qml
                 loadLayout(path)
             }
         }
