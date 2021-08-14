@@ -13,6 +13,8 @@ Window {
     height: 720
     title: qsTr("Qml Gallery")
     color: materialColors.grey_100_
+    flags: Qt.Window | Qt.WindowTitleHint | Qt.WindowSystemMenuHint
+           | (Qt.platform.os === "ios" ? Qt.MaximizeUsingFullscreenGeometryHint : 0)
 
     Colors {
         id: materialColors

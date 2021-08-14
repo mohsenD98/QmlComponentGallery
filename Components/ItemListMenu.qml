@@ -28,11 +28,11 @@ Rectangle {
         }
     }
 
-    //    Behavior on height {
-    //        NumberAnimation {
-    //            duration: 135
-    //        }
-    //    }
+    Behavior on height {
+        NumberAnimation {
+            duration: 100
+        }
+    }
     Ic_arrowDrop {
         id: dropDownIcon
         anchors.right: parent.right

@@ -160,5 +160,10 @@
         <file>Layouts/BottomNavigation_Icon.qml</file>
         <file>Layouts/BottomNavigation_Dark.qml</file>
         <file>Layouts/BottomNavigation_Article.qml</file>
+        <file>Components/CompSearchBar.qml</file>
+        <file>Drawables/Ic_mic.qml</file>
+        <file>Layouts/TabStore1.qml</file>
+        <file>Components/ItemStore1.qml</file>
+        <file>Drawables/Ic_more3Dot.qml</file>
     </qresource>
 </RCC>
