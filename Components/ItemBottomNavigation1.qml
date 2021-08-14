@@ -11,6 +11,7 @@ Rectangle {
     radius: 4
 
     signal btnPressed(var value)
+
     Colors {
         id: materialColors
     }

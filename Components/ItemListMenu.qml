@@ -8,7 +8,7 @@ import "../Drawables/"
 Rectangle {
     id: item
     width: mainWindow.width - 16
-    height: opened ? (40 * subComponentList.count) + 100 : 50
+    height: opened ? (subComponentList.height) + 80 : 50
     radius: 8
     color: materialColors.grey_95
     clip: true
@@ -17,7 +17,7 @@ Rectangle {
 
     Component.onCompleted: {
         var subMod = subModels.split(",")
-        for (var i = 0; i < 5; ++i) {
+        for (var i = 0; i < subModels.split(",").length; ++i) {
             subComponentList.model.append({
                                               "subModelName": subMod[i],
                                               "subModelPath": name.split(
@@ -96,9 +96,12 @@ Rectangle {
 
     ListView {
         id: subComponentList
-        anchors.fill: parent
+        anchors.top: parent.top
         anchors.topMargin: 65
+        anchors.left: parent.left
         anchors.leftMargin: itemName.x
+        anchors.right: parent.right
+        height: contentItem.childrenRect.height
         spacing: 8
         model: ListModel {}
 

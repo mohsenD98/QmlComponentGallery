@@ -5,7 +5,6 @@ import "../Drawables/"
 import ".."
 
 Item {
-
     Colors {
         id: materialColors
     }
@@ -23,6 +22,10 @@ Item {
             anchors.verticalCenter: parent.verticalCenter
             controller.strokeColor: "transparent"
             controller.strokeWidth: 1
+
+            onControllerClicked: {
+                stackview.pop()
+            }
         }
 
         TextInput {

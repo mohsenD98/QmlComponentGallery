@@ -177,5 +177,6 @@
         <file>Drawables/Ic_book.qml</file>
         <file>Components/ItemBottomNavigation2.qml</file>
         <file>Components/CompBottomNavigation2.qml</file>
+        <file>Components/Toolbar2.qml</file>
     </qresource>
 </RCC>

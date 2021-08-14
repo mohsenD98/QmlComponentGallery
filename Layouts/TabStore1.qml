@@ -6,6 +6,7 @@ import "../Components/"
 
 Item {
     clip: true
+    property var applyTheme: "Light"
     signal draggingDown(var value)
     signal draggingUp(var value)
     Colors {
@@ -49,13 +50,14 @@ Item {
                 font.pixelSize: 16
                 font.bold: true
                 anchors.left: parent.left
+                color: applyTheme === "Dark" ? "white" : "black"
             }
             Text {
                 id: lblReleaseMore
                 text: qsTr("More")
                 font.pixelSize: 13
                 anchors.right: parent.right
-                color: materialColors.grey_60
+                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
             }
 
             ListView {
@@ -86,7 +88,9 @@ Item {
                         le_image: "qrc:/images/image_1.jpg"
                     }
                 }
-                delegate: ItemStore1 {}
+                delegate: ItemStore1 {
+                    theme: applyTheme
+                }
             }
 
             Text {
@@ -97,6 +101,7 @@ Item {
                 anchors.topMargin: 20
                 font.pixelSize: 16
                 font.bold: true
+                color: applyTheme === "Dark" ? "white" : "black"
             }
             Text {
                 id: lblRecomendedMore
@@ -105,7 +110,7 @@ Item {
                 anchors.top: releaseList.bottom
                 anchors.topMargin: 20
                 font.pixelSize: 13
-                color: materialColors.grey_60
+                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
             }
 
             ListView {
@@ -146,7 +151,9 @@ Item {
                         le_image: "qrc:/images/image_14.jpg"
                     }
                 }
-                delegate: ItemStore2 {}
+                delegate: ItemStore1 {
+                    theme: applyTheme
+                }
             }
             Text {
                 id: lblTop
@@ -156,6 +163,7 @@ Item {
                 anchors.topMargin: 20
                 font.pixelSize: 16
                 font.bold: true
+                color: applyTheme === "Dark" ? "white" : "black"
             }
             Text {
                 id: lblTopMore
@@ -164,7 +172,7 @@ Item {
                 anchors.top: recomendedList.bottom
                 anchors.topMargin: 20
                 font.pixelSize: 13
-                color: materialColors.grey_60
+                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
             }
 
             ListView {
@@ -195,7 +203,9 @@ Item {
                         le_image: "qrc:/images/image_1.jpg"
                     }
                 }
-                delegate: ItemStore1 {}
+                delegate: ItemStore1 {
+                    theme: applyTheme
+                }
             }
         }
     }

@@ -8,6 +8,9 @@ Rectangle {
     width: mainWindow.width / 2.5 > 192 ? 192 : mainWindow.width / 2.5 // mainWindow from main.qml
     radius: 6
     clip: true
+    color: theme === "Dark" ? materialColors.grey_90 : "white"
+
+    property var theme: "Light"
 
     Image {
         id: image
@@ -24,6 +27,7 @@ Rectangle {
         anchors.top: image.bottom
         anchors.margins: 16
         clip: true
+        color: theme === "Dark" ? materialColors.grey_90 : "white"
 
         Ic_more3Dot {
             id: ic_more
@@ -46,18 +50,18 @@ Rectangle {
             spacing: 16
             clip: true
             Text {
-                color: materialColors.grey_90
                 font.pixelSize: 16
                 font.bold: true
                 text: le_name
                 wrapMode: Text.WrapAnywhere
+                color: applyTheme === "Dark" ? "white" : materialColors.grey_90
             }
 
             Text {
-                color: materialColors.grey_60
                 text: le_author
                 font.pixelSize: 13
                 wrapMode: Text.Wrap
+                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
             }
         }
     }
