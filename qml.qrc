@@ -146,5 +146,19 @@
         <file>Drawables/Ic_bottomSheet.qml</file>
         <file>Drawables/Ic_bottomNavigation.qml</file>
         <file>Components/ItemSubList.qml</file>
+        <file>Components/ListModelMainPage.qml</file>
+        <file>Layouts/BottomNavigation_Basic.qml</file>
+        <file>Layouts/AppMainWindow.qml</file>
+        <file>Layouts/BottomNavigation_Small.qml</file>
+        <file>Layouts/BottomNavigation_Shop.qml</file>
+        <file>Layouts/BottomNavigation_Shifting.qml</file>
+        <file>Layouts/BottomNavigation_Primary.qml</file>
+        <file>Layouts/BottomNavigation_MapBlue.qml</file>
+        <file>Layouts/BottomNavigation_Main.qml</file>
+        <file>Layouts/BottomNavigation_LightSimple.qml</file>
+        <file>Layouts/BottomNavigation_Light.qml</file>
+        <file>Layouts/BottomNavigation_Icon.qml</file>
+        <file>Layouts/BottomNavigation_Dark.qml</file>
+        <file>Layouts/BottomNavigation_Article.qml</file>
     </qresource>
 </RCC>

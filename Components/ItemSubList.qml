@@ -10,6 +10,7 @@ Rectangle {
     color: materialColors.grey_100_
 
     property bool opened: false
+    signal layoutSelected(var path)
 
     Text {
         id: modelName
@@ -30,7 +31,7 @@ Rectangle {
         anchors.fill: parent
 
         onClicked: {
-
+            layoutSelected(subModelPath)
         }
     }
 }

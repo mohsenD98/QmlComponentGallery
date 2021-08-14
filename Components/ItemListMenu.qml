@@ -16,18 +16,23 @@ Rectangle {
     property bool opened: false
 
     Component.onCompleted: {
-        var subMod= subModels.split(",")
+        var subMod = subModels.split(",")
         for (var i = 0; i < 5; ++i) {
-            subComponentList.model.append({subModelName:subMod[i]})
+            subComponentList.model.append({
+                                              "subModelName": subMod[i],
+                                              "subModelPath": name.split(
+                                                                  " ").join(
+                                                                  "") + "_" + subMod[i].split(
+                                                  " ").join("") + ".qml"
+                                          })
         }
     }
 
-//    Behavior on height {
-//        NumberAnimation {
-//            duration: 135
-//        }
-//    }
-
+    //    Behavior on height {
+    //        NumberAnimation {
+    //            duration: 135
+    //        }
+    //    }
     Ic_arrowDrop {
         id: dropDownIcon
         anchors.right: parent.right
@@ -38,9 +43,9 @@ Rectangle {
         controller.strokeWidth: 1
     }
 
-    Rectangle{
-        id:newComponentNotif
-        width: dropDownIcon.width/2.79
+    Rectangle {
+        id: newComponentNotif
+        width: dropDownIcon.width / 2.79
         height: width
         radius: width
         visible: isNew
@@ -95,12 +100,15 @@ Rectangle {
         anchors.topMargin: 65
         anchors.leftMargin: itemName.x
         spacing: 8
-        model:ListModel{
-
-        }
+        model: ListModel {}
 
         delegate: ItemSubList {
             width: item.width - itemName.x - 24
+
+            onLayoutSelected: {
+                // call from main.qml :
+                loadLayout(path)
+            }
         }
     }
     Loader {
@@ -127,8 +135,8 @@ Rectangle {
         font.bold: true
     }
 
-//    RippleLayout {
-//        mouseArea: itemMouseArea
-//        anchors.fill: item
-//    }
+    //    RippleLayout {
+    //        mouseArea: itemMouseArea
+    //        anchors.fill: item
+    //    }
 }
