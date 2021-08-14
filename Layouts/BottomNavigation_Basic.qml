@@ -23,9 +23,17 @@ Item {
             anchors.right: parent.right
             anchors.rightMargin: 12
             height: 50
+            clip: true
+
+            Behavior on height {
+                NumberAnimation {
+                    duration: 100
+                }
+            }
         }
 
         TabStore1 {
+            id: tabStore
             anchors.top: searchBar.bottom
             anchors.topMargin: 20
             anchors.bottom: bottomNavigationBasicBox.top
@@ -34,6 +42,19 @@ Item {
             anchors.leftMargin: 12
             anchors.right: parent.right
             anchors.rightMargin: 12
+
+            onDraggingDown: {
+                // show elements
+                searchBar.height = 50
+                bottomNavigationBasicBox.height = 50
+                tabStore.anchors.topMargin = 20
+            }
+            onDraggingUp: {
+                // hide elements
+                searchBar.height = 0
+                bottomNavigationBasicBox.height = 0
+                tabStore.anchors.topMargin = 5
+            }
         }
 
         Rectangle {
@@ -45,6 +66,11 @@ Item {
             anchors.right: parent.right
             anchors.rightMargin: 12
             color: materialColors.grey_10
+            Behavior on height {
+                NumberAnimation {
+                    duration: 100
+                }
+            }
         }
     }
 }

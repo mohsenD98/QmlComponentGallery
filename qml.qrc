@@ -165,5 +165,6 @@
         <file>Layouts/TabStore1.qml</file>
         <file>Components/ItemStore1.qml</file>
         <file>Drawables/Ic_more3Dot.qml</file>
+        <file>Components/ItemStore2.qml</file>
     </qresource>
 </RCC>
