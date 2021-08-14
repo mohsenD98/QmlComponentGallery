@@ -4,6 +4,7 @@ import QtQuick.Shapes 1.12
 
 Item {
     property alias controller: shapeController
+    property alias baseShape: shape
     property alias controllerBox: shapeControllerBox
     signal controllerClicked(var value)
     property bool doRotate: false
@@ -18,9 +19,10 @@ Item {
         color: "transparent"
 
         Shape {
+            id:shape
             anchors.fill: parent
             anchors.centerIn: parent
-            rotation: doRotate?180:0
+            rotation: doRotate ? 180 : 0
             ShapePath {
                 id: shapeController
                 fillColor: "white"

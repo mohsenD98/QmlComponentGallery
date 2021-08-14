@@ -3,6 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Shapes 1.12
 
 Item {
+    property alias baseShape: shape
     property alias controller: shapeController
     property alias controllerBox: shapeControllerBox
     signal controllerClicked(var value)
@@ -17,6 +18,7 @@ Item {
         color: "transparent"
 
         Shape {
+            id: shape
             anchors.fill: parent
             anchors.centerIn: parent
             ShapePath {
