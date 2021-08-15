@@ -27,7 +27,6 @@ Item {
                                                              ),
                                       "le_unFocusedColor": unFocusedColor.toString(
                                                                ),
-                                      "le_width": maxWidth / model.length,
                                       "le_hasFocus": currIndex === i ? true : false
                                   })
         }

@@ -178,5 +178,21 @@
         <file>Components/ItemBottomNavigation2.qml</file>
         <file>Components/CompBottomNavigation2.qml</file>
         <file>Components/Toolbar2.qml</file>
+        <file>Drawables/Ic_home.qml</file>
+        <file>Drawables/Ic_fovoritesBorder.qml</file>
+        <file>Drawables/Ic_addCircleOutline.qml</file>
+        <file>Drawables/Ic_addBox.qml</file>
+        <file>Drawables/Ic_add.qml</file>
+        <file>Drawables/Ic_account.qml</file>
+        <file>Drawables/Ic_accountCircle.qml</file>
+        <file>Drawables/Ic_accountBalance.qml</file>
+        <file>Drawables/Ic_shoppingCart.qml</file>
+        <file>Drawables/Ic_shoppingBasket.qml</file>
+        <file>Drawables/Ic_localOffer.qml</file>
+        <file>Drawables/Ic_apps.qml</file>
+        <file>Components/CompBottomNavigation3.qml</file>
+        <file>Components/CompBottomNavigation4.qml</file>
+        <file>Drawables/Ic_nearMe.qml</file>
+        <file>Drawables/Ic_formatListBullet.qml</file>
     </qresource>
 </RCC>
