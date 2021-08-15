@@ -72,19 +72,19 @@ Item {
             CompBottomNavigation1 {
                 anchors.fill: parent
                 backgroundColor: "white"
-                unFocusedColor: materialColors.grey_40
+                unFocusedColor: materialColors.grey_60
                 maxWidth: width
                 focusedColor: materialColors.colorPrimary
-                currIndex: 1
+                currIndex: 0
                 model: [{
-                        "name": "Recents",
-                        "icon": "qrc:/Drawables/Ic_recent.qml"
+                        "name": "Home",
+                        "icon": "qrc:/Drawables/Ic_home.qml"
+                    }, {
+                        "name": "Add",
+                        "icon": "qrc:/Drawables/Ic_addCircleOutline.qml"
                     }, {
                         "name": "Favorites",
-                        "icon": "qrc:/Drawables/Ic_favorites.qml"
-                    }, {
-                        "name": "Nearby",
-                        "icon": "qrc:/Drawables/Ic_nearby.qml"
+                        "icon": "qrc:/Drawables/Ic_fovoritesBorder.qml"
                     }]
 
                 onCurrentNavIndexChanged: {
