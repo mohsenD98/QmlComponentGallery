@@ -77,6 +77,7 @@ Item {
                 maxWidth: width
                 focusedColor: materialColors.deep_orange_500
                 currIndex: 2
+                enableText : false
                 model: [{
                         "name": "Home",
                         "icon": "qrc:/Drawables/Ic_home.qml"

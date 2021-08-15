@@ -11,6 +11,7 @@ Rectangle {
     radius: 4
 
     signal btnPressed(var value)
+    property bool enableTxt: true
 
     Colors {
         id: materialColors
@@ -18,9 +19,10 @@ Rectangle {
 
     Loader {
         id: btnIconLoader
-        anchors.top: parent.top
-        anchors.topMargin: 6
         anchors.horizontalCenter: parent.horizontalCenter
+        anchors.verticalCenter: enableTxt ? undefined : parent.verticalCenter
+        anchors.top: enableTxt ? parent.top : undefined
+        anchors.topMargin: enableTxt ? 6 : undefined
         Component.onCompleted: {
             var component = Qt.createComponent(le_btnIconPath)
             sourceComponent = component
@@ -48,6 +50,7 @@ Rectangle {
         anchors.top: btnIconLoader.bottom
         anchors.topMargin: 2
         anchors.horizontalCenter: parent.horizontalCenter
+        visible: enableTxt
         color: le_hasFocus ? le_focusedColor : le_unFocusedColor
     }
     MouseArea {

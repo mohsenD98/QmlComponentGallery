@@ -29,7 +29,7 @@ Item {
                 strokeWidth: 1
                 strokeColor: "transparent"
                 PathSvg {
-                    path: "M4,10v7h3v-7L4,10zM10,10v7h3v-7h-3zM2,22h19v-3L2,19v3zM16,10v7h3v-7h-3zM11.5,1L2,6v2h19L21,6l-9.5,-5z"
+                    path: "M10,4H4c-1.1,0 -1.99,0.9 -1.99,2L2,18c0,1.1 0.9,2 2,2h16c1.1,0 2,-0.9 2,-2V8c0,-1.1 -0.9,-2 -2,-2h-8l-2,-2z"
                 }
             }
         }

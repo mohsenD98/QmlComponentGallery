@@ -11,6 +11,7 @@ Item {
     property real maxWidth
     property var currIndex
     property var model
+    property bool enableText: true
 
     signal currentNavIndexChanged(var newIndex)
 
@@ -48,6 +49,7 @@ Item {
             clip: true
             model: ListModel {}
             delegate: ItemBottomNavigation1 {
+                enableTxt:enableText
                 width: maxWidth / menuList.model.count
                 onBtnPressed: {
                     for (var i = 0; i < menuList.model.count; ++i) {

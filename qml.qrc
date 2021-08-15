@@ -197,5 +197,10 @@
         <file>Layouts/TabStore2.qml</file>
         <file>Components/ItemStore3.qml</file>
         <file>Components/ItemCategories.qml</file>
+        <file>Components/Toolbar3.qml</file>
+        <file>Layouts/TabArticle.qml</file>
+        <file>Drawables/Ic_folder.qml</file>
+        <file>Drawables/Ic_dataUsage.qml</file>
+        <file>Drawables/Ic_viewModul.qml</file>
     </qresource>
 </RCC>
