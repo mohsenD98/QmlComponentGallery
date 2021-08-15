@@ -194,5 +194,8 @@
         <file>Components/CompBottomNavigation4.qml</file>
         <file>Drawables/Ic_nearMe.qml</file>
         <file>Drawables/Ic_formatListBullet.qml</file>
+        <file>Layouts/TabStore2.qml</file>
+        <file>Components/ItemStore3.qml</file>
+        <file>Components/ItemCategories.qml</file>
     </qresource>
 </RCC>
