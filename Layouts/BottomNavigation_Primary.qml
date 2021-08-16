@@ -79,13 +79,13 @@ Item {
                 currIndex: 1
                 model: [{
                         "name": "Dashboard",
-                        "icon": "qrc:/Drawables/Ic_apps.qml"
+                        "icon": "qrc:/Drawables/Ic_Apps.qml"
                     }, {
                         "name": "ShoppingBasket",
-                        "icon": "qrc:/Drawables/Ic_shoppingCart.qml"
+                        "icon": "qrc:/Drawables/Ic_ShoppingCart.qml"
                     }, {
                         "name": "Tikets",
-                        "icon": "qrc:/Drawables/Ic_localOffer.qml"
+                        "icon": "qrc:/Drawables/Ic_LocalOffer.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

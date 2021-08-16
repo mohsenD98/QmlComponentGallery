@@ -29,7 +29,7 @@ Rectangle {
         clip: true
         color: theme === "Dark" ? materialColors.grey_90 : "white"
 
-        Ic_more3Dot {
+        Ic_MoreVert {
             id: ic_more
             anchors.right: parent.right
             anchors.verticalCenter: parent.verticalCenter

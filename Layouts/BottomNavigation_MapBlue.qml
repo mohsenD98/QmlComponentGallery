@@ -37,13 +37,13 @@ Item {
                 enableText: true
                 model: [{
                         "name": "Map",
-                        "icon": "qrc:/Drawables/Ic_nearMe.qml"
+                        "icon": "qrc:/Drawables/Ic_NearMe.qml"
                     }, {
                         "name": "Add",
-                        "icon": "qrc:/Drawables/Ic_add.qml"
+                        "icon": "qrc:/Drawables/Ic_Add.qml"
                     }, {
                         "name": "List",
-                        "icon": "qrc:/Drawables/Ic_formatListBullet.qml"
+                        "icon": "qrc:/Drawables/Ic_FormatListBullet.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

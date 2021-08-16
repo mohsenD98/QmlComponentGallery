@@ -14,7 +14,7 @@ Item {
         color: "white"
         radius: 4
 
-        Ic_menu {
+        Ic_Menu {
             id: menuBtn
             controller.fillColor: materialColors.grey_60
             anchors.left: parent.left
@@ -54,7 +54,7 @@ Item {
                 color: materialColors.grey_60
             }
         }
-        Ic_mic {
+        Ic_Mic {
             id: micBtn
             controller.fillColor: materialColors.grey_60
             anchors.right: parent.right

@@ -78,13 +78,13 @@ Item {
                 currIndex: 0
                 model: [{
                         "name": "Home",
-                        "icon": "qrc:/Drawables/Ic_home.qml"
+                        "icon": "qrc:/Drawables/Ic_Home.qml"
                     }, {
                         "name": "Add",
-                        "icon": "qrc:/Drawables/Ic_addCircleOutline.qml"
+                        "icon": "qrc:/Drawables/Ic_AddCircleOutline.qml"
                     }, {
                         "name": "Favorites",
-                        "icon": "qrc:/Drawables/Ic_fovoritesBorder.qml"
+                        "icon": "qrc:/Drawables/Ic_FovoritesBorder.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

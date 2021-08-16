@@ -77,22 +77,22 @@ Item {
                 maxWidth: width
                 focusedColor: materialColors.deep_orange_500
                 currIndex: 2
-                enableText : false
+                enableText: false
                 model: [{
                         "name": "Home",
-                        "icon": "qrc:/Drawables/Ic_home.qml"
+                        "icon": "qrc:/Drawables/Ic_Home.qml"
                     }, {
                         "name": "Search",
-                        "icon": "qrc:/Drawables/Ic_search.qml"
+                        "icon": "qrc:/Drawables/Ic_Search.qml"
                     }, {
                         "name": "Add",
-                        "icon": "qrc:/Drawables/Ic_addBox.qml"
+                        "icon": "qrc:/Drawables/Ic_AddBox.qml"
                     }, {
                         "name": "Favorites",
-                        "icon": "qrc:/Drawables/Ic_fovoritesBorder.qml"
+                        "icon": "qrc:/Drawables/Ic_FavoriteBorder.qml"
                     }, {
                         "name": "Account",
-                        "icon": "qrc:/Drawables/Ic_account.qml"
+                        "icon": "qrc:/Drawables/Ic_AccountCircle.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

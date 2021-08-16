@@ -65,19 +65,19 @@ Item {
                 enableText: false
                 model: [{
                         "name": "a1",
-                        "icon": "qrc:/Drawables/Ic_viewModul.qml"
+                        "icon": "qrc:/Drawables/Ic_ViewModul.qml"
                     }, {
                         "name": "a2",
-                        "icon": "qrc:/Drawables/Ic_dataUsage.qml"
+                        "icon": "qrc:/Drawables/Ic_DataUsage.qml"
                     }, {
                         "name": "a3",
-                        "icon": "qrc:/Drawables/Ic_accountBalance.qml"
+                        "icon": "qrc:/Drawables/Ic_AccountBalance.qml"
                     }, {
                         "name": "a4",
-                        "icon": "qrc:/Drawables/Ic_folder.qml"
+                        "icon": "qrc:/Drawables/Ic_Folder.qml"
                     }, {
                         "name": "a5",
-                        "icon": "qrc:/Drawables/Ic_accountCircle.qml"
+                        "icon": "qrc:/Drawables/Ic_AccountCircle.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

@@ -33,7 +33,7 @@ Rectangle {
             duration: 135
         }
     }
-    Ic_arrowDrop {
+    Ic_ArrowDrop {
         id: dropDownIcon
         anchors.right: parent.right
         anchors.rightMargin: 24

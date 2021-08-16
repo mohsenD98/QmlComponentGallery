@@ -78,13 +78,13 @@ Item {
                 currIndex: 1
                 model: [{
                         "name": "Recents",
-                        "icon": "qrc:/Drawables/Ic_recent.qml"
+                        "icon": "qrc:/Drawables/Ic_Recent.qml"
                     }, {
                         "name": "Favorites",
-                        "icon": "qrc:/Drawables/Ic_favorites.qml"
+                        "icon": "qrc:/Drawables/Ic_Favorites.qml"
                     }, {
                         "name": "Nearby",
-                        "icon": "qrc:/Drawables/Ic_nearby.qml"
+                        "icon": "qrc:/Drawables/Ic_Nearby.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

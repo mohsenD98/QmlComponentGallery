@@ -79,19 +79,19 @@ Item {
                 model: [{
                         "name": "Movie & Tv",
                         "backgroundColor": materialColors.blue_grey_700,
-                        "icon": "qrc:/Drawables/Ic_movieTv.qml"
+                        "icon": "qrc:/Drawables/Ic_Movie.qml"
                     }, {
                         "name": "Musics",
                         "backgroundColor": materialColors.pink_800,
-                        "icon": "qrc:/Drawables/Ic_music.qml"
+                        "icon": "qrc:/Drawables/Ic_Music.qml"
                     }, {
                         "name": "Books",
                         "backgroundColor": materialColors.grey_700,
-                        "icon": "qrc:/Drawables/Ic_book.qml"
+                        "icon": "qrc:/Drawables/Ic_Book.qml"
                     }, {
                         "name": "Newsland",
                         "backgroundColor": materialColors.teal_800,
-                        "icon": "qrc:/Drawables/Ic_newsland.qml"
+                        "icon": "qrc:/Drawables/Ic_News.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

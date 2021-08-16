@@ -10,7 +10,7 @@ Item {
     Colors {
         id: materialColors
     }
-    height: ic_app.height + toolbar.height
+    height: toolbar.height
 
     Rectangle {
         id: toolbar
@@ -20,7 +20,7 @@ Item {
         height: toolbarHeight
         color: materialColors.grey_900
 
-        Ic_menu {
+        Ic_Menu {
             id: ic_menu
             anchors.left: parent.left
             anchors.leftMargin: 8
@@ -29,8 +29,9 @@ Item {
             controller.strokeColor: "transparent"
             controller.strokeWidth: 1
 
-            onControllerClicked: {
+            function onControllerClicked(value) {
                 stackview.pop()
+                console.log(value)
             }
         }
 
@@ -46,7 +47,7 @@ Item {
             font.bold: true
         }
 
-        Ic_more3Dot {
+        Ic_MoreVert {
             id: icNotificationBox
             anchors.verticalCenter: parent.verticalCenter
             anchors.right: parent.right
@@ -59,7 +60,7 @@ Item {
             }
         }
 
-        Ic_search {
+        Ic_Search {
             id: icSearchBox
             height: 20
             anchors.verticalCenter: parent.verticalCenter

@@ -12,7 +12,7 @@ Item {
     Colors {
         id: materialColors
     }
-    height: ic_app.height + toolbar.height
+    height: toolbar.height
 
     Rectangle {
         id: toolbar
@@ -22,7 +22,7 @@ Item {
         height: toolbarHeight
         color: backgroundColor
 
-        Ic_menu {
+        Ic_Menu {
             id: ic_menu
             anchors.left: parent.left
             anchors.leftMargin: 8
@@ -36,7 +36,7 @@ Item {
             }
         }
 
-        Ic_search {
+        Ic_Search {
             id: icSearchBox
             height: 20
             anchors.verticalCenter: parent.verticalCenter

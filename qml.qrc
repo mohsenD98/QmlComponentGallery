@@ -134,22 +134,14 @@
         <file>images/photo_singer_male.jpg</file>
         <file>Components/Toolbar.qml</file>
         <file>Drawables/AppLogo.qml</file>
-        <file>Drawables/Ic_menu.qml</file>
-        <file>Drawables/Ic_notification.qml</file>
-        <file>Drawables/Ic_search.qml</file>
         <file>images/ic_github.png</file>
         <file>images/ic_logo.png</file>
         <file>Components/ItemListMenu.qml</file>
         <file>Tools/RippleLayout.qml</file>
-        <file>Drawables/Ic_arrowDrop.qml</file>
-        <file>Drawables/Ic_buttons.qml</file>
-        <file>Drawables/Ic_bottomSheet.qml</file>
-        <file>Drawables/Ic_bottomNavigation.qml</file>
         <file>Components/ItemSubList.qml</file>
         <file>Components/ListModelMainPage.qml</file>
         <file>Layouts/BottomNavigation_Basic.qml</file>
         <file>Layouts/AppMainWindow.qml</file>
-        <file>Layouts/BottomNavigation_Small.qml</file>
         <file>Layouts/BottomNavigation_Shop.qml</file>
         <file>Layouts/BottomNavigation_Shifting.qml</file>
         <file>Layouts/BottomNavigation_Primary.qml</file>
@@ -161,46 +153,233 @@
         <file>Layouts/BottomNavigation_Dark.qml</file>
         <file>Layouts/BottomNavigation_Article.qml</file>
         <file>Components/CompSearchBar.qml</file>
-        <file>Drawables/Ic_mic.qml</file>
         <file>Layouts/TabStore1.qml</file>
         <file>Components/ItemStore1.qml</file>
-        <file>Drawables/Ic_more3Dot.qml</file>
         <file>Components/ItemStore2.qml</file>
         <file>Components/CompBottomNavigation1.qml</file>
         <file>Components/ItemBottomNavigation1.qml</file>
-        <file>Drawables/Ic_recent.qml</file>
-        <file>Drawables/Ic_nearby.qml</file>
-        <file>Drawables/Ic_favorites.qml</file>
-        <file>Drawables/Ic_newsland.qml</file>
-        <file>Drawables/Ic_music.qml</file>
-        <file>Drawables/Ic_movieTv.qml</file>
-        <file>Drawables/Ic_book.qml</file>
         <file>Components/ItemBottomNavigation2.qml</file>
         <file>Components/CompBottomNavigation2.qml</file>
         <file>Components/Toolbar2.qml</file>
-        <file>Drawables/Ic_home.qml</file>
-        <file>Drawables/Ic_fovoritesBorder.qml</file>
-        <file>Drawables/Ic_addCircleOutline.qml</file>
-        <file>Drawables/Ic_addBox.qml</file>
-        <file>Drawables/Ic_add.qml</file>
-        <file>Drawables/Ic_account.qml</file>
-        <file>Drawables/Ic_accountCircle.qml</file>
-        <file>Drawables/Ic_accountBalance.qml</file>
-        <file>Drawables/Ic_shoppingCart.qml</file>
-        <file>Drawables/Ic_shoppingBasket.qml</file>
-        <file>Drawables/Ic_localOffer.qml</file>
-        <file>Drawables/Ic_apps.qml</file>
         <file>Components/CompBottomNavigation3.qml</file>
         <file>Components/CompBottomNavigation4.qml</file>
-        <file>Drawables/Ic_nearMe.qml</file>
-        <file>Drawables/Ic_formatListBullet.qml</file>
         <file>Layouts/TabStore2.qml</file>
         <file>Components/ItemStore3.qml</file>
         <file>Components/ItemCategories.qml</file>
         <file>Components/Toolbar3.qml</file>
         <file>Layouts/TabArticle.qml</file>
-        <file>Drawables/Ic_folder.qml</file>
-        <file>Drawables/Ic_dataUsage.qml</file>
-        <file>Drawables/Ic_viewModul.qml</file>
+        <file>Layouts/TabStore3.qml</file>
+        <file>Components/Toolbar4.qml</file>
+        <file>Layouts/TabStore4.qml</file>
+        <file>Components/ItemCategories2.qml</file>
+        <file>Drawables/Ic_WrapText.qml</file>
+        <file>Drawables/Ic_Work.qml</file>
+        <file>Drawables/Ic_Wifi.qml</file>
+        <file>Drawables/Ic_Widgets.qml</file>
+        <file>Drawables/Ic_Whatshot.qml</file>
+        <file>Drawables/Ic_Weekend.qml</file>
+        <file>Drawables/Ic_WebAsset.qml</file>
+        <file>Drawables/Ic_WbIridescent.qml</file>
+        <file>Drawables/Ic_VpnKey.qml</file>
+        <file>Drawables/Ic_VolumeUp.qml</file>
+        <file>Drawables/Ic_VolumeOff.qml</file>
+        <file>Drawables/Ic_Visibility.qml</file>
+        <file>Drawables/Ic_ViewStream.qml</file>
+        <file>Drawables/Ic_ViewModul.qml</file>
+        <file>Drawables/Ic_ViewColumn.qml</file>
+        <file>Drawables/Ic_VideogameAsset.qml</file>
+        <file>Drawables/Ic_Videocam.qml</file>
+        <file>Drawables/Ic_Vibration.qml</file>
+        <file>Drawables/Ic_VerifiedUser.qml</file>
+        <file>Drawables/Ic_Undo.qml</file>
+        <file>Drawables/Ic_Tune.qml</file>
+        <file>Drawables/Ic_TouchApp.qml</file>
+        <file>Drawables/Ic_Timeline.qml</file>
+        <file>Drawables/Ic_ThumbUp.qml</file>
+        <file>Drawables/Ic_Textsms.qml</file>
+        <file>Drawables/Ic_TextFields.qml</file>
+        <file>Drawables/Ic_Tabs.qml</file>
+        <file>Drawables/Ic_Sync.qml</file>
+        <file>Drawables/Ic_SwapVert.qml</file>
+        <file>Drawables/Ic_SwapHoriz.qml</file>
+        <file>Drawables/Ic_Subject.qml</file>
+        <file>Drawables/Ic_Storage.qml</file>
+        <file>Drawables/Ic_StarBorder.qml</file>
+        <file>Drawables/Ic_Star.qml</file>
+        <file>Drawables/Ic_StackMenu.qml</file>
+        <file>Drawables/Ic_Spa.qml</file>
+        <file>Drawables/Ic_Sort.qml</file>
+        <file>Drawables/Ic_SocialTwitter.qml</file>
+        <file>Drawables/Ic_SocialInstagram.qml</file>
+        <file>Drawables/Ic_SocialFacebook.qml</file>
+        <file>Drawables/Ic_Smartphone.qml</file>
+        <file>Drawables/Ic_SkipPrevious.qml</file>
+        <file>Drawables/Ic_SkipNext.qml</file>
+        <file>Drawables/Ic_SimCard.qml</file>
+        <file>Drawables/Ic_SignalWifiOff.qml</file>
+        <file>Drawables/Ic_Shuffle.qml</file>
+        <file>Drawables/Ic_ShowChart.qml</file>
+        <file>Drawables/Ic_ShoppingCart.qml</file>
+        <file>Drawables/Ic_ShoppingBasket.qml</file>
+        <file>Drawables/Ic_Share.qml</file>
+        <file>Drawables/Ic_SettingsBackupRestore.qml</file>
+        <file>Drawables/Ic_Settings.qml</file>
+        <file>Drawables/Ic_SentimentSatisfied.qml</file>
+        <file>Drawables/Ic_Send.qml</file>
+        <file>Drawables/Ic_SearchGrey.qml</file>
+        <file>Drawables/Ic_Search.qml</file>
+        <file>Drawables/Ic_Schedule.qml</file>
+        <file>Drawables/Ic_Restaurant.qml</file>
+        <file>Drawables/Ic_Report.qml</file>
+        <file>Drawables/Ic_Reply.qml</file>
+        <file>Drawables/Ic_Repeat.qml</file>
+        <file>Drawables/Ic_Reoder.qml</file>
+        <file>Drawables/Ic_Remove.qml</file>
+        <file>Drawables/Ic_Refresh.qml</file>
+        <file>Drawables/Ic_Recent.qml</file>
+        <file>Drawables/Ic_Receipt.qml</file>
+        <file>Drawables/Ic_QueueMusic.qml</file>
+        <file>Drawables/Ic_Public.qml</file>
+        <file>Drawables/Ic_Print.qml</file>
+        <file>Drawables/Ic_PowerSettings.qml</file>
+        <file>Drawables/Ic_Pool.qml</file>
+        <file>Drawables/Ic_PlayArrow.qml</file>
+        <file>Drawables/Ic_PinDrop.qml</file>
+        <file>Drawables/Ic_PieChartOutline.qml</file>
+        <file>Drawables/Ic_PictureInPicture.qml</file>
+        <file>Drawables/Ic_PhotoLibrary.qml</file>
+        <file>Drawables/Ic_PhotoCamera.qml</file>
+        <file>Drawables/Ic_Photo.qml</file>
+        <file>Drawables/Ic_PhoneAndroid.qml</file>
+        <file>Drawables/Ic_Phone.qml</file>
+        <file>Drawables/Ic_PersonOutline.qml</file>
+        <file>Drawables/Ic_PersonGrey.qml</file>
+        <file>Drawables/Ic_PersonAdd.qml</file>
+        <file>Drawables/Ic_Person.qml</file>
+        <file>Drawables/Ic_PermDeviceInfo.qml</file>
+        <file>Drawables/Ic_Peoples.qml</file>
+        <file>Drawables/Ic_PeopleOutline.qml</file>
+        <file>Drawables/Ic_Pause.qml</file>
+        <file>Drawables/Ic_Palette.qml</file>
+        <file>Drawables/Ic_OpenInNew.qml</file>
+        <file>Drawables/Ic_Note.qml</file>
+        <file>Drawables/Ic_News.qml</file>
+        <file>Drawables/Ic_NearMe.qml</file>
+        <file>Drawables/Ic_Nearby.qml</file>
+        <file>Drawables/Ic_MyLocation.qml</file>
+        <file>Drawables/Ic_Music.qml</file>
+        <file>Drawables/Ic_Movie.qml</file>
+        <file>Drawables/Ic_MoveToInbox.qml</file>
+        <file>Drawables/Ic_MoreVert.qml</file>
+        <file>Drawables/Ic_MoreHoriz.qml</file>
+        <file>Drawables/Ic_MonetizationOn.qml</file>
+        <file>Drawables/Ic_Mic.qml</file>
+        <file>Drawables/Ic_Menu.qml</file>
+        <file>Drawables/Ic_MailOutline.qml</file>
+        <file>Drawables/Ic_Mail.qml</file>
+        <file>Drawables/Ic_Location.qml</file>
+        <file>Drawables/Ic_LocalOffer.qml</file>
+        <file>Drawables/Ic_LocalMovies.qml</file>
+        <file>Drawables/Ic_LocalFlorist.qml</file>
+        <file>Drawables/Ic_LocalCafe.qml</file>
+        <file>Drawables/Ic_LiveTv.qml</file>
+        <file>Drawables/Ic_Lightbulb.qml</file>
+        <file>Drawables/Ic_Layers.qml</file>
+        <file>Drawables/Ic_Label.qml</file>
+        <file>Drawables/Ic_InvertColors.qml</file>
+        <file>Drawables/Ic_InsertLink.qml</file>
+        <file>Drawables/Ic_InsertDrive.qml</file>
+        <file>Drawables/Ic_Info.qml</file>
+        <file>Drawables/Ic_Inbox.qml</file>
+        <file>Drawables/Ic_Https.qml</file>
+        <file>Drawables/Ic_Home.qml</file>
+        <file>Drawables/Ic_History.qml</file>
+        <file>Drawables/Ic_Highlight.qml</file>
+        <file>Drawables/Ic_Help.qml</file>
+        <file>Drawables/Ic_Games.qml</file>
+        <file>Drawables/Ic_Fullscreen.qml</file>
+        <file>Drawables/Ic_FormatListBulleted.qml</file>
+        <file>Drawables/Ic_FormatAlignRight.qml</file>
+        <file>Drawables/Ic_FormatAlignLeft.qml</file>
+        <file>Drawables/Ic_FormatAlignJustify.qml</file>
+        <file>Drawables/Ic_FormatAlignCenter.qml</file>
+        <file>Drawables/Ic_Folder.qml</file>
+        <file>Drawables/Ic_FlightTakeoff.qml</file>
+        <file>Drawables/Ic_FlightLand.qml</file>
+        <file>Drawables/Ic_Flight.qml</file>
+        <file>Drawables/Ic_FitnessCenter.qml</file>
+        <file>Drawables/Ic_FindInPage.qml</file>
+        <file>Drawables/Ic_FileDownload.qml</file>
+        <file>Drawables/Ic_Favorites.qml</file>
+        <file>Drawables/Ic_FavoriteBorder.qml</file>
+        <file>Drawables/Ic_Face.qml</file>
+        <file>Drawables/Ic_ExpandArrow.qml</file>
+        <file>Drawables/Ic_EventSeat.qml</file>
+        <file>Drawables/Ic_EventGrey.qml</file>
+        <file>Drawables/Ic_Event.qml</file>
+        <file>Drawables/Ic_ErrorOutline.qml</file>
+        <file>Drawables/Ic_Equalizer.qml</file>
+        <file>Drawables/Ic_EnhancedEncryption.qml</file>
+        <file>Drawables/Ic_Email.qml</file>
+        <file>Drawables/Ic_DoNotDisturbOff.qml</file>
+        <file>Drawables/Ic_DoNotDisturb.qml</file>
+        <file>Drawables/Ic_DoneAll.qml</file>
+        <file>Drawables/Ic_Done.qml</file>
+        <file>Drawables/Ic_Domain.qml</file>
+        <file>Drawables/Ic_Dns.qml</file>
+        <file>Drawables/Ic_DirectionsCar.qml</file>
+        <file>Drawables/Ic_DirectionsBike.qml</file>
+        <file>Drawables/Ic_Devices.qml</file>
+        <file>Drawables/Ic_Description.qml</file>
+        <file>Drawables/Ic_Delete.qml</file>
+        <file>Drawables/Ic_DataUsage.qml</file>
+        <file>Drawables/Ic_CropOriginal.qml</file>
+        <file>Drawables/Ic_CreditCardGrey.qml</file>
+        <file>Drawables/Ic_CreditCard.qml</file>
+        <file>Drawables/Ic_Create.qml</file>
+        <file>Drawables/Ic_ContentCopy.qml</file>
+        <file>Drawables/Ic_Contacts.qml</file>
+        <file>Drawables/Ic_ConfirmationNumber.qml</file>
+        <file>Drawables/Ic_Comment.qml</file>
+        <file>Drawables/Ic_CloudUpload.qml</file>
+        <file>Drawables/Ic_CloudOff.qml</file>
+        <file>Drawables/Ic_Close.qml</file>
+        <file>Drawables/Ic_Class.qml</file>
+        <file>Drawables/Ic_ChildFriendly.qml</file>
+        <file>Drawables/Ic_ChevronRight.qml</file>
+        <file>Drawables/Ic_ChevronLeft.qml</file>
+        <file>Drawables/Ic_CheckCircle.qml</file>
+        <file>Drawables/Ic_ChatOutline.qml</file>
+        <file>Drawables/Ic_Chat.qml</file>
+        <file>Drawables/Ic_CenterFocusWeak.qml</file>
+        <file>Drawables/Ic_CallToActio.qml</file>
+        <file>Drawables/Ic_Call.qml</file>
+        <file>Drawables/Ic_Business.qml</file>
+        <file>Drawables/Ic_BorderOuter.qml</file>
+        <file>Drawables/Ic_BookmarkBorder.qml</file>
+        <file>Drawables/Ic_Bookmark.qml</file>
+        <file>Drawables/Ic_Book.qml</file>
+        <file>Drawables/Ic_Bluetooth.qml</file>
+        <file>Drawables/Ic_BeachAccess.qml</file>
+        <file>Drawables/Ic_BaselineQrCode24.qml</file>
+        <file>Drawables/Ic_AttachMoney.qml</file>
+        <file>Drawables/Ic_AttachFile.qml</file>
+        <file>Drawables/Ic_Assignment.qml</file>
+        <file>Drawables/Ic_ArrowRight.qml</file>
+        <file>Drawables/Ic_ArrowDropGrey.qml</file>
+        <file>Drawables/Ic_ArrowDrop.qml</file>
+        <file>Drawables/Ic_ArrowDownward.qml</file>
+        <file>Drawables/Ic_ArrowBack.qml</file>
+        <file>Drawables/Ic_Apps.qml</file>
+        <file>Drawables/Ic_AirportShuttle.qml</file>
+        <file>Drawables/Ic_Adjust.qml</file>
+        <file>Drawables/Ic_AddCircleOutline.qml</file>
+        <file>Drawables/Ic_AddBox.qml</file>
+        <file>Drawables/Ic_Add.qml</file>
+        <file>Drawables/Ic_AccountCircle.qml</file>
+        <file>Drawables/Ic_AccountBalance.qml</file>
+        <file>Drawables/Ic_Accessibility.qml</file>
+        <file>Drawables/Ic_NotificationsOutline.qml</file>
+        <file>Drawables/Ic_Notifications.qml</file>
     </qresource>
 </RCC>

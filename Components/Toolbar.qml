@@ -20,7 +20,7 @@ Item {
         height: toolbarHeight
         color: materialColors.grey_100_
 
-        Ic_menu {
+        Ic_Menu {
             id: ic_menu
             anchors.left: parent.left
             anchors.leftMargin: 8
@@ -46,7 +46,7 @@ Item {
             font.bold: true
         }
 
-        Ic_notification {
+        Ic_Notifications {
             id: icNotificationBox
             anchors.verticalCenter: parent.verticalCenter
             anchors.right: parent.right
@@ -59,7 +59,7 @@ Item {
             }
         }
 
-        Ic_search {
+        Ic_Search {
             id: icSearchBox
             height: 20
             anchors.verticalCenter: parent.verticalCenter
