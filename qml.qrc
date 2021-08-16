@@ -405,5 +405,11 @@
         <file>Layouts/Buttons_FabMiddle.qml</file>
         <file>Layouts/Buttons_FabExtend.qml</file>
         <file>Layouts/Buttons_Basic.qml</file>
+        <file>images/ic_plus.png</file>
+        <file>images/ic_mic.png</file>
+        <file>images/ic_logo4.png</file>
+        <file>images/ic_logo2.png</file>
+        <file>images/ic_logo1.png</file>
+        <file>images/ic_create.png</file>
     </qresource>
 </RCC>
