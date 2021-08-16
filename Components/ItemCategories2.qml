@@ -6,7 +6,7 @@ import "../Drawables/"
 Rectangle {
     // mainWindow from main.qml
     height: mainWindow.height / 4.5 > 160 ? 160 : mainWindow.height / 4.5
-    width: mainWindow.width / 2.1 > 228 ? 228 : mainWindow.width / 2.5
+    width: mainWindow.width / 2.1 > 218.18 ? 218.18 : mainWindow.width / 2.5
     radius: 6
     clip: true
 

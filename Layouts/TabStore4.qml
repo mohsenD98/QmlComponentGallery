@@ -88,24 +88,8 @@ Item {
                     id: flowRepeater
                     model: ListModel {
                         ListElement {
-                            le_desc: "GADGETS & COMPUTERS"
-                            le_ic_name: "Ic_Home"
-                            le_color: "#EF5350"
-                            le_ic_color: "#78909C"
-                            le_text_color: "#78909C"
-                            le_back_color: "white"
-                        }
-                        ListElement {
-                            le_desc: "GADGETS & COMPUTERS"
-                            le_ic_name: "Ic_Home"
-                            le_color: "#EF5350"
-                            le_ic_color: "#78909C"
-                            le_text_color: "#78909C"
-                            le_back_color: "white"
-                        }
-                        ListElement {
                             le_desc: "Gadgets & Computers"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_Devices"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"
@@ -113,7 +97,7 @@ Item {
                         }
                         ListElement {
                             le_desc: "Fashion"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_Accessibility"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"
@@ -121,7 +105,7 @@ Item {
                         }
                         ListElement {
                             le_desc: "Beauti & Health"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_Face"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"
@@ -129,7 +113,7 @@ Item {
                         }
                         ListElement {
                             le_desc: "Babies & Kids"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_ChildFriendly"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"
@@ -137,7 +121,7 @@ Item {
                         }
                         ListElement {
                             le_desc: "Home & Garden"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_Weekend"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"
@@ -145,7 +129,7 @@ Item {
                         }
                         ListElement {
                             le_desc: "Sport & Hobby"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_Pool"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"
@@ -153,7 +137,7 @@ Item {
                         }
                         ListElement {
                             le_desc: "Ticket & Voucher"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_ConfirmationNumber"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"
@@ -161,7 +145,7 @@ Item {
                         }
                         ListElement {
                             le_desc: "Service & Food"
-                            le_ic_name: "Ic_Home"
+                            le_ic_name: "Ic_Restaurant"
                             le_color: "#EF5350"
                             le_ic_color: "#78909C"
                             le_text_color: "#78909C"

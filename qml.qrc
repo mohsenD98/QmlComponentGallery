@@ -381,5 +381,7 @@
         <file>Drawables/Ic_Accessibility.qml</file>
         <file>Drawables/Ic_NotificationsOutline.qml</file>
         <file>Drawables/Ic_Notifications.qml</file>
+        <file>Components/CompBottomNavigation5.qml</file>
+        <file>Layouts/TabEmpty1.qml</file>
     </qresource>
 </RCC>
