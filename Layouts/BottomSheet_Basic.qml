@@ -52,29 +52,22 @@ Item {
             }
             onPersonClicked: {
                 console.log(name)
-                if (!bottomSheetBox.opened) {
-                    bottomSheetBox.open()
+                bottomSheetBasic.model = name
+                if (!bottomSheetBasic.controller.opened) {
+                    bottomSheetBasic.controller.open()
                 } else {
-                    bottomSheetBox.close()
+                    bottomSheetBasic.controller.close()
                 }
             }
         }
 
-        Drawer {
-            id: bottomSheetBox
-            edge: Qt.BottomEdge
-            width: parent.width
-            height: mainWindow.height / 2.95 > 244.06 ? 244.06 : mainWindow.height / 2.95
-            modal: true
-            interactive: false
-
-            Rectangle {
-                anchors.fill: parent
-                MouseArea {
-                    anchors.fill: parent
-                    onClicked: bottomSheetBox.close()
-                }
-            }
+        CompBottomSheetBasic {
+            id: bottomSheetBasic
+            controller.modal: true
+            controller.interactive: false
+            anchors.right: parent.right
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
         }
     }
 }

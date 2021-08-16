@@ -393,5 +393,6 @@
         <file>Components/ListModelContactPeopel.qml</file>
         <file>Components/ItemListpPeople.qml</file>
         <file>Layouts/TabPeoples.qml</file>
+        <file>Components/CompBottomSheetBasic.qml</file>
     </qresource>
 </RCC>

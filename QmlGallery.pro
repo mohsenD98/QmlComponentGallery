@@ -1,4 +1,4 @@
-QT += quick
+QT += quick quickcontrols2
 
 CONFIG += c++11
 CONFIG += sc++11 debug_and_release
