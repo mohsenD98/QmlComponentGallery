@@ -43,7 +43,7 @@ Item {
                         "icon": "qrc:/Drawables/Ic_Add.qml"
                     }, {
                         "name": "List",
-                        "icon": "qrc:/Drawables/Ic_FormatListBullet.qml"
+                        "icon": "qrc:/Drawables/Ic_FormatListBulleted.qml"
                     }]
 
                 onCurrentNavIndexChanged: {

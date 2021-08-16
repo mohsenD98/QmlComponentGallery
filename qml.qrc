@@ -394,5 +394,7 @@
         <file>Components/ItemListpPeople.qml</file>
         <file>Layouts/TabPeoples.qml</file>
         <file>Components/CompBottomSheetBasic.qml</file>
+        <file>Components/CompBottomSheetList.qml</file>
+        <file>Components/ItemControlList.qml</file>
     </qresource>
 </RCC>
