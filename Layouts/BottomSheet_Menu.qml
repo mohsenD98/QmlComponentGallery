@@ -14,34 +14,12 @@ Item {
         anchors.fill: parent
         color: materialColors.grey_5
 
-        CompSearchBar {
-            id: searchBar
-            anchors.top: parent.top
-            anchors.topMargin: 8
-            anchors.left: parent.left
-            anchors.leftMargin: 12
-            anchors.right: parent.right
-            anchors.rightMargin: 12
-            height: 50
-            clip: true
-
-            Behavior on height {
-                NumberAnimation {
-                    duration: 100
-                }
-            }
-        }
-
-        TabStore1 {
+        WipTab {
             id: tabStore
-            anchors.top: searchBar.bottom
-            anchors.topMargin: 20
+            anchors.top: parent.top
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 8
             anchors.left: parent.left
-            anchors.leftMargin: 12
             anchors.right: parent.right
-            anchors.rightMargin: 12
 
             onDraggingDown: {
                 // show elements
@@ -54,43 +32,6 @@ Item {
                 searchBar.height = 0
                 bottomNavigationBasicBox.height = 0
                 tabStore.anchors.topMargin = 5
-            }
-        }
-
-        Rectangle {
-            id: bottomNavigationBasicBox
-            height: 50
-            anchors.bottom: parent.bottom
-            anchors.left: parent.left
-            anchors.right: parent.right
-            color: "transparent"
-            Behavior on height {
-                NumberAnimation {
-                    duration: 100
-                }
-            }
-
-            CompBottomNavigation1 {
-                anchors.fill: parent
-                backgroundColor: materialColors.grey_60
-                unFocusedColor: materialColors.grey_40
-                maxWidth:width
-                focusedColor: "white"
-                currIndex: 1
-                model: [{
-                        "name": "Recents",
-                        "icon": "qrc:/Drawables/Ic_Recent.qml"
-                    }, {
-                        "name": "Favorites",
-                        "icon": "qrc:/Drawables/Ic_Favorites.qml"
-                    }, {
-                        "name": "Nearby",
-                        "icon": "qrc:/Drawables/Ic_Nearby.qml"
-                    }]
-
-                onCurrentNavIndexChanged: {
-                    console.log(newIndex)
-                }
             }
         }
     }

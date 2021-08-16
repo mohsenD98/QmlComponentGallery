@@ -69,6 +69,7 @@ Item {
             anchors.right: parent.right
             anchors.left: parent.left
             anchors.bottom: parent.bottom
+            anchors.bottomMargin: 50
         }
     }
 }

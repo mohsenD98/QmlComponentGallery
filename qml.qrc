@@ -397,5 +397,6 @@
         <file>Components/CompBottomSheetList.qml</file>
         <file>Components/ItemControlList.qml</file>
         <file>Components/CompBottomSheetMap.qml</file>
+        <file>Layouts/WipTab.qml</file>
     </qresource>
 </RCC>
