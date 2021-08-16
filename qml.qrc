@@ -398,5 +398,12 @@
         <file>Components/ItemControlList.qml</file>
         <file>Components/CompBottomSheetMap.qml</file>
         <file>Layouts/WipTab.qml</file>
+        <file>Layouts/Buttons_ToggleBasic.qml</file>
+        <file>Layouts/Buttons_ButtonInUtilities.qml</file>
+        <file>Layouts/Buttons_FabMoreText.qml</file>
+        <file>Layouts/Buttons_FabMore.qml</file>
+        <file>Layouts/Buttons_FabMiddle.qml</file>
+        <file>Layouts/Buttons_FabExtend.qml</file>
+        <file>Layouts/Buttons_Basic.qml</file>
     </qresource>
 </RCC>
