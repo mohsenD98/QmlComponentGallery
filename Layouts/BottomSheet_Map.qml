@@ -3,6 +3,7 @@ import QtQuick.Controls 2.12
 
 import "../"
 import "../Components/"
+import "../Drawables/"
 
 Item {
 
@@ -10,88 +11,64 @@ Item {
         id: materialColors
     }
 
+    Component.onCompleted: {
+        bottomSheetBasic.controller.open()
+    }
+
+    CompSearchBar {
+        id: searchBar
+        anchors.top: parent.top
+        anchors.topMargin: 8
+        anchors.left: parent.left
+        anchors.leftMargin: 12
+        anchors.right: parent.right
+        anchors.rightMargin: 12
+        height: 50
+        clip: true
+
+        Behavior on height {
+            NumberAnimation {
+                duration: 100
+            }
+        }
+    }
+
     Rectangle {
         anchors.fill: parent
         color: materialColors.grey_5
 
-        CompSearchBar {
-            id: searchBar
-            anchors.top: parent.top
-            anchors.topMargin: 8
-            anchors.left: parent.left
-            anchors.leftMargin: 12
-            anchors.right: parent.right
-            anchors.rightMargin: 12
-            height: 50
-            clip: true
-
-            Behavior on height {
-                NumberAnimation {
-                    duration: 100
-                }
-            }
-        }
-
-        TabStore1 {
-            id: tabStore
-            anchors.top: searchBar.bottom
-            anchors.topMargin: 20
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 8
-            anchors.left: parent.left
-            anchors.leftMargin: 12
-            anchors.right: parent.right
-            anchors.rightMargin: 12
-
-            onDraggingDown: {
-                // show elements
-                searchBar.height = 50
-                bottomNavigationBasicBox.height = 50
-                tabStore.anchors.topMargin = 20
-            }
-            onDraggingUp: {
-                // hide elements
-                searchBar.height = 0
-                bottomNavigationBasicBox.height = 0
-                tabStore.anchors.topMargin = 5
-            }
-        }
-
         Rectangle {
-            id: bottomNavigationBasicBox
-            height: 50
-            anchors.bottom: parent.bottom
-            anchors.left: parent.left
+            anchors.bottom: bottomSheetBasic.top
+            anchors.bottomMargin: 45
             anchors.right: parent.right
-            color: "transparent"
-            Behavior on height {
-                NumberAnimation {
-                    duration: 100
+            anchors.rightMargin: 25
+            color: materialColors.colorAccent
+            height: 50
+            width: 50
+            radius: 50
+
+            Ic_PinDrop {
+                anchors.centerIn: parent
+                controller.fillColor: "white"
+                controller.strokeColor: "transparent"
+                controller.strokeWidth: 1
+                function onControllerClicked(value) {
+                    bottomSheetBasic.controller.open()
                 }
             }
-
-            CompBottomNavigation1 {
+            MouseArea {
                 anchors.fill: parent
-                backgroundColor: materialColors.grey_60
-                unFocusedColor: materialColors.grey_40
-                maxWidth:width
-                focusedColor: "white"
-                currIndex: 1
-                model: [{
-                        "name": "Recents",
-                        "icon": "qrc:/Drawables/Ic_Recent.qml"
-                    }, {
-                        "name": "Favorites",
-                        "icon": "qrc:/Drawables/Ic_Favorites.qml"
-                    }, {
-                        "name": "Nearby",
-                        "icon": "qrc:/Drawables/Ic_Nearby.qml"
-                    }]
-
-                onCurrentNavIndexChanged: {
-                    console.log(newIndex)
+                onClicked: {
+                    bottomSheetBasic.controller.open()
                 }
             }
+        }
+
+        CompBottomSheetMap {
+            id: bottomSheetBasic
+            anchors.right: parent.right
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
         }
     }
 }

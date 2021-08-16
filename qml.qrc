@@ -396,5 +396,6 @@
         <file>Components/CompBottomSheetBasic.qml</file>
         <file>Components/CompBottomSheetList.qml</file>
         <file>Components/ItemControlList.qml</file>
+        <file>Components/CompBottomSheetMap.qml</file>
     </qresource>
 </RCC>

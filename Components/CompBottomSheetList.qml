@@ -27,7 +27,7 @@ Item {
         height: mainWindow.height / 2.95 > 244.06 ? 244.06 : mainWindow.height / 2.95
         modal: true
         interactive: false
-
+        closePolicy: Popup.CloseOnEscape | Popup.CloseOnPressOutside
         Rectangle {
             anchors.fill: parent
             border.color: "transparent"
