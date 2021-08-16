@@ -3,11 +3,37 @@
 Most of UI problem today is hard to convert UI design concept into native source code. So we try to explore and research Qt-Qml-Android material design UI as similar as its guidelines design.
 
 ### Feature : 
-* Bottom Navigation
+* Bottom Navigation    
+    - [x] Basic
+    - [x] Shifting
+    - [x] Light
+    - [x] Dark
+    - [x] Icon
+    - [x] Primary
+    - [x] MapBlue
+    - [x] Light Simple
+    - [x] Article
+    - [x] Main
 * Bottom Sheet
+    - [x] Basic
+    - [x] List
+    - [x] Map
+    - [ ] Floating
+    - [ ] Full
+    - [ ] Filter
+    - [ ] Menu
+* Buttons     
+    - [x] Basic
+    - [ ] Button In Utilities
+    - [ ] Fab Middle
+    - [ ] Fab More
+    - [ ] Fab More Text
+    - [ ] Toggle Basic
+    - [ ] Fab Extend    
     
+     
+
 ### WIP : 
-* Buttons 
 * Card View
 * Chips
 * Dialog View
