@@ -47,6 +47,7 @@ Item {
                     anchors.fill: parent
                     onClicked: {
                         fab.controllerOptions.height = 0
+                        fab.closing = true
                         moverlay.visible = !moverlay.visible
                     }
                 }

@@ -31,6 +31,7 @@ Rectangle {
 
     Rectangle {
         id: lblBox
+        visible: le_showText
         anchors.right: fab.left
         anchors.rightMargin: 8
         anchors.verticalCenter: fab.verticalCenter

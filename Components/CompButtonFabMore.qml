@@ -14,6 +14,8 @@ Item {
     property var model
     property var overlay
     property alias controllerOptions: options
+    property bool openning: false
+    property bool closing: false
 
     signal itemCalled(var item)
     width: 200
@@ -28,6 +30,7 @@ Item {
             optionList.model.append({
                                         "le_name": model[i].name,
                                         "le_icon": model[i].icon,
+                                        "le_showText":enableText,
                                         "le_backGroundColor": "white",
                                         "le_iconColor": "#78909C"
                                     })
@@ -86,10 +89,30 @@ Item {
             horizontalAlignment: Text.AlignHCenter
             verticalAlignment: Text.AlignVCenter
             elide: Text.ElideRight
+
+            RotationAnimator {
+                id:openRotate
+                target: fab.contentItem
+                from: 0
+                to: 360
+                duration: 100
+                running: openning
+            }
+
+            RotationAnimator {
+                id:closeRotate
+                target: fab.contentItem
+                from: 0
+                to: -360
+                duration: 100
+                running: closing
+            }
         }
         onClicked: {
             overlay.visible = !overlay.visible
             options.height === 0 ? options.height = 200 : options.height = 0
+            options.height === 0 ? openning = true : openning = false
+            options.height !== 0 ? closing = true : closing = false
         }
     }
 }
