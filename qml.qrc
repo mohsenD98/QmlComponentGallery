@@ -411,5 +411,9 @@
         <file>images/ic_logo2.png</file>
         <file>images/ic_logo1.png</file>
         <file>images/ic_create.png</file>
+        <file>Components/ListModelDatedList.qml</file>
+        <file>Layouts/TabSectionedList.qml</file>
+        <file>Components/ItemListSectionedList.qml</file>
+        <file>Components/ItemSubSectionedList.qml</file>
     </qresource>
 </RCC>
