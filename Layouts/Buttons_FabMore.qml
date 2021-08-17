@@ -34,9 +34,43 @@ Item {
             id: tabSectionList
             anchors.top: searchBar.bottom
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 8
             anchors.left: parent.left
             anchors.right: parent.right
+            Rectangle {
+                id: moverlay
+                anchors.fill: parent
+                color: materialColors.overlay_dark_80
+                visible: false
+                z: 2
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        fab.controllerOptions.height = 0
+                        moverlay.visible = !moverlay.visible
+                    }
+                }
+            }
+        }
+
+        CompButtonFabMore {
+            id: fab
+            anchors.bottom: parent.bottom
+            anchors.right: parent.right
+            icon: "ic_mic"
+            backgroundColor: "#1976D2"
+            accentColor: "white"
+            overlay: moverlay
+            model: [{
+                    "name": "option1",
+                    "icon": "+"
+                }, {
+                    "name": "option2",
+                    "icon": "+"
+                }, {
+                    "name": "option3",
+                    "icon": "+"
+                }]
         }
     }
 }

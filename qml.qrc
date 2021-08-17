@@ -415,5 +415,7 @@
         <file>Layouts/TabSectionedList.qml</file>
         <file>Components/ItemListSectionedList.qml</file>
         <file>Components/ItemSubSectionedList.qml</file>
+        <file>Components/CompButtonFabMore.qml</file>
+        <file>Components/ItemButtonFabMore.qml</file>
     </qresource>
 </RCC>
