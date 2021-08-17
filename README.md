@@ -24,10 +24,10 @@ Most of UI problem today is hard to convert UI design concept into native source
     - [ ] Menu
 * Buttons     
     - [x] Basic
-    - [ ] Button In Utilities
+    - [x] Button In Utilities
     - [ ] Fab Middle
-    - [ ] Fab More
-    - [ ] Fab More Text
+    - [x] Fab More
+    - [x] Fab More Text
     - [ ] Toggle Basic
     - [ ] Fab Extend    
     
