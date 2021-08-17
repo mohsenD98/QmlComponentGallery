@@ -1,110 +1,78 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
-import QtQuick.Controls.Material 2.12
 
 import "../"
 import "../Components/"
 
 Item {
-    clip: true
-    property var applyTheme: "Light"
-    signal draggingDown(var value)
-    signal draggingUp(var value)
     Colors {
         id: materialColors
     }
 
     Rectangle {
-        id: storeBox
-        clip: true
-        color: "transparent"
-        height: parent.height
-        width: parent.width
+        anchors.fill: parent
+        color: materialColors.grey_5
 
-        Column {
-            id: emptyCol
-            spacing: 20
-            anchors.centerIn: parent
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
+        Toolbar4 {
+            id: searchBar
+            anchors.top: parent.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            backgroundColor: materialColors.colorPrimary
+            toolbarHeight: 50
+            height: 50
+            clip: true
 
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                    }
+            Behavior on height {
+                NumberAnimation {
+                    duration: 100
                 }
             }
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
+        }
 
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
+        TabSectionedList {
+            id: tabSectionList
+            anchors.top: searchBar.bottom
+            anchors.bottom: parent.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
+            Rectangle {
+                id: moverlay
+                anchors.fill: parent
+                color: materialColors.overlay_dark_80
+                visible: false
+                z: 2
+
+                MouseArea {
+                    anchors.fill: parent
+                    onClicked: {
+                        fab.controllerOptions.height = 0
+                        fab.closing = true
+                        moverlay.visible = !moverlay.visible
                     }
                 }
             }
         }
 
-        Button {
+        CompButtonFabMore {
+            id: fab
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 100
-            anchors.horizontalCenter: parent.horizontalCenter
-            highlighted: true
-            Material.background: materialColors.colorPrimary
-            text: "work in progress! - Back"
-            flat: true
-            onClicked: stackview.pop()
-            Material.accent: "white"
+            anchors.right: parent.right
+            icon: "ic_mic"
+            enableText: true
+            backgroundColor: "#1976D2"
+            accentColor: "white"
+            overlay: moverlay
+            model: [{
+                    "name": "option1",
+                    "icon": "+"
+                }, {
+                    "name": "option2",
+                    "icon": "+"
+                }, {
+                    "name": "option3",
+                    "icon": "+"
+                }]
         }
     }
 }
