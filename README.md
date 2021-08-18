@@ -28,13 +28,20 @@ Most of UI problem today is hard to convert UI design concept into native source
     - [ ] Fab Middle
     - [x] Fab More
     - [x] Fab More Text
-    - [ ] Toggle Basic
-    - [ ] Fab Extend    
-    
+    - [x] Toggle Basic
+    - [x] Fab Extend    
+* Card View
+    - [ ] Basic
+    - [ ] Timeline    
+    - [ ] Overlap
+    - [ ] Wizard
+    - [ ] Wizard Light
+    - [ ] Wizard Overlap
+    - [ ] Chackable
      
 
 ### WIP : 
-* Card View
+
 * Chips
 * Dialog View
 * Expansion Panels
