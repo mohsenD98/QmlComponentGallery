@@ -6,105 +6,41 @@ import "../"
 import "../Components/"
 
 Item {
-    clip: true
-    property var applyTheme: "Light"
-    signal draggingDown(var value)
-    signal draggingUp(var value)
     Colors {
         id: materialColors
     }
 
     Rectangle {
-        id: storeBox
+        id: box
         clip: true
-        color: "transparent"
+        color: "black"
         height: parent.height
         width: parent.width
 
-        Column {
-            id: emptyCol
-            spacing: 20
-            anchors.centerIn: parent
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
-
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                    }
-                }
-            }
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
-
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                    }
-                }
-            }
+        Image {
+            source: "qrc:/images/world_map.png"
+            width: parent.width
+            height: parent.height / 3 > 240 ? 240 : parent.height / 3
+            fillMode: Image.PreserveAspectFit
         }
 
-        Button {
+        RoundButton {
+            id: fab
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 100
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.right: parent.right
+            anchors.margins: 20
             highlighted: true
-            Material.background: materialColors.colorPrimary
-            text: "work in progress! - Back"
-            flat: true
-            onClicked: stackview.pop()
-            Material.accent: "white"
+            smooth: true
+            text: "DOWNLOAD"
+            icon.source: "qrc:/images/ic_download.png"
+            icon.width: 25
+            icon.height: 25
+
+            Material.background: materialColors.deep_orange_500
+
+            Component.onCompleted: {
+                width = width * 1.35
+            }
         }
     }
 }

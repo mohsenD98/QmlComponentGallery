@@ -419,5 +419,18 @@
         <file>Components/ItemButtonFabMore.qml</file>
         <file>Components/CompButtonsToggleBasic.qml</file>
         <file>Components/ItemButtonToggleBasic.qml</file>
+        <file>images/ic_download.png</file>
+        <file>images/world_map.png</file>
+        <file>images/material_bg_2.png</file>
+        <file>images/material_bg_1.png</file>
+        <file>images/logo.png</file>
+        <file>images/logo_very_small.png</file>
+        <file>images/logo_small.png</file>
+        <file>images/logo_small_round.png</file>
+        <file>images/logo_round.png</file>
+        <file>images/img_wizard_4.png</file>
+        <file>images/img_wizard_3.png</file>
+        <file>images/img_wizard_2.png</file>
+        <file>images/img_wizard_1.png</file>
     </qresource>
 </RCC>
