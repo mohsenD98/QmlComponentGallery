@@ -17,9 +17,11 @@ Rectangle {
 
     Component.onCompleted: {
         var subMod = subModels.split(",")
+        var newSubMod = isNewSubModel.split(",")
         for (var i = 0; i < subModels.split(",").length; ++i) {
             subComponentList.model.append({
                                               "subModelName": subMod[i],
+                                              "isNewSubModel": newSubMod[i] === "1",
                                               "subModelPath": name.split(
                                                                   " ").join(
                                                                   "") + "_" + subMod[i].split(

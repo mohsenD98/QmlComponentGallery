@@ -21,6 +21,19 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         font.pixelSize: 12
     }
+
+    Rectangle {
+        id: newComponentNotif
+        width: dropDownIcon.width / 2.79
+        height: width
+        radius: width
+        visible: isNewSubModel
+        anchors.right: parent.right
+        anchors.rightMargin: 15
+        anchors.verticalCenter: parent.verticalCenter
+        color: materialColors.colorAccentDark
+    }
+
     RippleLayout {
         mouseArea: baseModelNameArea
         anchors.fill: base
