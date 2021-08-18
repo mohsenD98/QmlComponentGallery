@@ -417,5 +417,7 @@
         <file>Components/ItemSubSectionedList.qml</file>
         <file>Components/CompButtonFabMore.qml</file>
         <file>Components/ItemButtonFabMore.qml</file>
+        <file>Components/CompButtonsToggleBasic.qml</file>
+        <file>Components/ItemButtonToggleBasic.qml</file>
     </qresource>
 </RCC>
