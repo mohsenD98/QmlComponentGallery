@@ -432,5 +432,12 @@
         <file>images/img_wizard_3.png</file>
         <file>images/img_wizard_2.png</file>
         <file>images/img_wizard_1.png</file>
+        <file>Layouts/Cards_WizardOverlap.qml</file>
+        <file>Layouts/Cards_WizardLight.qml</file>
+        <file>Layouts/Cards_Wizard.qml</file>
+        <file>Layouts/Cards_Timeline.qml</file>
+        <file>Layouts/Cards_Overlap.qml</file>
+        <file>Layouts/Cards_Chackable.qml</file>
+        <file>Layouts/Cards_Basic.qml</file>
     </qresource>
 </RCC>
