@@ -439,5 +439,6 @@
         <file>Layouts/Cards_Overlap.qml</file>
         <file>Layouts/Cards_Chackable.qml</file>
         <file>Layouts/Cards_Basic.qml</file>
+        <file>Components/CompCardsBasicModel1.qml</file>
     </qresource>
 </RCC>

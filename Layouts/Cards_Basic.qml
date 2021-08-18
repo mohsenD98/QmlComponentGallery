@@ -7,104 +7,47 @@ import "../Components/"
 
 Item {
     clip: true
-    property var applyTheme: "Light"
-    signal draggingDown(var value)
-    signal draggingUp(var value)
+
     Colors {
         id: materialColors
     }
 
     Rectangle {
-        id: storeBox
-        clip: true
-        color: "transparent"
-        height: parent.height
-        width: parent.width
+        anchors.fill: parent
+        color: materialColors.grey_50
 
-        Column {
-            id: emptyCol
-            spacing: 20
-            anchors.centerIn: parent
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
+        Toolbar4 {
+            id: searchBar
+            anchors.top: parent.top
+            anchors.left: parent.left
+            anchors.right: parent.right
+            backgroundColor: materialColors.colorPrimary
+            toolbarHeight: 50
+            clip: true
 
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                    }
-                }
-            }
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
-
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                    }
+            Behavior on height {
+                NumberAnimation {
+                    duration: 100
                 }
             }
         }
 
-        Button {
+        Rectangle {
+            anchors.top: searchBar.bottom
+            anchors.left: parent.left
+            anchors.right: parent.right
             anchors.bottom: parent.bottom
-            anchors.bottomMargin: 100
-            anchors.horizontalCenter: parent.horizontalCenter
-            highlighted: true
-            Material.background: materialColors.colorPrimary
-            text: "work in progress! - Back"
-            flat: true
-            onClicked: stackview.pop()
-            Material.accent: "white"
+            color: "transparent"
+            anchors.margins: 20
+
+            Row {
+                anchors.fill: parent
+
+                CompCardsBasicModel1 {
+                    width: parent.width
+                    height: 3 * parent.height / 5 > 432 ? 432 : 3 * parent.height / 5
+                }
+            }
         }
     }
 }
