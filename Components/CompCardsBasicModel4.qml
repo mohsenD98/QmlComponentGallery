@@ -57,6 +57,7 @@ Pane {
             anchors.right: parent.right
             anchors.verticalCenter: desc.verticalCenter
             anchors.rightMargin: 16
+            baseShape.scale: 1.25
         }
     }
 }
