@@ -1,110 +1,112 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
+import QtGraphicalEffects 1.0
 
 import "../"
 import "../Components/"
 
 Item {
     clip: true
-    property var applyTheme: "Light"
-    signal draggingDown(var value)
-    signal draggingUp(var value)
+
     Colors {
         id: materialColors
     }
 
     Rectangle {
-        id: storeBox
-        clip: true
-        color: "transparent"
-        height: parent.height
-        width: parent.width
+        anchors.fill: parent
+        color: materialColors.grey_5
 
-        Column {
-            id: emptyCol
-            spacing: 20
-            anchors.centerIn: parent
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
+        Image {
+            anchors.fill: parent
+            source: "qrc:/images/image_13.jpg"
+            fillMode: Image.PreserveAspectCrop
+        }
+        Rectangle {
+            anchors.fill: parent
+            color: materialColors.overlay_light_80
+        }
 
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
+        SwipeView {
+            id: view
+            currentIndex: 0
+            anchors.fill: parent
+
+            Item {
+                id: page1
+                CompCardsWizard2 {
+                    onNextPageCalled: {
+                        view.currentIndex = view.currentIndex + 1
                     }
+                    iconPath: "qrc:images/img_wizard_1.png"
+
+                    titleText: "Ready To Travel"
+                    subTitleText: "Select the day, pick Your ticket. We give you the best prices. We guarantee!"
                 }
             }
-            Row {
-                spacing: 10
-                Rectangle {
-                    width: 75
-                    height: 75
-                    radius: 75
-                    color: materialColors.grey_20
-                }
-                Rectangle {
-                    width: 200
-                    height: 75
-                    color: "transparent"
-                    Column {
-                        anchors.centerIn: parent
-                        spacing: 5
-
-                        Rectangle {
-                            width: 75
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 175
-                            height: 15
-                            color: materialColors.grey_20
-                        }
-                        Rectangle {
-                            width: 30
-                            height: 15
-                            color: materialColors.grey_20
-                        }
+            Item {
+                id: page2
+                CompCardsWizard2 {
+                    onNextPageCalled: {
+                        view.currentIndex = view.currentIndex + 1
                     }
+                    iconPath: "qrc:images/img_wizard_2.png"
+
+                    titleText: "Pick the Ticket"
+                    subTitleText: "Choose your destination, plan Your trip. Pick the best place for Your holiday"
+                }
+            }
+            Item {
+                id: page3
+                CompCardsWizard2 {
+                    onNextPageCalled: {
+                        view.currentIndex = view.currentIndex + 1
+                    }
+                    iconPath: "qrc:images/img_wizard_3.png"
+
+                    titleText: "Flight to Destination"
+                    subTitleText: "Safe and Comfort flight is our priority. Professional crew and services."
+                }
+            }
+            Item {
+                id: page4
+                CompCardsWizard2 {
+                    onNextPageCalled: {
+                        stackview.pop()
+                    }
+                    iconPath: "qrc:images/img_wizard_4.png"
+
+                    titleText: "Enjoy Holiday"
+                    controllerName: "Getting Started!"
+                    subTitleText: "Enjoy your holiday, Don't forget to feel the moment and take a photo!"
                 }
             }
         }
 
-        Button {
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 100
+        PageIndicator {
+            id: indicator
+
+            count: view.count
+            currentIndex: view.currentIndex
+
+            anchors.bottom: view.bottom
+            anchors.bottomMargin: 50
             anchors.horizontalCenter: parent.horizontalCenter
-            highlighted: true
-            Material.background: materialColors.colorPrimary
-            text: "work in progress! - Back"
-            flat: true
-            onClicked: stackview.pop()
-            Material.accent: "white"
+
+            delegate: Rectangle {
+                implicitWidth: 10
+                implicitHeight: 10
+
+                radius: width / 2
+                color: index === indicator.currentIndex ? materialColors.light_green_600 : materialColors.grey_60
+
+                //                opacity: index === control.currentIndex ? 0.95 : pressed ? 0.7 : 0.45
+                Behavior on opacity {
+                    OpacityAnimator {
+                        duration: 100
+                    }
+                }
+            }
         }
     }
 }

@@ -94,7 +94,7 @@ Rectangle {
 
             Rectangle {
                 id: next
-                height: 45
+                height: 55
                 width: parent.width
                 color: "transparent"
                 anchors.bottom: parent.bottom
