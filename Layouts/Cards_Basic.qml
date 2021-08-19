@@ -87,6 +87,22 @@ Item {
                         height: val > 234 ? 234 : val
                         backgroundColor: materialColors.blue_700
                     }
+                    Row {
+                        spacing: 20
+                        CompCardsBasicModel4 {
+                            width: filckRoot.width / 2.1
+                            property var val: 0.3 * filckRoot.height
+                            height: val > 216 ? 216 : val
+                            backgroundColor: materialColors.teal_700
+                        }
+
+                        CompCardsBasicModel5 {
+                            width: filckRoot.width / 2.1
+                            property var val: 0.3 * filckRoot.height
+                            height: val > 216 ? 216 : val
+                            backgroundColor: materialColors.deep_orange_500
+                        }
+                    }
                 }
             }
         }

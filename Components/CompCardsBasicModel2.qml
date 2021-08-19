@@ -16,6 +16,8 @@ Pane {
     Rectangle {
         anchors.fill: parent
         color: "white"
+        radius: 4
+        clip: true
 
         Image {
             id: image
