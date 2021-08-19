@@ -31,8 +31,8 @@ Most of UI problem today is hard to convert UI design concept into native source
     - [x] Toggle Basic
     - [x] Fab Extend    
 * Card View
-    - [ ] Basic
-    - [ ] Timeline    
+    - [x] Basic
+    - [x] Timeline    
     - [ ] Overlap
     - [ ] Wizard
     - [ ] Wizard Light
