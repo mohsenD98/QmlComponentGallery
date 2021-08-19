@@ -33,16 +33,17 @@ Most of UI problem today is hard to convert UI design concept into native source
 * Card View
     - [x] Basic
     - [x] Timeline    
-    - [ ] Overlap
-    - [ ] Wizard
-    - [ ] Wizard Light
-    - [ ] Wizard Overlap
-    - [ ] Chackable
-     
+    - [x] Overlap
+    - [x] Wizard
+    - [x] Wizard Light
+    - [x] Wizard Overlap
+    - [x] Chackable
+* Chips
+    - [ ] Basic    
+    - [ ] Tag
 
 ### WIP : 
 
-* Chips
 * Dialog View
 * Expansion Panels
 * Grid View
