@@ -448,5 +448,6 @@
         <file>Components/CompCardsTimelineModel1.qml</file>
         <file>Components/Toolbar5.qml</file>
         <file>Components/CompCardsCheckable.qml</file>
+        <file>Components/CompCardsWizard1.qml</file>
     </qresource>
 </RCC>

@@ -23,103 +23,56 @@ Item {
 
             Item {
                 id: page1
-                Rectangle {
-                    anchors.centerIn: parent
-                    width: 4 * parent.width / 6
-                    height: 6 * parent.height / 10
-                    color: "transparent"
-                    Pane {
-                        width: parent.width
-                        height: parent.height
-                        padding: 0
-                        Material.elevation: 6
-                        Rectangle {
-                            id: root
-                            anchors.fill: parent
-                            radius: 4
-                            color: materialColors.light_green_600
-
-                            Image {
-                                anchors.top: parent.top
-                                anchors.left: parent.left
-                                anchors.right: parent.right
-                                anchors.bottom: next.top
-                                source: "qrc:/images/image_15.jpg"
-                                fillMode: Image.PreserveAspectCrop
-
-                                Rectangle {
-                                    anchors.fill: parent
-                                    color: "#B38BC34A"
-                                }
-
-                                Text {
-                                    id: title1
-                                    anchors.top: parent.top
-                                    anchors.topMargin: 24
-                                    anchors.horizontalCenter: imgLogo.horizontalCenter
-                                    text: qsTr("Ready To Travel")
-                                    font.pixelSize: 23
-                                    horizontalAlignment: Text.AlignHCenter
-                                    color: "white"
-                                    font.weight: Font.DemiBold
-                                }
-
-                                Text {
-                                    id: desc
-                                    anchors.top: title1.bottom
-                                    anchors.horizontalCenter: title1.horizontalCenter
-                                    anchors.topMargin: 42
-                                    text: "Find Featured and Premium \nItem From Our Store"
-                                    font.pixelSize: 18
-                                    color: "white"
-                                    horizontalAlignment: Text.AlignHCenter
-                                }
-
-                                Image {
-                                    id: imgLogo
-                                    width: 120
-                                    height: 120
-                                    source: "qrc:images/img_wizard_1.png"
-                                    fillMode: Image.PreserveAspectCrop
-                                    clip: true
-                                    anchors.top: desc.bottom
-                                    anchors.topMargin: 8
-                                    anchors.horizontalCenter: parent.horizontalCenter
-                                }
-
-                                ColorOverlay {
-                                    anchors.fill: imgLogo
-                                    source: imgLogo
-                                    color: "white"
-                                }
-                            }
-
-                            Rectangle {
-                                id: next
-                                height: 45
-                                width: parent.width
-                                color: "transparent"
-                                anchors.bottom: parent.bottom
-
-                                Text {
-                                    text: "NEXT"
-                                    font.pixelSize: 18
-                                    color: "white"
-                                    anchors.centerIn: parent
-                                }
-                            }
-                        }
+                CompCardsWizard1 {
+                    onNextPageCalled: {
+                        view.currentIndex = view.currentIndex + 1
                     }
+                    imagePath: "qrc:/images/image_15.jpg"
+                    iconPath: "qrc:images/img_wizard_1.png"
+
+                    titleText: "Ready To Travel"
+                    subTitleText: "Select the day, pick Your ticket. We give you the best prices. We guarantee!"
                 }
             }
             Item {
                 id: page2
+                CompCardsWizard1 {
+                    onNextPageCalled: {
+                        view.currentIndex = view.currentIndex + 1
+                    }
+                    imagePath: "qrc:/images/image_10.jpg"
+                    iconPath: "qrc:images/img_wizard_2.png"
+
+                    titleText: "Pick the Ticket"
+                    subTitleText: "Choose your destination, plan Your trip. Pick the best place for Your holiday"
+                }
             }
             Item {
                 id: page3
+                CompCardsWizard1 {
+                    onNextPageCalled: {
+                        view.currentIndex = view.currentIndex + 1
+                    }
+                    imagePath: "qrc:/images/image_3.jpg"
+                    iconPath: "qrc:images/img_wizard_3.png"
+
+                    titleText: "Flight to Destination"
+                    subTitleText: "Safe and Comfort flight is our priority. Professional crew and services."
+                }
             }
             Item {
                 id: page4
+                CompCardsWizard1 {
+                    onNextPageCalled: {
+                        stackview.pop()
+                    }
+                    imagePath: "qrc:/images/image_12.jpg"
+                    iconPath: "qrc:images/img_wizard_4.png"
+
+                    titleText: "Enjoy Holiday"
+                    controllerName: "Getting Started!"
+                    subTitleText: "Enjoy your holiday, Don't forget to feel the moment and take a photo!"
+                }
             }
         }
 
