@@ -444,5 +444,7 @@
         <file>Components/CompCardsBasicModel3.qml</file>
         <file>Components/CompCardsBasicModel5.qml</file>
         <file>Components/CompCardsBasicModel4.qml</file>
+        <file>Components/CompCardsTimelineModel2.qml</file>
+        <file>Components/CompCardsTimelineModel1.qml</file>
     </qresource>
 </RCC>
