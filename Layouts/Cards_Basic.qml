@@ -80,6 +80,13 @@ Item {
                             imageSource: "qrc:/images/image_9.jpg"
                         }
                     }
+
+                    CompCardsBasicModel3 {
+                        width: filckRoot.width
+                        property var val: 0.325 * filckRoot.height
+                        height: val > 234 ? 234 : val
+                        backgroundColor: materialColors.blue_700
+                    }
                 }
             }
         }

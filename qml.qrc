@@ -441,5 +441,6 @@
         <file>Layouts/Cards_Basic.qml</file>
         <file>Components/CompCardsBasicModel1.qml</file>
         <file>Components/CompCardsBasicModel2.qml</file>
+        <file>Components/CompCardsBasicModel3.qml</file>
     </qresource>
 </RCC>
