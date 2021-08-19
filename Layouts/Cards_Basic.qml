@@ -14,7 +14,7 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_50
+        color: materialColors.grey_10
 
         Toolbar4 {
             id: searchBar
@@ -38,14 +38,15 @@ Item {
             anchors.right: parent.right
             anchors.bottom: parent.bottom
             color: "transparent"
-            anchors.margins: 20
+            anchors.margins: 10
 
             Row {
                 anchors.fill: parent
 
                 CompCardsBasicModel1 {
                     width: parent.width
-                    height: 3 * parent.height / 5 > 432 ? 432 : 3 * parent.height / 5
+                    property var val: 3.6 * parent.height / 5
+                    height: val > 518.4 ? 518.4 : val
                 }
             }
         }
