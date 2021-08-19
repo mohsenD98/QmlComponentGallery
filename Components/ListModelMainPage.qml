@@ -32,4 +32,18 @@ ListModel {
         subModels: "Basic,Timeline,Overlap,Wizard,Wizard Light,Wizard Overlap,Chackable"
         isNewSubModel: "1,1,1,1,1,1,1"
     }
+    ListElement {
+        ic_name: "Ic_Label"
+        name: "Chips"
+        isNew: true
+        subModels: "Basic,Tag"
+        isNewSubModel: "1,1"
+    }
+    ListElement {
+        ic_name: "Ic_PictureInPicture"
+        name: "Dialogs"
+        isNew: true
+        subModels: "Basic,Fullscreen,Custom,Custom Info,Custom Warning,Custom Light,Custom Dark,Custom Add Post,Custom Add Review,GDPR Basic,Term of Services,Header,Image,Menu Payment,Achievement,Contact Us"
+        isNewSubModel: "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+    }
 }

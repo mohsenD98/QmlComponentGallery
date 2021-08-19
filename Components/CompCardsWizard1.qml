@@ -9,7 +9,7 @@ import ".."
 Rectangle {
     anchors.centerIn: parent
     width: 4 * parent.width / 6
-    height: 6 * parent.height / 10
+    height: 6 * parent.height / 10 > 432 ? 432 : 6 * parent.height / 10
     color: "transparent"
     property var imagePath: "qrc:/images/image_15.jpg"
     property var iconPath: "qrc:images/img_wizard_1.png"

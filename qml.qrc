@@ -451,5 +451,23 @@
         <file>Components/CompCardsWizard1.qml</file>
         <file>Components/CompCardsWizard2.qml</file>
         <file>Components/CompCardsWizard3.qml</file>
+        <file>Layouts/Dialogs_TermofServices.qml</file>
+        <file>Layouts/Dialogs_Image.qml</file>
+        <file>Layouts/Dialogs_Header.qml</file>
+        <file>Layouts/Dialogs_GDPRBasic.qml</file>
+        <file>Layouts/Dialogs_Fullscreen.qml</file>
+        <file>Layouts/Dialogs_CustomWarning.qml</file>
+        <file>Layouts/Dialogs_CustomLight.qml</file>
+        <file>Layouts/Dialogs_CustomInfo.qml</file>
+        <file>Layouts/Dialogs_CustomDark.qml</file>
+        <file>Layouts/Dialogs_CustomAddReview.qml</file>
+        <file>Layouts/Dialogs_CustomAddPost.qml</file>
+        <file>Layouts/Dialogs_Custom.qml</file>
+        <file>Layouts/Dialogs_ContactUs.qml</file>
+        <file>Layouts/Dialogs_Basic.qml</file>
+        <file>Layouts/Dialogs_Achievement.qml</file>
+        <file>Layouts/Chips_Tag.qml</file>
+        <file>Layouts/Chips_Basic.qml</file>
+        <file>Layouts/Dialogs_MenuPayment.qml</file>
     </qresource>
 </RCC>
