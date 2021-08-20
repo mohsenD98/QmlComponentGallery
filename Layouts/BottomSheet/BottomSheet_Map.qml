@@ -11,24 +11,6 @@ Item {
         bottomSheetBasic.controller.open()
     }
 
-    CompSearchBar {
-        id: searchBar
-        anchors.top: parent.top
-        anchors.topMargin: 8
-        anchors.left: parent.left
-        anchors.leftMargin: 12
-        anchors.right: parent.right
-        anchors.rightMargin: 12
-        height: 50
-        clip: true
-
-        Behavior on height {
-            NumberAnimation {
-                duration: 100
-            }
-        }
-    }
-
     Rectangle {
         anchors.fill: parent
         color: materialStatics.grey_5
@@ -66,6 +48,24 @@ Item {
             anchors.left: parent.left
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 50
+        }
+
+        CompSearchBar {
+            id: searchBar
+            anchors.top: parent.top
+            anchors.topMargin: 8
+            anchors.left: parent.left
+            anchors.leftMargin: 12
+            anchors.right: parent.right
+            anchors.rightMargin: 12
+            height: 50
+            clip: true
+
+            Behavior on height {
+                NumberAnimation {
+                    duration: 100
+                }
+            }
         }
     }
 }

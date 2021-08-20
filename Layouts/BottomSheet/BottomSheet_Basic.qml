@@ -10,25 +10,23 @@ Item {
         anchors.fill: parent
         color: materialStatics.grey_5
 
-        Toolbar4 {
-            id: searchBar
+        GeneralToolBar {
+            id: toolbar
+            backgroundColor: materialStatics.colorPrimary
+            iconsColor: "white"
+            toolBarText: "Qml Gallery"
+            leftIcon: "Ic_Menu"
+            rightIconLeft: "Ic_Notifications"
+            rightIconRight: "Ic_MoreVert"
+
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialStatics.colorPrimary
-            toolbarHeight: 50
-            clip: true
-
-            Behavior on height {
-                NumberAnimation {
-                    duration: 100
-                }
-            }
         }
 
         TabPeoples {
             id: tabStore
-            anchors.top: searchBar.bottom
+            anchors.top: toolbar.bottom
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 8
             anchors.left: parent.left
@@ -36,13 +34,13 @@ Item {
 
             onDraggingDown: {
                 // show elements
-                searchBar.height = 50
+                toolbar.height = 50
                 bottomNavigationBasicBox.height = 50
                 tabStore.anchors.topMargin = 20
             }
             onDraggingUp: {
                 // hide elements
-                searchBar.height = 0
+                toolbar.height = 0
                 bottomNavigationBasicBox.height = 0
                 tabStore.anchors.topMargin = 5
             }

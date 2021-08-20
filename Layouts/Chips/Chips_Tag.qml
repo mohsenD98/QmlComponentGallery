@@ -16,9 +16,16 @@ Item {
         anchors.fill: parent
         color: materialStatics.grey_10
 
+        Image {
+            id: image
+            width: parent.width
+            height: 1 / 3 * mainWindow.height > 240 ? 240 : 1 / 3 * mainWindow.height
+            fillMode: Image.PreserveAspectCrop
+            source: "qrc:/images/image_3.jpg"
+        }
         GeneralToolBar {
             id: toolbar
-            backgroundColor: materialStatics.colorPrimary
+            backgroundColor: "transparent"
             iconsColor: "white"
             toolBarText: "Tag"
             leftIcon: "Ic_Menu"
@@ -30,13 +37,6 @@ Item {
             anchors.right: parent.right
         }
 
-        Image {
-            id: image
-            width: parent.width
-            height: 1 / 3 * mainWindow.height > 240 ? 240 : 1 / 3 * mainWindow.height
-            fillMode: Image.PreserveAspectCrop
-            source: "qrc:/images/image_3.jpg"
-        }
         Text {
             id: titleLbl
             anchors.top: image.bottom
