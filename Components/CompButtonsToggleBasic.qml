@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.0
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     width: 200
@@ -22,9 +22,6 @@ Item {
 
     signal currentToggleIndexChanged(var index, var value)
 
-    Colors {
-        id: materialStatics
-    }
 
     Component.onCompleted: {
         for (var i = 0; i < model.length; ++i) {

@@ -4,7 +4,6 @@ import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
 import "../Tools/"
-import ".."
 
 Item {
     property var mtext: ""
@@ -14,9 +13,6 @@ Item {
 
     property bool longPressed: false
 
-    Colors {
-        id: materialStatics
-    }
 
     Pane {
         padding: 0

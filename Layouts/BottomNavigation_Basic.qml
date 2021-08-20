@@ -1,15 +1,9 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
 import "../Components/"
 
 Item {
-
-    Colors {
-        id: materialStatics
-    }
-
     Rectangle {
         anchors.fill: parent
         color: materialStatics.grey_5
@@ -74,7 +68,7 @@ Item {
                 anchors.fill: parent
                 backgroundColor: materialStatics.grey_60
                 unFocusedColor: materialStatics.grey_40
-                maxWidth:width
+                maxWidth: width
                 focusedColor: "white"
                 currIndex: 1
                 model: [{

@@ -1,7 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
+
 import "../Components/"
 
 Item {
@@ -10,10 +10,6 @@ Item {
     signal draggingDown(var value)
     signal draggingUp(var value)
     signal personClicked(var name)
-
-    Colors {
-        id: materialStatics
-    }
 
     ListView {
         id: contactList

@@ -3,13 +3,9 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Pane {
-    Colors {
-        id: materialStatics
-    }
-
     padding: 0
     Material.elevation: 6
     Rectangle {

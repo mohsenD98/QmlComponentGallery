@@ -4,13 +4,8 @@ import QtQuick.Controls.Material 2.12
 import QtGraphicalEffects 1.0
 
 import "../Drawables/"
-import ".."
 
 Pane {
-    Colors {
-        id: materialStatics
-    }
-
     padding: 0
     Material.elevation: 6
     property var imageSource

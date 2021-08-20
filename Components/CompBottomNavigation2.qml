@@ -2,7 +2,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     property color focusedColor
@@ -13,9 +13,6 @@ Item {
 
     signal currentNavIndexChanged(var newIndex)
 
-    Colors {
-        id: materialStatics
-    }
 
     Component.onCompleted: {
         for (var i = 0; i < model.length; ++i) {

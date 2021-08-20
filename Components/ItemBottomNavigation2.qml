@@ -3,7 +3,7 @@ import QtQuick.Controls 2.12
 
 import "../Drawables/"
 import "../Tools/"
-import ".."
+
 
 Rectangle {
     height: 50
@@ -11,9 +11,6 @@ Rectangle {
     radius: 4
 
     signal btnPressed(var value)
-    Colors {
-        id: materialStatics
-    }
 
     Loader {
         id: btnIconLoader

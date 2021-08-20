@@ -3,15 +3,13 @@ import QtQuick.Window 2.12
 import QtQuick.Shapes 1.12
 
 import "../Drawables/"
-import "../"
+
 
 Item {
     property real toolbarHeight
     property color backgroundColor
     property color widgetColors
-    Colors {
-        id: materialStatics
-    }
+
     height: toolbar.height
 
     Rectangle {

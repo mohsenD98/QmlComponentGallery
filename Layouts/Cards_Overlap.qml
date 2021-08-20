@@ -3,7 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 import QtGraphicalEffects 1.0
 
-import "../"
+
 import "../Components/"
 import "../Drawables/"
 
@@ -12,9 +12,6 @@ Item {
     property var applyTheme: "Light"
     signal draggingDown(var value)
     signal draggingUp(var value)
-    Colors {
-        id: materialStatics
-    }
 
     Rectangle {
         anchors.fill: parent

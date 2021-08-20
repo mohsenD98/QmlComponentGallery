@@ -1,14 +1,11 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
+
 import "../Components/"
 
 Item {
 
-    Colors {
-        id: materialStatics
-    }
 
     Rectangle {
         anchors.fill: parent

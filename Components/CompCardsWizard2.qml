@@ -4,7 +4,7 @@ import QtQuick.Controls.Material 2.12
 import QtGraphicalEffects 1.0
 
 import "../Drawables/"
-import ".."
+
 
 Rectangle {
     anchors.centerIn: parent
@@ -20,9 +20,6 @@ Rectangle {
 
     signal nextPageCalled
 
-    Colors {
-        id: materialStatics
-    }
 
     Pane {
         width: parent.width

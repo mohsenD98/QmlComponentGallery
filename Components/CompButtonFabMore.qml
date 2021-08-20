@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.0
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     property color backgroundColor: "#2e2e2e"
@@ -21,9 +21,6 @@ Item {
     width: 200
     height: fab.height + options.height + 20
 
-    Colors {
-        id: materialStatics
-    }
 
     Component.onCompleted: {
         for (var i = 0; i < model.length; ++i) {
