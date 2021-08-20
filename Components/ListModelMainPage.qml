@@ -43,7 +43,7 @@ ListModel {
         ic_name: "Ic_PictureInPicture"
         name: "Dialogs"
         isNew: true
-        subModels: "Basic,Fullscreen,Custom,Custom Info,Custom Warning,Custom Light,Custom Dark,Custom Add Post,Custom Add Review,GDPR Basic,Term of Services,Header,Image,Menu Payment,Achievement,Contact Us"
-        isNewSubModel: "1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+        subModels: "Basic,Fantastic Materials,Fullscreen,Custom,Custom Add Post,Custom Add Review,GDPR Basic,Term of Services"
+        isNewSubModel: "1,1,1,1,1,1,1,1"
     }
 }

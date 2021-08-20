@@ -445,21 +445,12 @@
         <file>Layouts/Cards/Cards_WizardOverlap.qml</file>
         <file>Layouts/Chips/Chips_Basic.qml</file>
         <file>Layouts/Chips/Chips_Tag.qml</file>
-        <file>Layouts/Dialogs/Dialogs_Achievement.qml</file>
         <file>Layouts/Dialogs/Dialogs_Basic.qml</file>
-        <file>Layouts/Dialogs/Dialogs_ContactUs.qml</file>
         <file>Layouts/Dialogs/Dialogs_Custom.qml</file>
         <file>Layouts/Dialogs/Dialogs_CustomAddPost.qml</file>
         <file>Layouts/Dialogs/Dialogs_CustomAddReview.qml</file>
-        <file>Layouts/Dialogs/Dialogs_CustomDark.qml</file>
-        <file>Layouts/Dialogs/Dialogs_CustomInfo.qml</file>
-        <file>Layouts/Dialogs/Dialogs_CustomLight.qml</file>
-        <file>Layouts/Dialogs/Dialogs_CustomWarning.qml</file>
         <file>Layouts/Dialogs/Dialogs_Fullscreen.qml</file>
         <file>Layouts/Dialogs/Dialogs_GDPRBasic.qml</file>
-        <file>Layouts/Dialogs/Dialogs_Header.qml</file>
-        <file>Layouts/Dialogs/Dialogs_Image.qml</file>
-        <file>Layouts/Dialogs/Dialogs_MenuPayment.qml</file>
         <file>Layouts/Dialogs/Dialogs_TermofServices.qml</file>
         <file>Layouts/WipTab.qml</file>
         <file>Layouts/TabStore4.qml</file>
@@ -470,5 +461,6 @@
         <file>Layouts/TabPeoples.qml</file>
         <file>Layouts/TabEmpty1.qml</file>
         <file>Layouts/TabArticle.qml</file>
+        <file>Layouts/Dialogs/Dialogs_FantasticMaterials.qml</file>
     </qresource>
 </RCC>
