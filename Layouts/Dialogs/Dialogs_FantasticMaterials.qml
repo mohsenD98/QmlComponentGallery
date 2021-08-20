@@ -109,6 +109,9 @@ Item {
                 CompDialogMaterialCustomInfo {
                     id: customInfoDialog
                 }
+                CompDialogMaterialCustomWarning {
+                    id: customInfoDialogWarning
+                }
 
                 MouseArea {
                     id: optionMouseArea
@@ -119,6 +122,9 @@ Item {
                         switch (le_index) {
                         case 0:
                             customInfoDialog.popupController.open()
+                            break
+                        case 1:
+                            customInfoDialogWarning.popupController.open()
                             break
                         }
                     }
