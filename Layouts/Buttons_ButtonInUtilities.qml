@@ -12,7 +12,7 @@ Item {
     signal draggingDown(var value)
     signal draggingUp(var value)
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
@@ -27,7 +27,7 @@ Item {
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialColors.colorPrimary
+            backgroundColor: materialStatics.colorPrimary
             toolbarHeight: 50
             clip: true
 
@@ -52,7 +52,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 anchors.bottom: parent.bottom
-                color: materialColors.grey_5
+                color: materialStatics.grey_5
 
                 Ic_Contacts {
                     id: contactIcon
@@ -60,7 +60,7 @@ Item {
                     anchors.leftMargin: 35
                     anchors.top: parent.top
                     anchors.topMargin: 50
-                    controller.fillColor: materialColors.colorPrimary
+                    controller.fillColor: materialStatics.colorPrimary
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                     baseShape.scale: 1.25
@@ -86,7 +86,7 @@ Item {
                     anchors.leftMargin: 25
                     text: "UNINSTALL"
                     highlighted: true
-                    Material.background: materialColors.colorAccent
+                    Material.background: materialStatics.colorAccent
                 }
 
                 Button {
@@ -101,7 +101,7 @@ Item {
                         text: cancel.text
                         font: cancel.font
                         opacity: enabled ? 1.0 : 0.3
-                        color: materialColors.colorAccent
+                        color: materialStatics.colorAccent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         elide: Text.ElideRight
@@ -115,7 +115,7 @@ Item {
                     anchors.right: parent.right
                     anchors.left: parent.left
                     height: 1
-                    color: materialColors.grey_20
+                    color: materialStatics.grey_20
                 }
 
                 Ic_Storage {
@@ -124,7 +124,7 @@ Item {
                     anchors.leftMargin: 35
                     anchors.top: splitter1.top
                     anchors.topMargin: 35
-                    controller.fillColor: materialColors.grey_60
+                    controller.fillColor: materialStatics.grey_60
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                     baseShape.scale: 1.25
@@ -136,7 +136,7 @@ Item {
                 Text {
                     id: storage
                     text: qsTr("Storage")
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     x: morningPizza.x
                     anchors.verticalCenter: storageIcon.verticalCenter
                     font.pixelSize: 18
@@ -165,7 +165,7 @@ Item {
                     x: morningPizza.x
                     height: 18
                     width: parent.width - x - 25
-                    color: materialColors.colorAccentLight
+                    color: materialStatics.colorAccentLight
                 }
                 Rectangle {
                     id: progressed
@@ -174,7 +174,7 @@ Item {
                     x: morningPizza.x
                     height: 18
                     width: parent.width - x - 150
-                    color: materialColors.colorAccent
+                    color: materialStatics.colorAccent
                 }
                 Text {
                     id: appTitle
@@ -188,7 +188,7 @@ Item {
                 Text {
                     id: appValue
                     text: qsTr("9.4 MB")
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     anchors.top: appTitle.bottom
                     anchors.topMargin: 5
                     x: morningPizza.x
@@ -197,7 +197,7 @@ Item {
                 Text {
                     id: dataTitle
                     text: qsTr("Data")
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     anchors.top: progressed.bottom
                     anchors.topMargin: 10
                     x: progressed.x + progressed.width
@@ -206,7 +206,7 @@ Item {
                 Text {
                     id: dataValue
                     text: qsTr("9.4 MB")
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     anchors.top: dataTitle.bottom
                     anchors.topMargin: 5
                     x: progressed.x + progressed.width
@@ -225,7 +225,7 @@ Item {
                         text: cancel.text
                         font: cancel.font
                         opacity: enabled ? 1.0 : 0.3
-                        color: materialColors.colorAccent
+                        color: materialStatics.colorAccent
                         horizontalAlignment: Text.AlignHCenter
                         verticalAlignment: Text.AlignVCenter
                         elide: Text.ElideRight
@@ -238,7 +238,7 @@ Item {
                     anchors.right: parent.right
                     anchors.left: parent.left
                     height: 1
-                    color: materialColors.grey_20
+                    color: materialStatics.grey_20
                 }
                 Ic_DataUsage {
                     id: datausageIcon
@@ -246,7 +246,7 @@ Item {
                     anchors.leftMargin: 35
                     anchors.top: splitter2.top
                     anchors.topMargin: 35
-                    controller.fillColor: materialColors.grey_60
+                    controller.fillColor: materialStatics.grey_60
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                     baseShape.scale: 1.25
@@ -258,7 +258,7 @@ Item {
                 Text {
                     id: dataUsage
                     text: qsTr("Data Usage")
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     x: morningPizza.x
                     anchors.verticalCenter: datausageIcon.verticalCenter
                     font.pixelSize: 18

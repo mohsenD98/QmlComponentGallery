@@ -6,19 +6,19 @@ import "../Components/"
 
 Item {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         Toolbar4 {
             id: searchBar
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialColors.colorPrimary
+            backgroundColor: materialStatics.colorPrimary
             toolbarHeight: 50
             height: 50
             clip: true
@@ -39,7 +39,7 @@ Item {
             Rectangle {
                 id: moverlay
                 anchors.fill: parent
-                color: materialColors.overlay_dark_80
+                color: materialStatics.overlay_dark_80
                 visible: false
                 z: 2
 

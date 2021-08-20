@@ -7,7 +7,7 @@ import "../Components/"
 
 Item {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
@@ -36,7 +36,7 @@ Item {
             icon.width: 25
             icon.height: 25
 
-            Material.background: materialColors.deep_orange_500
+            Material.background: materialStatics.deep_orange_500
 
             Component.onCompleted: {
                 width = width * 1.35

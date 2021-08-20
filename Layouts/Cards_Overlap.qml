@@ -13,12 +13,12 @@ Item {
     signal draggingDown(var value)
     signal draggingUp(var value)
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_10
+        color: materialStatics.grey_10
 
         Flickable {
             width: parent.width
@@ -36,7 +36,7 @@ Item {
 
                 Rectangle {
                     anchors.fill: imgBackground
-                    color: materialColors.overlay_dark_40
+                    color: materialStatics.overlay_dark_40
                 }
 
                 Toolbar5 {
@@ -100,7 +100,7 @@ Item {
                         anchors.left: parent.left
                         anchors.top: parent.top
                         anchors.margins: 20
-                        color: materialColors.grey_80
+                        color: materialStatics.grey_80
                     }
                     Column {
                         id: facilitiesCol
@@ -120,13 +120,13 @@ Item {
                                     anchors.left: parent.left
                                     anchors.verticalCenter: parent.verticalCenter
                                     anchors.leftMargin: 20
-                                    controller.fillColor: materialColors.grey_40
+                                    controller.fillColor: materialStatics.grey_40
                                 }
                                 Text {
                                     anchors.left: icon.right
                                     anchors.leftMargin: 20
                                     anchors.verticalCenter: parent.verticalCenter
-                                    color: materialColors.grey_40
+                                    color: materialStatics.grey_40
                                     font.pixelSize: 18
                                     text: "Food & Cafe"
                                 }
@@ -143,13 +143,13 @@ Item {
                                     anchors.left: parent.left
                                     anchors.verticalCenter: parent.verticalCenter
                                     anchors.leftMargin: 20
-                                    controller.fillColor: materialColors.grey_40
+                                    controller.fillColor: materialStatics.grey_40
                                 }
                                 Text {
                                     anchors.left: icon2.right
                                     anchors.leftMargin: 20
                                     anchors.verticalCenter: parent.verticalCenter
-                                    color: materialColors.grey_40
+                                    color: materialStatics.grey_40
                                     font.pixelSize: 18
                                     text: "Fresh Air"
                                 }
@@ -166,13 +166,13 @@ Item {
                                     anchors.left: parent.left
                                     anchors.verticalCenter: parent.verticalCenter
                                     anchors.leftMargin: 20
-                                    controller.fillColor: materialColors.grey_40
+                                    controller.fillColor: materialStatics.grey_40
                                 }
                                 Text {
                                     anchors.left: icon3.right
                                     anchors.leftMargin: 20
                                     anchors.verticalCenter: parent.verticalCenter
-                                    color: materialColors.grey_40
+                                    color: materialStatics.grey_40
                                     font.pixelSize: 18
                                     text: "Parking Area"
                                 }
@@ -189,13 +189,13 @@ Item {
                                     anchors.left: parent.left
                                     anchors.verticalCenter: parent.verticalCenter
                                     anchors.leftMargin: 20
-                                    controller.fillColor: materialColors.grey_40
+                                    controller.fillColor: materialStatics.grey_40
                                 }
                                 Text {
                                     anchors.left: icon4.right
                                     anchors.leftMargin: 20
                                     anchors.verticalCenter: parent.verticalCenter
-                                    color: materialColors.grey_40
+                                    color: materialStatics.grey_40
                                     font.pixelSize: 18
                                     text: "Cozy Canopy"
                                 }
@@ -229,7 +229,7 @@ Item {
                         anchors.left: parent.left
                         anchors.top: parent.top
                         anchors.margins: 20
-                        color: materialColors.grey_80
+                        color: materialStatics.grey_80
                     }
                     Text {
                         id: addressDetails
@@ -240,7 +240,7 @@ Item {
                         anchors.left: parent.left
                         anchors.right: parent.right
                         anchors.margins: 20
-                        color: materialColors.grey_40
+                        color: materialStatics.grey_40
                     }
                 }
             }
@@ -268,7 +268,7 @@ Item {
                         anchors.left: parent.left
                         anchors.top: parent.top
                         anchors.margins: 20
-                        color: materialColors.grey_80
+                        color: materialStatics.grey_80
                     }
                     Text {
                         id: descText
@@ -281,7 +281,7 @@ Item {
                         anchors.right: parent.right
                         anchors.margins: 20
                         wrapMode: Text.WordWrap
-                        color: materialColors.grey_40
+                        color: materialStatics.grey_40
                     }
                 }
             }

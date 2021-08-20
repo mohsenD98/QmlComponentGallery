@@ -6,7 +6,7 @@ import "../Components/"
 
 Item {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
@@ -65,8 +65,8 @@ Item {
 
             CompBottomNavigation1 {
                 anchors.fill: parent
-                backgroundColor: materialColors.grey_900
-                unFocusedColor: materialColors.grey_60
+                backgroundColor: materialStatics.grey_900
+                unFocusedColor: materialStatics.grey_60
                 maxWidth: width
                 focusedColor: "white"
                 currIndex: 1

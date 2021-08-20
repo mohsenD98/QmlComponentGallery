@@ -21,7 +21,7 @@ Rectangle {
     signal nextPageCalled
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Pane {
@@ -33,7 +33,7 @@ Rectangle {
             id: root
             anchors.fill: parent
             radius: 4
-            color: materialColors.light_green_600
+            color: materialStatics.light_green_600
 
             Image {
                 anchors.top: parent.top

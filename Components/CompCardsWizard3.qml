@@ -21,7 +21,7 @@ Rectangle {
     signal nextPageCalled
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Pane {
@@ -42,7 +42,7 @@ Rectangle {
                 text: titleText
                 font.pixelSize: 23
                 horizontalAlignment: Text.AlignHCenter
-                color: materialColors.grey_80
+                color: materialStatics.grey_80
                 font.weight: Font.DemiBold
             }
 
@@ -55,7 +55,7 @@ Rectangle {
                 font.pixelSize: 18
                 wrapMode: Text.WordWrap
                 width: parent.width - 20
-                color: materialColors.grey_40
+                color: materialStatics.grey_40
                 horizontalAlignment: Text.AlignHCenter
             }
 
@@ -74,7 +74,7 @@ Rectangle {
             ColorOverlay {
                 anchors.fill: imgLogo
                 source: imgLogo
-                color: materialColors.light_green_600
+                color: materialStatics.light_green_600
             }
         }
     }

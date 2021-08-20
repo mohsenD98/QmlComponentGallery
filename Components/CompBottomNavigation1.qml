@@ -16,7 +16,7 @@ Item {
     signal currentNavIndexChanged(var newIndex)
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Component.onCompleted: {
@@ -49,7 +49,7 @@ Item {
             clip: true
             model: ListModel {}
             delegate: ItemBottomNavigation1 {
-                enableTxt:enableText
+                enableTxt: enableText
                 width: maxWidth / menuList.model.count
                 onBtnPressed: {
                     for (var i = 0; i < menuList.model.count; ++i) {

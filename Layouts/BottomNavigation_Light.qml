@@ -6,12 +6,12 @@ import "../Components/"
 
 Item {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         CompSearchBar {
             id: searchBar
@@ -72,9 +72,9 @@ Item {
             CompBottomNavigation1 {
                 anchors.fill: parent
                 backgroundColor: "white"
-                unFocusedColor: materialColors.grey_40
+                unFocusedColor: materialStatics.grey_40
                 maxWidth: width
-                focusedColor: materialColors.colorPrimary
+                focusedColor: materialStatics.colorPrimary
                 currIndex: 1
                 model: [{
                         "name": "Recents",

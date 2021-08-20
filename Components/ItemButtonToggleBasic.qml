@@ -11,7 +11,7 @@ Rectangle {
     width: ((le_showText ? text.width : 0)
             + (le_showIcon ? listIconLoader.width : 0)) * 1.4 + 10 // margins
     color: le_backGroundColor
-    border.color: le_selected ? le_accentColor : materialColors.grey_20
+    border.color: le_selected ? le_accentColor : materialStatics.grey_20
     border.width: 2
 
     signal itemClicked(var name)
@@ -32,14 +32,14 @@ Rectangle {
                 target: listIconLoader.item.controller
                 property: "fillColor"
 
-                value: le_selected ? le_accentColor : materialColors.grey_20
+                value: le_selected ? le_accentColor : materialStatics.grey_20
             }
 
             onLoaded: {
                 if (le_selected) {
                     listIconLoader.item.controller.fillColor = le_accentColor
                 } else {
-                    listIconLoader.item.controller.fillColor = materialColors.grey_20
+                    listIconLoader.item.controller.fillColor = materialStatics.grey_20
                 }
                 if (!le_showText) {
                     listIconLoader.item.baseShape.scale = 1.25
@@ -53,7 +53,7 @@ Rectangle {
             id: text
             text: le_text
             font.pixelSize: 14
-            color: le_selected ? le_accentColor : materialColors.grey_20
+            color: le_selected ? le_accentColor : materialStatics.grey_20
             visible: le_showText
             font.bold: true
         }
@@ -73,7 +73,7 @@ Rectangle {
                 console.log(le_text)
                 if (le_unselectable)
                     if (listIconLoader.item.controller.fillColor === le_accentColor)
-                        listIconLoader.item.controller.fillColor = materialColors.grey_20
+                        listIconLoader.item.controller.fillColor = materialStatics.grey_20
                     else {
                         listIconLoader.item.controller.fillColor = le_accentColor
                     }

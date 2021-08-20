@@ -7,7 +7,7 @@ import ".."
 
 Pane {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     padding: 0

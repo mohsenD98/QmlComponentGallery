@@ -11,19 +11,19 @@ Item {
     signal draggingDown(var value)
     signal draggingUp(var value)
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_10
+        color: materialStatics.grey_10
 
         Toolbar4 {
             id: searchBar
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialColors.colorPrimary
+            backgroundColor: materialStatics.colorPrimary
             toolbarHeight: 50
             clip: true
 
@@ -51,7 +51,7 @@ Item {
                     mtext: "Aliquet Et Ante"
                     subText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     backgroundColor: "white"
-                    accentColor: materialColors.colorPrimary
+                    accentColor: materialStatics.colorPrimary
                 }
                 CompCardsCheckable {
                     height: 175
@@ -59,7 +59,7 @@ Item {
                     mtext: "Aliquet Et Ante"
                     subText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                     backgroundColor: "white"
-                    accentColor: materialColors.colorPrimary
+                    accentColor: materialStatics.colorPrimary
                 }
             }
             CompCardsCheckable {
@@ -69,7 +69,7 @@ Item {
                 mtext: "Quisque Sapien Lorem"
                 subText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 backgroundColor: "white"
-                accentColor: materialColors.colorPrimary
+                accentColor: materialStatics.colorPrimary
             }
         }
     }

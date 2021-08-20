@@ -13,7 +13,7 @@ Item {
     signal personClicked(var name)
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     ListView {

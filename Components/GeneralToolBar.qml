@@ -17,10 +17,6 @@ Item {
     property var rightIconRight
     property var shapeScales: 1.25
 
-    Colors {
-        id: materialColors
-    }
-
     Rectangle {
         id: toolbar
         anchors.top: parent.top

@@ -10,12 +10,12 @@ Item {
     clip: true
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_50
+        color: materialStatics.grey_50
 
         Text {
             id: lblButtons1
@@ -24,7 +24,7 @@ Item {
             anchors.left: parent.left
             anchors.topMargin: 20
             anchors.leftMargin: 20
-            color: materialColors.blue_grey_400
+            color: materialStatics.blue_grey_400
         }
         Rectangle {
             anchors.right: parent.right
@@ -32,7 +32,7 @@ Item {
             anchors.verticalCenter: lblButtons1.verticalCenter
             anchors.leftMargin: 20
             anchors.rightMargin: 20
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
 
@@ -68,7 +68,7 @@ Item {
                 }
 
                 background: Rectangle {
-                    color: materialColors.colorPrimary
+                    color: materialStatics.colorPrimary
                     implicitWidth: 100
                     implicitHeight: 40
                     opacity: enabled ? 1 : 0.3
@@ -91,7 +91,7 @@ Item {
                 }
 
                 background: Rectangle {
-                    color: materialColors.colorAccent
+                    color: materialStatics.colorAccent
                     implicitWidth: 100
                     implicitHeight: 40
                     opacity: enabled ? 1 : 0.3
@@ -114,7 +114,7 @@ Item {
                     text: control3.text
                     font: control3.font
                     opacity: enabled ? 1.0 : 0.3
-                    color: materialColors.colorPrimary
+                    color: materialStatics.colorPrimary
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideRight
@@ -129,7 +129,7 @@ Item {
                     text: control4.text
                     font: control4.font
                     opacity: enabled ? 1.0 : 0.3
-                    color: materialColors.colorAccent
+                    color: materialStatics.colorAccent
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideRight
@@ -150,7 +150,7 @@ Item {
                     text: control5.text
                     font: control5.font
                     opacity: enabled ? 1.0 : 0.3
-                    color: materialColors.colorPrimary
+                    color: materialStatics.colorPrimary
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideRight
@@ -174,7 +174,7 @@ Item {
                     text: control6.text
                     font: control6.font
                     opacity: enabled ? 1.0 : 0.3
-                    color: materialColors.colorAccent
+                    color: materialStatics.colorAccent
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideRight
@@ -199,7 +199,7 @@ Item {
             anchors.left: parent.left
             anchors.topMargin: 20
             anchors.leftMargin: 20
-            color: materialColors.blue_grey_400
+            color: materialStatics.blue_grey_400
         }
         Rectangle {
             anchors.right: parent.right
@@ -207,7 +207,7 @@ Item {
             anchors.verticalCenter: lblButtons2.verticalCenter
             anchors.leftMargin: 20
             anchors.rightMargin: 20
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
 
@@ -233,14 +233,14 @@ Item {
                 text: "PRIMARY"
                 highlighted: true
                 Layout.fillWidth: true
-                Material.background: materialColors.colorPrimary
+                Material.background: materialStatics.colorPrimary
                 Material.accent: "white"
             }
             Button {
                 text: "ACCENT"
                 highlighted: true
                 Layout.fillWidth: true
-                Material.background: materialColors.colorAccent
+                Material.background: materialStatics.colorAccent
                 Material.accent: "white"
             }
 
@@ -254,14 +254,14 @@ Item {
                 text: "PRIMARY"
                 highlighted: true
                 Layout.fillWidth: true
-                Material.accent: materialColors.colorPrimary
+                Material.accent: materialStatics.colorPrimary
                 flat: true
             }
             Button {
                 text: "ACCENT"
                 highlighted: true
                 Layout.fillWidth: true
-                Material.accent: materialColors.colorAccent
+                Material.accent: materialStatics.colorAccent
                 flat: true
             }
 
@@ -281,7 +281,7 @@ Item {
                     text: control7.text
                     font: control7.font
                     opacity: enabled ? 1.0 : 0.3
-                    color: materialColors.colorPrimary
+                    color: materialStatics.colorPrimary
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideRight
@@ -297,7 +297,7 @@ Item {
                     text: control8.text
                     font: control8.font
                     opacity: enabled ? 1.0 : 0.3
-                    color: materialColors.colorAccent
+                    color: materialStatics.colorAccent
                     horizontalAlignment: Text.AlignHCenter
                     verticalAlignment: Text.AlignVCenter
                     elide: Text.ElideRight
@@ -312,7 +312,7 @@ Item {
             anchors.left: parent.left
             anchors.topMargin: 20
             anchors.leftMargin: 20
-            color: materialColors.blue_grey_400
+            color: materialStatics.blue_grey_400
         }
         Rectangle {
             anchors.right: parent.right
@@ -320,7 +320,7 @@ Item {
             anchors.verticalCenter: lblButtons3.verticalCenter
             anchors.leftMargin: 20
             anchors.rightMargin: 20
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
 
@@ -359,7 +359,7 @@ Item {
                 RoundButton {
                     highlighted: true
                     icon.source: "qrc:/images/ic_plus.png"
-                    Material.background: materialColors.colorPrimary
+                    Material.background: materialStatics.colorPrimary
                     anchors.centerIn: parent
                     width: 80
                     height: 80
@@ -374,7 +374,7 @@ Item {
                 RoundButton {
                     highlighted: true
                     icon.source: "qrc:/images/ic_create.png"
-                    Material.background: materialColors.colorAccent
+                    Material.background: materialStatics.colorAccent
                     anchors.centerIn: parent
                     width: 80
                     height: 80

@@ -6,12 +6,12 @@ import "../Components/"
 
 Item {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         Toolbar3 {
             id: toolbar
@@ -22,7 +22,7 @@ Item {
             height: 50
             clip: true
             backgroundColor: "transparent"
-            widgetColors: materialColors.green_300
+            widgetColors: materialStatics.green_300
 
             Behavior on height {
                 NumberAnimation {
@@ -58,9 +58,9 @@ Item {
             CompBottomNavigation1 {
                 anchors.fill: parent
                 backgroundColor: "white"
-                unFocusedColor: materialColors.grey_10
+                unFocusedColor: materialStatics.grey_10
                 maxWidth: width
-                focusedColor: materialColors.green_300
+                focusedColor: materialStatics.green_300
                 currIndex: 0
                 enableText: false
                 model: [{

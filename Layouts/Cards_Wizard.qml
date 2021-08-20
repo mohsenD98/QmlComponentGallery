@@ -10,12 +10,12 @@ Item {
     clip: true
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
         SwipeView {
             id: view
             currentIndex: 0
@@ -91,7 +91,7 @@ Item {
                 implicitHeight: 10
 
                 radius: width / 2
-                color: index === indicator.currentIndex ? materialColors.light_green_600 : materialColors.grey_20
+                color: index === indicator.currentIndex ? materialStatics.light_green_600 : materialStatics.grey_20
 
                 //                opacity: index === control.currentIndex ? 0.95 : pressed ? 0.7 : 0.45
                 Behavior on opacity {

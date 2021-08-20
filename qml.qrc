@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>Colors.qml</file>
+        <file>Materials.qml</file>
         <file>images/badge_crown.png</file>
         <file>images/badge_goal.png</file>
         <file>images/badge_ontime.png</file>

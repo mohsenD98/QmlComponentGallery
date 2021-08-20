@@ -14,7 +14,7 @@ Rectangle {
     property bool enableTxt: true
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Loader {

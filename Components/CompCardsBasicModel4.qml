@@ -7,7 +7,7 @@ import ".."
 
 Pane {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     padding: 0
@@ -35,7 +35,7 @@ Pane {
             id: splitter1
             height: 1
             width: parent.width
-            color: materialColors.grey_40
+            color: materialStatics.grey_40
             anchors.top: title.bottom
             anchors.topMargin: 16
         }

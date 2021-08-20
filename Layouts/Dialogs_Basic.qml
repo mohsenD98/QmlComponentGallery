@@ -11,7 +11,7 @@ Item {
     signal draggingDown(var value)
     signal draggingUp(var value)
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
@@ -31,7 +31,7 @@ Item {
                     width: 75
                     height: 75
                     radius: 75
-                    color: materialColors.grey_20
+                    color: materialStatics.grey_20
                 }
                 Rectangle {
                     width: 200
@@ -44,17 +44,17 @@ Item {
                         Rectangle {
                             width: 75
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 175
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 30
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                     }
                 }
@@ -65,7 +65,7 @@ Item {
                     width: 75
                     height: 75
                     radius: 75
-                    color: materialColors.grey_20
+                    color: materialStatics.grey_20
                 }
                 Rectangle {
                     width: 200
@@ -78,17 +78,17 @@ Item {
                         Rectangle {
                             width: 75
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 175
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 30
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                     }
                 }
@@ -100,7 +100,7 @@ Item {
             anchors.bottomMargin: 100
             anchors.horizontalCenter: parent.horizontalCenter
             highlighted: true
-            Material.background: materialColors.colorPrimary
+            Material.background: materialStatics.colorPrimary
             text: "work in progress! - Back"
             flat: true
             onClicked: stackview.pop()

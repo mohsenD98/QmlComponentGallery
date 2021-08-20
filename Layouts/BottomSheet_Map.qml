@@ -8,7 +8,7 @@ import "../Drawables/"
 Item {
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Component.onCompleted: {
@@ -35,14 +35,14 @@ Item {
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         Rectangle {
             anchors.bottom: bottomSheetBasic.top
             anchors.bottomMargin: 45
             anchors.right: parent.right
             anchors.rightMargin: 25
-            color: materialColors.colorAccent
+            color: materialStatics.colorAccent
             height: 50
             width: 50
             radius: 50

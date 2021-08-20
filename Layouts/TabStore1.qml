@@ -10,7 +10,7 @@ Item {
     signal draggingDown(var value)
     signal draggingUp(var value)
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Flickable {
@@ -57,7 +57,7 @@ Item {
                 text: qsTr("More")
                 font.pixelSize: 13
                 anchors.right: parent.right
-                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
+                color: applyTheme === "Light" ? materialStatics.grey_60 : materialStatics.grey_20
             }
 
             ListView {
@@ -110,7 +110,7 @@ Item {
                 anchors.top: releaseList.bottom
                 anchors.topMargin: 20
                 font.pixelSize: 13
-                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
+                color: applyTheme === "Light" ? materialStatics.grey_60 : materialStatics.grey_20
             }
 
             ListView {
@@ -172,7 +172,7 @@ Item {
                 anchors.top: recomendedList.bottom
                 anchors.topMargin: 20
                 font.pixelSize: 13
-                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
+                color: applyTheme === "Light" ? materialStatics.grey_60 : materialStatics.grey_20
             }
 
             ListView {

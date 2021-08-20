@@ -9,19 +9,19 @@ Item {
     clip: true
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_10
+        color: materialStatics.grey_10
 
         Toolbar4 {
             id: searchBar
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialColors.colorPrimary
+            backgroundColor: materialStatics.colorPrimary
             toolbarHeight: 50
             clip: true
 
@@ -85,7 +85,7 @@ Item {
                         width: filckRoot.width
                         property var val: 0.325 * filckRoot.height
                         height: val > 234 ? 234 : val
-                        backgroundColor: materialColors.blue_700
+                        backgroundColor: materialStatics.blue_700
                     }
                     Row {
                         spacing: 20
@@ -93,14 +93,14 @@ Item {
                             width: filckRoot.width / 2.1
                             property var val: 0.3 * filckRoot.height
                             height: val > 216 ? 216 : val
-                            backgroundColor: materialColors.teal_700
+                            backgroundColor: materialStatics.teal_700
                         }
 
                         CompCardsBasicModel5 {
                             width: filckRoot.width / 2.1
                             property var val: 0.3 * filckRoot.height
                             height: val > 216 ? 216 : val
-                            backgroundColor: materialColors.deep_orange_500
+                            backgroundColor: materialStatics.deep_orange_500
                         }
                     }
                 }

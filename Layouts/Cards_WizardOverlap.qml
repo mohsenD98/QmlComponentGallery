@@ -10,12 +10,12 @@ Item {
     clip: true
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         Image {
             anchors.fill: parent
@@ -24,7 +24,7 @@ Item {
         }
         Rectangle {
             anchors.fill: parent
-            color: materialColors.overlay_light_80
+            color: materialStatics.overlay_light_80
         }
 
         SwipeView {
@@ -98,7 +98,7 @@ Item {
                 implicitHeight: 10
 
                 radius: width / 2
-                color: index === indicator.currentIndex ? materialColors.light_green_600 : materialColors.grey_60
+                color: index === indicator.currentIndex ? materialStatics.light_green_600 : materialStatics.grey_60
 
                 //                opacity: index === control.currentIndex ? 0.95 : pressed ? 0.7 : 0.45
                 Behavior on opacity {
@@ -114,7 +114,7 @@ Item {
             height: 55
             width: parent.width - 20
             anchors.horizontalCenter: parent.horizontalCenter
-            color: materialColors.light_green_600
+            color: materialStatics.light_green_600
             anchors.bottom: view.bottom
             anchors.bottomMargin: 20
             radius: 4

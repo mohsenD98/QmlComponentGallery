@@ -1,13 +1,11 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../Tools/"
-
 Rectangle {
     id: base
     height: 40
     radius: 8
-    color: materialColors.grey_100_
+    color: materialStatics.grey_100_
 
     property bool opened: false
     signal layoutSelected(var path)
@@ -31,12 +29,7 @@ Rectangle {
         anchors.right: parent.right
         anchors.rightMargin: 15
         anchors.verticalCenter: parent.verticalCenter
-        color: materialColors.colorAccentDark
-    }
-
-    RippleLayout {
-        mouseArea: baseModelNameArea
-        anchors.fill: base
+        color: materialStatics.colorAccentDark
     }
 
     MouseArea {

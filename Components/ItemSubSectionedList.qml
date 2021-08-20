@@ -28,7 +28,7 @@ Rectangle {
     Text {
         id: modelText
         text: le_text
-        color: materialColors.grey_60
+        color: materialStatics.grey_60
         anchors.top: modelName.bottom
         anchors.topMargin: 5
         anchors.left: image.right

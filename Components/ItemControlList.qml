@@ -31,13 +31,13 @@ Rectangle {
                         "qrc:/Drawables/" + ic_name + ".qml")
             sourceComponent = component
         }
-        onLoaded: listIconLoader.item.controller.fillColor = materialColors.grey_60
+        onLoaded: listIconLoader.item.controller.fillColor = materialStatics.grey_60
     }
 
     Text {
         text: name
         font.pixelSize: 18
-        color: materialColors.grey_60
+        color: materialStatics.grey_60
         anchors.verticalCenter: parent.verticalCenter
         anchors.left: listIconLoader.right
         anchors.leftMargin: 35

@@ -7,12 +7,12 @@ import "../Components/"
 Item {
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         CompSearchBar {
             id: searchBar
@@ -73,8 +73,8 @@ Item {
             CompBottomNavigation3 {
                 anchors.fill: parent
                 maxWidth: width
-                unFocusedColor: materialColors.teal_600
-                focusedColor: materialColors.teal_600
+                unFocusedColor: materialStatics.teal_600
+                focusedColor: materialStatics.teal_600
                 backgroundColor:"white"
                 currIndex: 1
                 model: [{

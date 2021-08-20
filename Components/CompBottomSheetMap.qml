@@ -26,7 +26,7 @@ Item {
                 width: 45
                 height: 10
                 radius: 8
-                color: materialColors.grey_10
+                color: materialStatics.grey_10
                 anchors.top: parent.top
                 anchors.topMargin: 20
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -50,7 +50,7 @@ Item {
                 anchors.left: title.left
                 width: 75
                 height: 15
-                color: materialColors.grey_10
+                color: materialStatics.grey_10
             }
             Text {
                 id: numberOfVotes
@@ -60,7 +60,7 @@ Item {
                 anchors.verticalCenter: ratingStars.verticalCenter
                 anchors.leftMargin: 10
                 font.pixelSize: 16
-                color: materialColors.grey_40
+                color: materialStatics.grey_40
             }
 
             Rectangle {
@@ -71,7 +71,7 @@ Item {
                 height: 1
                 anchors.top: numberOfVotes.bottom
                 anchors.topMargin: 5
-                color: materialColors.grey_10
+                color: materialStatics.grey_10
             }
 
             Text {
@@ -83,7 +83,7 @@ Item {
                 anchors.left: ratingStars.left
                 font.pixelSize: 22
                 font.bold: true
-                color: materialColors.colorPrimary
+                color: materialStatics.colorPrimary
             }
             Rectangle {
                 id: splitter2
@@ -93,7 +93,7 @@ Item {
                 height: 1
                 anchors.top: deallineTime.bottom
                 anchors.topMargin: 25
-                color: materialColors.grey_10
+                color: materialStatics.grey_10
             }
 
             Rectangle {

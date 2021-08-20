@@ -7,7 +7,7 @@ import ".."
 
 Pane {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     padding: 0
@@ -52,19 +52,19 @@ Pane {
 
                 Ic_Share {
                     baseShape.scale: 1.65
-                    controller.fillColor: materialColors.grey_40
+                    controller.fillColor: materialStatics.grey_40
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                 }
                 Ic_Bookmark {
                     baseShape.scale: 1.65
-                    controller.fillColor: materialColors.grey_40
+                    controller.fillColor: materialStatics.grey_40
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                 }
                 Ic_Favorites {
                     baseShape.scale: 1.65
-                    controller.fillColor: materialColors.grey_40
+                    controller.fillColor: materialStatics.grey_40
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                 }

@@ -7,12 +7,12 @@ import "../Components/"
 Item {
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         WipTab {
             id: tabStore

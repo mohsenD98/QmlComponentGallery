@@ -10,12 +10,12 @@ Item {
     clip: true
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_50
+        color: materialStatics.grey_50
 
         Text {
             id: lblButtons1
@@ -24,7 +24,7 @@ Item {
             anchors.left: parent.left
             anchors.topMargin: 20
             anchors.leftMargin: 20
-            color: materialColors.blue_grey_400
+            color: materialStatics.blue_grey_400
         }
         Rectangle {
             anchors.right: parent.right
@@ -32,7 +32,7 @@ Item {
             anchors.verticalCenter: lblButtons1.verticalCenter
             anchors.leftMargin: 20
             anchors.rightMargin: 20
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
 
@@ -70,7 +70,7 @@ Item {
             anchors.left: parent.left
             anchors.topMargin: 20
             anchors.leftMargin: 20
-            color: materialColors.blue_grey_400
+            color: materialStatics.blue_grey_400
         }
         Rectangle {
             anchors.right: parent.right
@@ -78,7 +78,7 @@ Item {
             anchors.verticalCenter: lblButtons2.verticalCenter
             anchors.leftMargin: 20
             anchors.rightMargin: 20
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
         CompButtonsToggleBasic {
@@ -144,7 +144,7 @@ Item {
             anchors.left: parent.left
             anchors.topMargin: 20
             anchors.leftMargin: 20
-            color: materialColors.blue_grey_400
+            color: materialStatics.blue_grey_400
         }
         Rectangle {
             anchors.right: parent.right
@@ -152,7 +152,7 @@ Item {
             anchors.verticalCenter: lblButtons3.verticalCenter
             anchors.leftMargin: 20
             anchors.rightMargin: 20
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
 
@@ -189,7 +189,7 @@ Item {
             anchors.left: parent.left
             anchors.topMargin: 20
             anchors.leftMargin: 20
-            color: materialColors.blue_grey_400
+            color: materialStatics.blue_grey_400
         }
         Rectangle {
             anchors.right: parent.right
@@ -197,7 +197,7 @@ Item {
             anchors.verticalCenter: lblButtons4.verticalCenter
             anchors.leftMargin: 20
             anchors.rightMargin: 20
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
 

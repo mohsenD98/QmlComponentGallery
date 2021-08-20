@@ -15,7 +15,7 @@ Item {
     property bool longPressed: false
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Pane {
@@ -48,7 +48,7 @@ Item {
                 anchors.margins: 20
                 font.pixelSize: 18
                 font.bold: true
-                color: materialColors.grey_60
+                color: materialStatics.grey_60
                 wrapMode: Text.WordWrap
             }
 
@@ -59,7 +59,7 @@ Item {
                 anchors.right: parent.right
                 anchors.margins: 20
                 font.pixelSize: 16
-                color: materialColors.grey_40
+                color: materialStatics.grey_40
                 wrapMode: Text.WordWrap
             }
 

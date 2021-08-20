@@ -21,7 +21,7 @@ Rectangle {
     signal nextPageCalled
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Pane {
@@ -75,7 +75,7 @@ Rectangle {
                 id: next
                 height: 55
                 width: parent.width
-                color: materialColors.light_green_600
+                color: materialStatics.light_green_600
                 anchors.bottom: parent.bottom
 
                 MouseArea {

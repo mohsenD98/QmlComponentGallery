@@ -2,7 +2,6 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Window 2.12
 
-import "../Tools/"
 import "../Drawables/"
 
 Rectangle {
@@ -10,7 +9,7 @@ Rectangle {
     width: mainWindow.width - 16
     height: opened ? (subComponentList.height) + 80 : 50
     radius: 8
-    color: materialColors.grey_95
+    color: materialStatics.grey_95
     clip: true
 
     property bool opened: false
@@ -40,7 +39,7 @@ Rectangle {
         anchors.right: parent.right
         anchors.rightMargin: 24
         anchors.verticalCenter: parent.verticalCenter
-        controller.fillColor: materialColors.colorPrimary
+        controller.fillColor: materialStatics.colorPrimary
         controller.strokeColor: "transparent"
         controller.strokeWidth: 1
     }
@@ -54,7 +53,7 @@ Rectangle {
         anchors.right: dropDownIcon.left
         anchors.rightMargin: 10
         anchors.verticalCenter: parent.verticalCenter
-        color: materialColors.colorAccentDark
+        color: materialStatics.colorAccentDark
     }
 
     MouseArea {
@@ -126,7 +125,7 @@ Rectangle {
                         "qrc:/Drawables/" + ic_name + ".qml")
             sourceComponent = component
         }
-        onLoaded: listIconLoader.item.controller.fillColor = materialColors.colorPrimary
+        onLoaded: listIconLoader.item.controller.fillColor = materialStatics.colorPrimary
     }
 
     Text {
@@ -139,9 +138,4 @@ Rectangle {
         font.pixelSize: 14
         font.bold: true
     }
-
-    //    RippleLayout {
-    //        mouseArea: itemMouseArea
-    //        anchors.fill: item
-    //    }
 }

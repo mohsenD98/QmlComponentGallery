@@ -9,19 +9,19 @@ Item {
     clip: true
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_10
+        color: materialStatics.grey_10
 
         Toolbar4 {
             id: searchBar
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialColors.colorPrimary
+            backgroundColor: materialStatics.colorPrimary
             toolbarHeight: 50
             clip: true
 

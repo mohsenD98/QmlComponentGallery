@@ -65,7 +65,7 @@ Rectangle {
         anchors.leftMargin: 20
         font.pixelSize: 18
         font.bold: true
-        color: materialColors.grey_60
+        color: materialStatics.grey_60
     }
     //    RippleLayout {
     //        mouseArea: itemMouseArea

@@ -7,12 +7,12 @@ import "../Components/"
 Item {
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         Rectangle {
             id: bottomNavigationBasicBox
@@ -30,8 +30,8 @@ Item {
             CompBottomNavigation3 {
                 anchors.fill: parent
                 maxWidth: width
-                unFocusedColor: materialColors.colorPrimary
-                focusedColor: materialColors.colorPrimary
+                unFocusedColor: materialStatics.colorPrimary
+                focusedColor: materialStatics.colorPrimary
                 backgroundColor: "white"
                 currIndex: 1
                 enableText: true

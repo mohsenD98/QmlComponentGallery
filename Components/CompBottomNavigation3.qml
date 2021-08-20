@@ -16,7 +16,7 @@ Item {
     signal currentNavIndexChanged(var newIndex)
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Component.onCompleted: {

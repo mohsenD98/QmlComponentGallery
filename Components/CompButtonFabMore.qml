@@ -22,7 +22,7 @@ Item {
     height: fab.height + options.height + 20
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Component.onCompleted: {

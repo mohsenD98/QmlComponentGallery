@@ -6,19 +6,19 @@ import "../Components/"
 
 Item {
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         Toolbar4 {
             id: searchBar
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialColors.colorPrimary
+            backgroundColor: materialStatics.colorPrimary
             toolbarHeight: 50
             clip: true
 
@@ -67,9 +67,9 @@ Item {
             CompBottomNavigation1 {
                 anchors.fill: parent
                 backgroundColor: "white"
-                unFocusedColor: materialColors.grey_40
+                unFocusedColor: materialStatics.grey_40
                 maxWidth: width
-                focusedColor: materialColors.colorPrimary
+                focusedColor: materialStatics.colorPrimary
                 currIndex: 1
                 model: [{
                         "name": "Home",

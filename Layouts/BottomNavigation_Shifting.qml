@@ -7,12 +7,12 @@ import "../Components/"
 Item {
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_5
+        color: materialStatics.grey_5
 
         CompSearchBar {
             id: searchBar
@@ -72,25 +72,25 @@ Item {
 
             CompBottomNavigation2 {
                 anchors.fill: parent
-                unFocusedColor: materialColors.grey_20
+                unFocusedColor: materialStatics.grey_20
                 focusedColor: "white"
                 maxWidth: width
                 currIndex: 0
                 model: [{
                         "name": "Movie & Tv",
-                        "backgroundColor": materialColors.blue_grey_700,
+                        "backgroundColor": materialStatics.blue_grey_700,
                         "icon": "qrc:/Drawables/Ic_Movie.qml"
                     }, {
                         "name": "Musics",
-                        "backgroundColor": materialColors.pink_800,
+                        "backgroundColor": materialStatics.pink_800,
                         "icon": "qrc:/Drawables/Ic_Music.qml"
                     }, {
                         "name": "Books",
-                        "backgroundColor": materialColors.grey_700,
+                        "backgroundColor": materialStatics.grey_700,
                         "icon": "qrc:/Drawables/Ic_Book.qml"
                     }, {
                         "name": "Newsland",
-                        "backgroundColor": materialColors.teal_800,
+                        "backgroundColor": materialStatics.teal_800,
                         "icon": "qrc:/Drawables/Ic_News.qml"
                     }]
 

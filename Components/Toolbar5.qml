@@ -9,7 +9,7 @@ Item {
     property real toolbarHeight
     property color backgroundColor
     Colors {
-        id: materialColors
+        id: materialStatics
     }
     height: toolbar.height
 

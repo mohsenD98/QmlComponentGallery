@@ -12,7 +12,7 @@ Rectangle {
 
     signal btnPressed(var value)
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Loader {

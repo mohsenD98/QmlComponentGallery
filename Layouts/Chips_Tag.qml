@@ -12,16 +12,16 @@ Item {
     signal draggingDown(var value)
     signal draggingUp(var value)
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Rectangle {
         anchors.fill: parent
-        color: materialColors.grey_10
+        color: materialStatics.grey_10
 
         GeneralToolBar {
             id: toolbar
-            backgroundColor: materialColors.colorPrimary
+            backgroundColor: materialStatics.colorPrimary
             iconsColor: "white"
             toolBarText: "Tag"
             leftIcon: "Ic_Menu"
@@ -49,7 +49,7 @@ Item {
             horizontalAlignment: Text.AlignVCenter
             anchors.left: parent.left
             anchors.leftMargin: 22
-            color: materialColors.grey_60
+            color: materialStatics.grey_60
         }
 
         TextEdit {
@@ -70,7 +70,7 @@ Item {
             anchors.topMargin: 10
             anchors.left: parent.left
             anchors.right: parent.right
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
         Text {
@@ -82,7 +82,7 @@ Item {
             horizontalAlignment: Text.AlignVCenter
             anchors.left: parent.left
             anchors.leftMargin: 22
-            color: materialColors.grey_60
+            color: materialStatics.grey_60
         }
 
         TextEdit {
@@ -101,7 +101,7 @@ Item {
             anchors.topMargin: 10
             anchors.left: parent.left
             anchors.right: parent.right
-            color: materialColors.grey_20
+            color: materialStatics.grey_20
             height: 1
         }
         Text {
@@ -113,7 +113,7 @@ Item {
             horizontalAlignment: Text.AlignVCenter
             anchors.left: parent.left
             anchors.leftMargin: 22
-            color: materialColors.grey_60
+            color: materialStatics.grey_60
         }
 
         TextEdit {

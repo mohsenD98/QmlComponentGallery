@@ -14,7 +14,7 @@ Item {
     signal currentNavIndexChanged(var newIndex)
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Component.onCompleted: {
@@ -37,7 +37,7 @@ Item {
     Rectangle {
         anchors.fill: parent
         color: !menuList.model.get(
-                   currIndex) ? materialColors.blue_grey_700 : menuList.model.get(
+                   currIndex) ? materialStatics.blue_grey_700 : menuList.model.get(
                                     currIndex)["le_background"]
         clip: true
 

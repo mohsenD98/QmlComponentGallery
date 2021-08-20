@@ -23,7 +23,7 @@ Item {
     signal currentToggleIndexChanged(var index, var value)
 
     Colors {
-        id: materialColors
+        id: materialStatics
     }
 
     Component.onCompleted: {
@@ -49,7 +49,7 @@ Item {
         anchors.leftMargin: 20
         y: optionList.y
         radius: 4
-        border.color: materialColors.grey_20
+        border.color: materialStatics.grey_20
         color: "transparent"
     }
 
