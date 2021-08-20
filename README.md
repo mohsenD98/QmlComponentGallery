@@ -41,10 +41,25 @@ Most of UI problem today is hard to convert UI design concept into native source
 * Chips
     - [ ] Basic    
     - [ ] Tag
-
-### WIP : 
-
 * Dialog View
+    - [ ] Basic
+    - [ ] FullScreen
+    - [ ] Custom
+    - [ ] Custom Info
+    - [ ] Custom Warning
+    - [ ] Custom Light
+    - [ ] Custom Dark
+    - [ ] Custom Add Post
+    - [ ] Custom Add Review
+    - [ ] GDPR Basic
+    - [ ] Term of Services
+    - [ ] Header
+    - [ ] Image
+    - [ ] Menu Payment
+    - [ ] Achivement
+    - [ ] Contact US
+
+### WIP :
 * Expansion Panels
 * Grid View
 * List View
