@@ -1,8 +1,10 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
+import QtQuick.Controls.Material 2.12
 
 
-import "../Components/"
+import "../../Components/"
+
 Item {
     clip: true
     property var applyTheme: "Light"
@@ -89,6 +91,18 @@ Item {
                     }
                 }
             }
+        }
+
+        Button {
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 100
+            anchors.horizontalCenter: parent.horizontalCenter
+            highlighted: true
+            Material.background: materialStatics.colorPrimary
+            text: "work in progress! - Back"
+            flat: true
+            onClicked: stackview.pop()
+            Material.accent: "white"
         }
     }
 }

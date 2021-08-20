@@ -111,7 +111,7 @@ Rectangle {
 
             onLayoutSelected: {
                 // call from main.qml
-                loadLayout(path)
+                loadLayout(name.split(" ").join("") + "/" + path)
             }
         }
     }

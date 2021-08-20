@@ -140,20 +140,8 @@
         <file>Tools/RippleLayout.qml</file>
         <file>Components/ItemSubList.qml</file>
         <file>Components/ListModelMainPage.qml</file>
-        <file>Layouts/BottomNavigation_Basic.qml</file>
         <file>Layouts/AppMainWindow.qml</file>
-        <file>Layouts/BottomNavigation_Shop.qml</file>
-        <file>Layouts/BottomNavigation_Shifting.qml</file>
-        <file>Layouts/BottomNavigation_Primary.qml</file>
-        <file>Layouts/BottomNavigation_MapBlue.qml</file>
-        <file>Layouts/BottomNavigation_Main.qml</file>
-        <file>Layouts/BottomNavigation_LightSimple.qml</file>
-        <file>Layouts/BottomNavigation_Light.qml</file>
-        <file>Layouts/BottomNavigation_Icon.qml</file>
-        <file>Layouts/BottomNavigation_Dark.qml</file>
-        <file>Layouts/BottomNavigation_Article.qml</file>
         <file>Components/CompSearchBar.qml</file>
-        <file>Layouts/TabStore1.qml</file>
         <file>Components/ItemStore1.qml</file>
         <file>Components/ItemStore2.qml</file>
         <file>Components/CompBottomNavigation1.qml</file>
@@ -163,14 +151,10 @@
         <file>Components/Toolbar2.qml</file>
         <file>Components/CompBottomNavigation3.qml</file>
         <file>Components/CompBottomNavigation4.qml</file>
-        <file>Layouts/TabStore2.qml</file>
         <file>Components/ItemStore3.qml</file>
         <file>Components/ItemCategories.qml</file>
         <file>Components/Toolbar3.qml</file>
-        <file>Layouts/TabArticle.qml</file>
-        <file>Layouts/TabStore3.qml</file>
         <file>Components/Toolbar4.qml</file>
-        <file>Layouts/TabStore4.qml</file>
         <file>Components/ItemCategories2.qml</file>
         <file>Drawables/Ic_WrapText.qml</file>
         <file>Drawables/Ic_Work.qml</file>
@@ -382,29 +366,12 @@
         <file>Drawables/Ic_NotificationsOutline.qml</file>
         <file>Drawables/Ic_Notifications.qml</file>
         <file>Components/CompBottomNavigation5.qml</file>
-        <file>Layouts/TabEmpty1.qml</file>
-        <file>Layouts/BottomSheet_Menu.qml</file>
-        <file>Layouts/BottomSheet_Map.qml</file>
-        <file>Layouts/BottomSheet_List.qml</file>
-        <file>Layouts/BottomSheet_Full.qml</file>
-        <file>Layouts/BottomSheet_Floating.qml</file>
-        <file>Layouts/BottomSheet_Filter.qml</file>
-        <file>Layouts/BottomSheet_Basic.qml</file>
         <file>Components/ListModelContactPeopel.qml</file>
         <file>Components/ItemListpPeople.qml</file>
-        <file>Layouts/TabPeoples.qml</file>
         <file>Components/CompBottomSheetBasic.qml</file>
         <file>Components/CompBottomSheetList.qml</file>
         <file>Components/ItemControlList.qml</file>
         <file>Components/CompBottomSheetMap.qml</file>
-        <file>Layouts/WipTab.qml</file>
-        <file>Layouts/Buttons_ToggleBasic.qml</file>
-        <file>Layouts/Buttons_ButtonInUtilities.qml</file>
-        <file>Layouts/Buttons_FabMoreText.qml</file>
-        <file>Layouts/Buttons_FabMore.qml</file>
-        <file>Layouts/Buttons_FabMiddle.qml</file>
-        <file>Layouts/Buttons_FabExtend.qml</file>
-        <file>Layouts/Buttons_Basic.qml</file>
         <file>images/ic_plus.png</file>
         <file>images/ic_mic.png</file>
         <file>images/ic_logo4.png</file>
@@ -412,7 +379,6 @@
         <file>images/ic_logo1.png</file>
         <file>images/ic_create.png</file>
         <file>Components/ListModelDatedList.qml</file>
-        <file>Layouts/TabSectionedList.qml</file>
         <file>Components/ItemListSectionedList.qml</file>
         <file>Components/ItemSubSectionedList.qml</file>
         <file>Components/CompButtonFabMore.qml</file>
@@ -432,13 +398,6 @@
         <file>images/img_wizard_3.png</file>
         <file>images/img_wizard_2.png</file>
         <file>images/img_wizard_1.png</file>
-        <file>Layouts/Cards_WizardOverlap.qml</file>
-        <file>Layouts/Cards_WizardLight.qml</file>
-        <file>Layouts/Cards_Wizard.qml</file>
-        <file>Layouts/Cards_Timeline.qml</file>
-        <file>Layouts/Cards_Overlap.qml</file>
-        <file>Layouts/Cards_Chackable.qml</file>
-        <file>Layouts/Cards_Basic.qml</file>
         <file>Components/CompCardsBasicModel1.qml</file>
         <file>Components/CompCardsBasicModel2.qml</file>
         <file>Components/CompCardsBasicModel3.qml</file>
@@ -451,24 +410,65 @@
         <file>Components/CompCardsWizard1.qml</file>
         <file>Components/CompCardsWizard2.qml</file>
         <file>Components/CompCardsWizard3.qml</file>
-        <file>Layouts/Dialogs_TermofServices.qml</file>
-        <file>Layouts/Dialogs_Image.qml</file>
-        <file>Layouts/Dialogs_Header.qml</file>
-        <file>Layouts/Dialogs_GDPRBasic.qml</file>
-        <file>Layouts/Dialogs_Fullscreen.qml</file>
-        <file>Layouts/Dialogs_CustomWarning.qml</file>
-        <file>Layouts/Dialogs_CustomLight.qml</file>
-        <file>Layouts/Dialogs_CustomInfo.qml</file>
-        <file>Layouts/Dialogs_CustomDark.qml</file>
-        <file>Layouts/Dialogs_CustomAddReview.qml</file>
-        <file>Layouts/Dialogs_CustomAddPost.qml</file>
-        <file>Layouts/Dialogs_Custom.qml</file>
-        <file>Layouts/Dialogs_ContactUs.qml</file>
-        <file>Layouts/Dialogs_Basic.qml</file>
-        <file>Layouts/Dialogs_Achievement.qml</file>
-        <file>Layouts/Chips_Tag.qml</file>
-        <file>Layouts/Chips_Basic.qml</file>
-        <file>Layouts/Dialogs_MenuPayment.qml</file>
         <file>Components/GeneralToolBar.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Article.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Basic.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Dark.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Icon.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Light.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_LightSimple.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Main.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_MapBlue.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Primary.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Shifting.qml</file>
+        <file>Layouts/BottomNavigation/BottomNavigation_Shop.qml</file>
+        <file>Layouts/BottomSheet/BottomSheet_Basic.qml</file>
+        <file>Layouts/BottomSheet/BottomSheet_Filter.qml</file>
+        <file>Layouts/BottomSheet/BottomSheet_Floating.qml</file>
+        <file>Layouts/BottomSheet/BottomSheet_Full.qml</file>
+        <file>Layouts/BottomSheet/BottomSheet_List.qml</file>
+        <file>Layouts/BottomSheet/BottomSheet_Map.qml</file>
+        <file>Layouts/BottomSheet/BottomSheet_Menu.qml</file>
+        <file>Layouts/Buttons/Buttons_Basic.qml</file>
+        <file>Layouts/Buttons/Buttons_ButtonInUtilities.qml</file>
+        <file>Layouts/Buttons/Buttons_FabExtend.qml</file>
+        <file>Layouts/Buttons/Buttons_FabMiddle.qml</file>
+        <file>Layouts/Buttons/Buttons_FabMore.qml</file>
+        <file>Layouts/Buttons/Buttons_FabMoreText.qml</file>
+        <file>Layouts/Buttons/Buttons_ToggleBasic.qml</file>
+        <file>Layouts/Cards/Cards_Basic.qml</file>
+        <file>Layouts/Cards/Cards_Chackable.qml</file>
+        <file>Layouts/Cards/Cards_Overlap.qml</file>
+        <file>Layouts/Cards/Cards_Timeline.qml</file>
+        <file>Layouts/Cards/Cards_Wizard.qml</file>
+        <file>Layouts/Cards/Cards_WizardLight.qml</file>
+        <file>Layouts/Cards/Cards_WizardOverlap.qml</file>
+        <file>Layouts/Chips/Chips_Basic.qml</file>
+        <file>Layouts/Chips/Chips_Tag.qml</file>
+        <file>Layouts/Dialogs/Dialogs_Achievement.qml</file>
+        <file>Layouts/Dialogs/Dialogs_Basic.qml</file>
+        <file>Layouts/Dialogs/Dialogs_ContactUs.qml</file>
+        <file>Layouts/Dialogs/Dialogs_Custom.qml</file>
+        <file>Layouts/Dialogs/Dialogs_CustomAddPost.qml</file>
+        <file>Layouts/Dialogs/Dialogs_CustomAddReview.qml</file>
+        <file>Layouts/Dialogs/Dialogs_CustomDark.qml</file>
+        <file>Layouts/Dialogs/Dialogs_CustomInfo.qml</file>
+        <file>Layouts/Dialogs/Dialogs_CustomLight.qml</file>
+        <file>Layouts/Dialogs/Dialogs_CustomWarning.qml</file>
+        <file>Layouts/Dialogs/Dialogs_Fullscreen.qml</file>
+        <file>Layouts/Dialogs/Dialogs_GDPRBasic.qml</file>
+        <file>Layouts/Dialogs/Dialogs_Header.qml</file>
+        <file>Layouts/Dialogs/Dialogs_Image.qml</file>
+        <file>Layouts/Dialogs/Dialogs_MenuPayment.qml</file>
+        <file>Layouts/Dialogs/Dialogs_TermofServices.qml</file>
+        <file>Layouts/WipTab.qml</file>
+        <file>Layouts/TabStore4.qml</file>
+        <file>Layouts/TabStore3.qml</file>
+        <file>Layouts/TabStore2.qml</file>
+        <file>Layouts/TabStore1.qml</file>
+        <file>Layouts/TabSectionedList.qml</file>
+        <file>Layouts/TabPeoples.qml</file>
+        <file>Layouts/TabEmpty1.qml</file>
+        <file>Layouts/TabArticle.qml</file>
     </qresource>
 </RCC>

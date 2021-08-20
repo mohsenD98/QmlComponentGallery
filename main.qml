@@ -63,6 +63,7 @@ Window {
 
     function loadLayout(path) {
         var absPath = "qrc:/Layouts/" + path
+        console.log("loading : ", absPath)
         var component = Qt.createComponent(absPath)
         stackview.push(component)
     }

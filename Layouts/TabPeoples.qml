@@ -4,7 +4,6 @@ import QtQuick.Controls 2.12
 
 import "../Components/"
 
-
 Item {
     clip: true
     property var applyTheme: "Light"
