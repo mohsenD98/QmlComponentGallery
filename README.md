@@ -2,6 +2,10 @@
 
 Most of UI problem today is hard to convert UI design concept into native source code. So we try to explore and research Qt-Qml-Android material design UI as similar as its guidelines design.
 
+# Note : 
+work is on process .. don't forget **Star** :)    
+if you what to help me open an Issue about the part you want to work on so we can discuss it further also you can text me in telegram or Mail!
+
 ### Feature : 
 * Bottom Navigation    
     - [x] Basic
