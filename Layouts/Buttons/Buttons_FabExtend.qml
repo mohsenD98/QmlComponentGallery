@@ -38,6 +38,7 @@ Item {
             Component.onCompleted: {
                 width = width * 1.35
             }
+            onClicked: stackview.pop()
         }
     }
 }

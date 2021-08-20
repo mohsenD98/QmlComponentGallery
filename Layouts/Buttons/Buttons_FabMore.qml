@@ -10,26 +10,23 @@ Item {
         anchors.fill: parent
         color: materialStatics.grey_5
 
-        Toolbar4 {
-            id: searchBar
+        GeneralToolBar {
+            id: toolbar
+            backgroundColor: materialStatics.colorPrimary
+            iconsColor: "white"
+            toolBarText: "Qml Gallery"
+            leftIcon: "Ic_Menu"
+            rightIconLeft: "Ic_Notifications"
+            rightIconRight: "Ic_MoreVert"
+
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
-            backgroundColor: materialStatics.colorPrimary
-            toolbarHeight: 50
-            height: 50
-            clip: true
-
-            Behavior on height {
-                NumberAnimation {
-                    duration: 100
-                }
-            }
         }
 
         TabSectionedList {
             id: tabSectionList
-            anchors.top: searchBar.bottom
+            anchors.top: toolbar.bottom
             anchors.bottom: parent.bottom
             anchors.left: parent.left
             anchors.right: parent.right

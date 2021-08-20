@@ -346,6 +346,7 @@ Item {
                     icon.width: 50
                     icon.height: 50
                     icon.color: "black"
+                    onClicked: stackview.pop()
                 }
             }
             Rectangle {
@@ -361,6 +362,7 @@ Item {
                     height: 80
                     icon.width: 50
                     icon.height: 50
+                    onClicked: stackview.pop()
                 }
             }
             Rectangle {
@@ -376,6 +378,7 @@ Item {
                     height: 80
                     icon.width: 50
                     icon.height: 50
+                    onClicked: stackview.pop()
                 }
             }
         }
