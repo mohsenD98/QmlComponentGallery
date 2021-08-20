@@ -3,7 +3,6 @@ import QtQuick.Window 2.12
 import QtQuick.Shapes 1.12
 
 import "../Drawables/"
-import "../"
 import "../Tools/"
 
 Item {
