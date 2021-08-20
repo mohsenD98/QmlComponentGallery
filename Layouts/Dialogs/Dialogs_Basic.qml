@@ -53,7 +53,7 @@ Item {
                 }
                 ListElement {
                     le_name: "MULTIPLE CHOICE GIALOG"
-                    le_component: "qrc:/Components/CompDialogBasicConfirmation.qml"
+                    le_component: "qrc:/Components/CompDialogBasicChackBox.qml"
                 }
             }
 
@@ -83,15 +83,23 @@ Item {
                     id: radioDialogs
                     radioNames: "option1,option2,option3"
                 }
+                CompDialogBasicChackBox {
+                    id: radicheckboxesDialogs
+                    radioNames: "option1,option2,option3"
+                }
 
                 MouseArea {
                     id: optionMouseArea
                     anchors.fill: parent
 
                     onClicked: {
-
                         if (le_name === "SINGLE DIALOG") {
                             radioDialogs.popupController.open()
+                            return
+                        }
+
+                        if (le_name === "MULTIPLE CHOICE GIALOG") {
+                            radicheckboxesDialogs.popupController.open()
                             return
                         }
 
