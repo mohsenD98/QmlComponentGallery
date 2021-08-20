@@ -462,5 +462,6 @@
         <file>Layouts/TabEmpty1.qml</file>
         <file>Layouts/TabArticle.qml</file>
         <file>Layouts/Dialogs/Dialogs_FantasticMaterials.qml</file>
+        <file>Components/CompDialogBasicConfirmation.qml</file>
     </qresource>
 </RCC>

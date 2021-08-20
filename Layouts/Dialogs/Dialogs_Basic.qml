@@ -8,6 +8,7 @@ import "../../Tools/"
 import "../"
 
 Item {
+    id: rootItem
     clip: true
     property var applyTheme: "Light"
     signal draggingDown(var value)
@@ -40,15 +41,19 @@ Item {
             model: ListModel {
                 ListElement {
                     le_name: "CONFIRMATION Diallog"
+                    le_component: "qrc:/Components/CompDialogBasicConfirmation.qml"
                 }
                 ListElement {
                     le_name: "ALERT DIALOG"
+                    le_component: "qrc:/Components/CompDialogBasicConfirmation.qml"
                 }
                 ListElement {
                     le_name: "SINGLE DIALOG"
+                    le_component: "qrc:/Components/CompDialogBasicConfirmation.qml"
                 }
                 ListElement {
                     le_name: "MULTIPLE CHOICE GIALOG"
+                    le_component: "qrc:/Components/CompDialogBasicConfirmation.qml"
                 }
             }
 
@@ -77,6 +82,14 @@ Item {
                 MouseArea {
                     id: optionMouseArea
                     anchors.fill: parent
+
+                    onClicked: {
+                        var component = Qt.createComponent(le_component)
+                        if (component.status === Component.Ready) {
+                            var dialog = component.createObject(rootItem)
+                            dialog.popupController.open()
+                        }
+                    }
                 }
                 RippleLayout {
                     mouseArea: optionMouseArea
