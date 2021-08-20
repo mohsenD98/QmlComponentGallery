@@ -465,5 +465,6 @@
         <file>Components/CompDialogBasicConfirmation.qml</file>
         <file>Components/CompDialogBasicRadios.qml</file>
         <file>Components/CompDialogBasicChackBox.qml</file>
+        <file>Components/CompDialogMaterialCustomInfo.qml</file>
     </qresource>
 </RCC>

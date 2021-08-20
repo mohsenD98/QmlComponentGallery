@@ -8,6 +8,7 @@ import "../../Tools/"
 import "../"
 
 Item {
+    id: rootItem
     clip: true
     property var applyTheme: "Light"
     signal draggingDown(var value)
@@ -21,7 +22,7 @@ Item {
             id: toolbar
             backgroundColor: materialStatics.colorPrimary
             iconsColor: "white"
-            toolBarText: "BASIC"
+            toolBarText: "Material Dialogs !"
             leftIcon: "Ic_Menu"
             rightIconLeft: "Ic_Search"
             rightIconRight: "Ic_MoreVert"
@@ -39,16 +40,48 @@ Item {
 
             model: ListModel {
                 ListElement {
-                    le_name: "CONFIRMATION Diallog"
+                    le_name: "CUSTOM INFO DIALOG"
+                    le_index: 0
                 }
+
                 ListElement {
-                    le_name: "ALERT DIALOG"
+                    le_name: "CUSTOM WARNING DIALOG"
+                    le_index: 1
                 }
+
                 ListElement {
-                    le_name: "SINGLE DIALOG"
+                    le_name: "CUSTOM LIGHT DIALOG"
+                    le_index: 2
                 }
+
                 ListElement {
-                    le_name: "MULTIPLE CHOICE GIALOG"
+                    le_name: "CUSTOM DARK DIALOG"
+                    le_index: 3
+                }
+
+                ListElement {
+                    le_name: "HEADER DIALOG"
+                    le_index: 4
+                }
+
+                ListElement {
+                    le_name: "IMAGE DIALOG"
+                    le_index: 5
+                }
+
+                ListElement {
+                    le_name: "MENU PAYMENT DIALOG"
+                    le_index: 6
+                }
+
+                ListElement {
+                    le_name: "ACHIEVEMENT DIALOG"
+                    le_index: 7
+                }
+
+                ListElement {
+                    le_name: "CONTACT US DIALOG"
+                    le_index: 8
                 }
             }
 
@@ -73,10 +106,22 @@ Item {
                     color: materialStatics.grey_60
                     opacity: 0.3
                 }
+                CompDialogMaterialCustomInfo {
+                    id: customInfoDialog
+                }
 
                 MouseArea {
                     id: optionMouseArea
                     anchors.fill: parent
+
+                    onClicked: {
+                        console.log("index : ", le_index)
+                        switch (le_index) {
+                        case 0:
+                            customInfoDialog.popupController.open()
+                            break
+                        }
+                    }
                 }
                 RippleLayout {
                     mouseArea: optionMouseArea
