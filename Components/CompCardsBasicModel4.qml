@@ -3,12 +3,9 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
 
 Pane {
-    Colors {
-        id: materialColors
-    }
+
 
     padding: 0
     Material.elevation: 6
@@ -35,7 +32,7 @@ Pane {
             id: splitter1
             height: 1
             width: parent.width
-            color: materialColors.grey_40
+            color: materialStatics.grey_40
             anchors.top: title.bottom
             anchors.topMargin: 16
         }

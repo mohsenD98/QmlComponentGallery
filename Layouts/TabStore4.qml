@@ -1,17 +1,13 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
-import "../Components/"
 
+import "../Components/"
 Item {
     clip: true
     property var applyTheme: "Light"
     signal draggingDown(var value)
     signal draggingUp(var value)
-    Colors {
-        id: materialColors
-    }
 
     Flickable {
         anchors.fill: parent
@@ -49,7 +45,7 @@ Item {
                 anchors.right: parent.right
                 anchors.left: parent.left
                 height: .5 * width > 240 ? 240 : .5 * width
-                color: materialColors.colorPrimary
+                color: materialStatics.colorPrimary
                 radius: 20
                 clip: true
                 Image {
@@ -61,7 +57,7 @@ Item {
 
                 Rectangle {
                     anchors.fill: parent
-                    color: materialColors.overlay_dark_40
+                    color: materialStatics.overlay_dark_40
                 }
                 Text {
                     text: "Browse Through Million of Products\nin Many Category"

@@ -3,7 +3,7 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     property alias controller: bottomSheetBox
@@ -29,7 +29,7 @@ Item {
                 anchors.leftMargin: 20
                 anchors.topMargin: 40
                 font.pixelSize: 20
-                color: materialColors.grey_90
+                color: materialStatics.grey_90
             }
 
             Text {
@@ -42,7 +42,7 @@ Item {
                 anchors.rightMargin: 20
                 font.pixelSize: 16
                 wrapMode: Text.WordWrap
-                color: materialColors.grey_60
+                color: materialStatics.grey_60
             }
 
             Button {
@@ -54,7 +54,7 @@ Item {
                 anchors.rightMargin: 20
                 text: "Details"
                 highlighted: true
-                Material.background: materialColors.colorPrimary
+                Material.background: materialStatics.colorPrimary
             }
 
             Button {

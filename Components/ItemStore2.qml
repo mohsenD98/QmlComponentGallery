@@ -28,7 +28,7 @@ Rectangle {
 
         Text {
             id: descText
-            color: materialColors.grey_90
+            color: materialStatics.grey_90
             font.pixelSize: 16
             font.bold: true
             text: le_name

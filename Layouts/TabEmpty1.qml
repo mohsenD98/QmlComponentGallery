@@ -1,17 +1,14 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
-import "../Components/"
 
+import "../Components/"
 Item {
     clip: true
     property var applyTheme: "Light"
     signal draggingDown(var value)
     signal draggingUp(var value)
-    Colors {
-        id: materialColors
-    }
+
 
     Rectangle {
         id: storeBox
@@ -30,7 +27,7 @@ Item {
                     width: 75
                     height: 75
                     radius: 75
-                    color: materialColors.grey_20
+                    color: materialStatics.grey_20
                 }
                 Rectangle {
                     width: 200
@@ -43,17 +40,17 @@ Item {
                         Rectangle {
                             width: 75
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 175
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 30
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                     }
                 }
@@ -64,7 +61,7 @@ Item {
                     width: 75
                     height: 75
                     radius: 75
-                    color: materialColors.grey_20
+                    color: materialStatics.grey_20
                 }
                 Rectangle {
                     width: 200
@@ -77,17 +74,17 @@ Item {
                         Rectangle {
                             width: 75
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 175
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                         Rectangle {
                             width: 30
                             height: 15
-                            color: materialColors.grey_20
+                            color: materialStatics.grey_20
                         }
                     }
                 }

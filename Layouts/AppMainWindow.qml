@@ -5,14 +5,17 @@ import QtGraphicalEffects 1.0
 import "../Components/"
 
 Item {
-
-    Toolbar {
+    GeneralToolBar {
         id: toolbar
         anchors.top: parent.top
-        anchors.right: parent.right
         anchors.left: parent.left
-        height: toolbarHeight
-        toolbarHeight: 50
+        anchors.right: parent.right
+        backgroundColor: materialStatics.grey_100_
+        iconsColor: "white"
+        toolBarText: "Qml Gallery"
+        leftIcon: "Ic_Menu"
+        rightIconLeft: "Ic_Notifications"
+        rightIconRight: "Ic_Search"
         clip: true
     }
 
@@ -28,19 +31,19 @@ Item {
         ColorOverlay {
             anchors.fill: ic_app
             source: ic_app
-            color: materialColors.colorPrimary
+            color: materialStatics.colorPrimary
         }
     }
 
     Rectangle {
         id: spliter
+        height: 1
         anchors.top: ic_app.bottom
         anchors.topMargin: 25
         anchors.right: parent.right
         anchors.left: parent.left
         anchors.margins: 8
-        height: 1
-        color: materialColors.colorPrimaryDark
+        color: materialStatics.colorPrimaryDark
         opacity: .15
     }
 

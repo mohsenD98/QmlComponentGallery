@@ -4,14 +4,9 @@ import QtQuick.Controls.Material 2.12
 import QtGraphicalEffects 1.0
 
 import "../Drawables/"
-import ".."
 import "../Tools/"
 
 Pane {
-    Colors {
-        id: materialColors
-    }
-
     padding: 0
     Material.elevation: 6
     property var imageSource
@@ -72,7 +67,7 @@ Pane {
                 }
                 Text {
                     text: "June 1, 2015"
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     font.pixelSize: 16
                 }
             }
@@ -89,7 +84,7 @@ Pane {
                 text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin"
                 font.pixelSize: 18
                 font.weight: Font.Medium
-                color: materialColors.grey_60
+                color: materialStatics.grey_60
             }
         }
 
@@ -139,14 +134,14 @@ Pane {
                     anchors.left: parent.left
                     anchors.leftMargin: 20
                     baseShape.scale: 1.5
-                    controller.fillColor: materialColors.grey_60
+                    controller.fillColor: materialStatics.grey_60
                     anchors.verticalCenter: parent.verticalCenter
                 }
                 Ic_Share {
                     anchors.left: favorites.right
                     anchors.leftMargin: 35
                     baseShape.scale: 1.5
-                    controller.fillColor: materialColors.grey_60
+                    controller.fillColor: materialStatics.grey_60
                     anchors.verticalCenter: parent.verticalCenter
                 }
                 Text {
@@ -155,14 +150,14 @@ Pane {
                     font.pixelSize: 20
                     anchors.right: parent.right
                     anchors.rightMargin: 20
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     anchors.verticalCenter: parent.verticalCenter
                 }
                 Ic_Comment {
                     anchors.right: count.left
                     anchors.rightMargin: 35
                     baseShape.scale: 1.5
-                    controller.fillColor: materialColors.grey_60
+                    controller.fillColor: materialStatics.grey_60
                     anchors.verticalCenter: parent.verticalCenter
                 }
             }
@@ -174,7 +169,7 @@ Pane {
                 width: parent.width
                 anchors.bottom: undefined
                 clip: true
-                color: materialColors.grey_3
+                color: materialStatics.grey_3
 
                 Behavior on height {
                     NumberAnimation {
@@ -222,7 +217,7 @@ Pane {
                                 }
                                 Text {
                                     text: qsTr("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin")
-                                    color: materialColors.grey_60
+                                    color: materialStatics.grey_60
                                     font.pixelSize: 16
                                     width: parent.width - 20
                                     height: 80
@@ -263,7 +258,7 @@ Pane {
                                 }
                                 Text {
                                     text: qsTr("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin")
-                                    color: materialColors.grey_60
+                                    color: materialStatics.grey_60
                                     font.pixelSize: 16
                                     width: parent.width - 20
                                     height: 80
@@ -309,7 +304,7 @@ Pane {
                     wrapMode: Text.WordWrap
                     anchors.top: repName.bottom
                     anchors.topMargin: 10
-                    color: materialColors.grey_60
+                    color: materialStatics.grey_60
                     anchors.left: parent.left
                     anchors.right: parent.right
                     height: lineHeight * 2
@@ -323,7 +318,7 @@ Pane {
                 anchors.right: parent.right
                 anchors.left: parent.left
                 height: 1
-                color: materialColors.grey_20
+                color: materialStatics.grey_20
             }
         }
     }

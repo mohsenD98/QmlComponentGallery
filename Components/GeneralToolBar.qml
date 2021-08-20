@@ -3,7 +3,6 @@ import QtQuick.Window 2.12
 import QtQuick.Shapes 1.12
 
 import "../Drawables/"
-import "../"
 import "../Tools/"
 
 Item {
@@ -16,10 +15,6 @@ Item {
     property var rightIconLeft
     property var rightIconRight
     property var shapeScales: 1.25
-
-    Colors {
-        id: materialColors
-    }
 
     Rectangle {
         id: toolbar

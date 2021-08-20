@@ -12,12 +12,12 @@ Window {
     width: 480
     height: 720
     title: qsTr("Qml Gallery")
-    color: materialColors.grey_100_
+    color: materialStatics.grey_100_
     flags: Qt.Window | Qt.WindowTitleHint | Qt.WindowSystemMenuHint
            | (Qt.platform.os === "ios" ? Qt.MaximizeUsingFullscreenGeometryHint : 0)
 
-    Colors {
-        id: materialColors
+    Materials {
+        id: materialStatics
     }
 
     StackView {
@@ -63,6 +63,7 @@ Window {
 
     function loadLayout(path) {
         var absPath = "qrc:/Layouts/" + path
+        console.log("loading : ", absPath)
         var component = Qt.createComponent(absPath)
         stackview.push(component)
     }

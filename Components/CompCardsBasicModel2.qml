@@ -3,12 +3,10 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Pane {
-    Colors {
-        id: materialColors
-    }
+
 
     padding: 0
     Material.elevation: 6
@@ -52,19 +50,19 @@ Pane {
 
                 Ic_Share {
                     baseShape.scale: 1.65
-                    controller.fillColor: materialColors.grey_40
+                    controller.fillColor: materialStatics.grey_40
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                 }
                 Ic_Bookmark {
                     baseShape.scale: 1.65
-                    controller.fillColor: materialColors.grey_40
+                    controller.fillColor: materialStatics.grey_40
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                 }
                 Ic_Favorites {
                     baseShape.scale: 1.65
-                    controller.fillColor: materialColors.grey_40
+                    controller.fillColor: materialStatics.grey_40
                     controller.strokeColor: "transparent"
                     controller.strokeWidth: 1
                 }

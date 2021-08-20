@@ -2,7 +2,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     property color focusedColor
@@ -13,9 +13,6 @@ Item {
 
     signal currentNavIndexChanged(var newIndex)
 
-    Colors {
-        id: materialColors
-    }
 
     Component.onCompleted: {
         for (var i = 0; i < model.length; ++i) {
@@ -37,7 +34,7 @@ Item {
     Rectangle {
         anchors.fill: parent
         color: !menuList.model.get(
-                   currIndex) ? materialColors.blue_grey_700 : menuList.model.get(
+                   currIndex) ? materialStatics.blue_grey_700 : menuList.model.get(
                                     currIndex)["le_background"]
         clip: true
 

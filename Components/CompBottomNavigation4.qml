@@ -2,7 +2,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     property color focusedColor
@@ -14,9 +14,6 @@ Item {
 
     signal currentNavIndexChanged(var newIndex)
 
-    Colors {
-        id: materialColors
-    }
     Rectangle {
         anchors.bottom: parent.bottom
         height: 50

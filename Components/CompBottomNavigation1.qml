@@ -2,7 +2,7 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     property color backgroundColor
@@ -14,10 +14,6 @@ Item {
     property bool enableText: true
 
     signal currentNavIndexChanged(var newIndex)
-
-    Colors {
-        id: materialColors
-    }
 
     Component.onCompleted: {
         for (var i = 0; i < model.length; ++i) {
@@ -49,7 +45,7 @@ Item {
             clip: true
             model: ListModel {}
             delegate: ItemBottomNavigation1 {
-                enableTxt:enableText
+                enableTxt: enableText
                 width: maxWidth / menuList.model.count
                 onBtnPressed: {
                     for (var i = 0; i < menuList.model.count; ++i) {

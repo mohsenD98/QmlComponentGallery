@@ -1,19 +1,14 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
-import "../Components/"
 
+import "../Components/"
 Item {
     clip: true
     property var applyTheme: "Light"
     signal draggingDown(var value)
     signal draggingUp(var value)
     signal personClicked(var name)
-
-    Colors {
-        id: materialColors
-    }
 
     ListView {
         id: contactList

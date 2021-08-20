@@ -1,17 +1,13 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
-import "../Components/"
 
+import "../Components/"
 Item {
     clip: true
     property var applyTheme: "Light"
     signal draggingDown(var value)
     signal draggingUp(var value)
-    Colors {
-        id: materialColors
-    }
 
     Flickable {
         anchors.fill: parent
@@ -58,7 +54,7 @@ Item {
                 text: qsTr("More")
                 font.pixelSize: 13
                 anchors.right: parent.right
-                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
+                color: applyTheme === "Light" ? materialStatics.grey_60 : materialStatics.grey_20
             }
 
             Rectangle {
@@ -68,7 +64,7 @@ Item {
                 anchors.right: parent.right
                 anchors.left: parent.left
                 height: width / 1.8 > 266.66 ? 266.66 : width / 1.8
-                color: materialColors.colorPrimary
+                color: materialStatics.colorPrimary
                 radius: 20
                 clip: true
                 Image {
@@ -93,25 +89,25 @@ Item {
                         width: 4
                         height: width
                         radius: width
-                        color: materialColors.grey_20
+                        color: materialStatics.grey_20
                     }
                     Rectangle {
                         width: 4
                         height: width
                         radius: width
-                        color: materialColors.grey_20
+                        color: materialStatics.grey_20
                     }
                     Rectangle {
                         width: 4
                         height: width
                         radius: width
-                        color: materialColors.colorPrimaryLight
+                        color: materialStatics.colorPrimaryLight
                     }
                     Rectangle {
                         width: 4
                         height: width
                         radius: width
-                        color: materialColors.grey_20
+                        color: materialStatics.grey_20
                     }
                 }
             }
@@ -133,7 +129,7 @@ Item {
                 anchors.top: indicators.bottom
                 anchors.topMargin: 20
                 font.pixelSize: 13
-                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
+                color: applyTheme === "Light" ? materialStatics.grey_60 : materialStatics.grey_20
             }
 
             ListView {
@@ -193,7 +189,7 @@ Item {
                 anchors.top: featuredList.bottom
                 anchors.topMargin: 20
                 font.pixelSize: 13
-                color: applyTheme === "Light" ? materialColors.grey_60 : materialColors.grey_20
+                color: applyTheme === "Light" ? materialStatics.grey_60 : materialStatics.grey_20
             }
 
             Flow {

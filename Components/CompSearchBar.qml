@@ -2,13 +2,8 @@ import QtQuick 2.12
 import QtQuick.Controls 2.12
 
 import "../Drawables/"
-import ".."
 
 Item {
-    Colors {
-        id: materialColors
-    }
-
     Rectangle {
         anchors.fill: parent
         color: "white"
@@ -16,7 +11,7 @@ Item {
 
         Ic_Menu {
             id: menuBtn
-            controller.fillColor: materialColors.grey_60
+            controller.fillColor: materialStatics.grey_60
             anchors.left: parent.left
             anchors.leftMargin: 24
             anchors.verticalCenter: parent.verticalCenter
@@ -51,12 +46,12 @@ Item {
                 id: placeholder
                 text: "Search"
                 font.pixelSize: 18
-                color: materialColors.grey_60
+                color: materialStatics.grey_60
             }
         }
         Ic_Mic {
             id: micBtn
-            controller.fillColor: materialColors.grey_60
+            controller.fillColor: materialStatics.grey_60
             anchors.right: parent.right
             anchors.rightMargin: 24
             anchors.verticalCenter: parent.verticalCenter

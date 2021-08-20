@@ -3,12 +3,8 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
 
 Pane {
-    Colors {
-        id: materialColors
-    }
 
     padding: 0
     Material.elevation: 6
@@ -34,7 +30,7 @@ Pane {
             text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
             font.pixelSize: 20
             wrapMode: Text.WordWrap
-            color: materialColors.grey_10
+            color: materialStatics.grey_10
             anchors.top: title.bottom
             anchors.topMargin: 20
             anchors.left: parent.left

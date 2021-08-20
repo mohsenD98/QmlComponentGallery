@@ -4,7 +4,7 @@ import QtGraphicalEffects 1.0
 import QtQuick.Controls.Material 2.12
 
 import "../Drawables/"
-import ".."
+
 
 Item {
     width: 200
@@ -22,9 +22,6 @@ Item {
 
     signal currentToggleIndexChanged(var index, var value)
 
-    Colors {
-        id: materialColors
-    }
 
     Component.onCompleted: {
         for (var i = 0; i < model.length; ++i) {
@@ -49,7 +46,7 @@ Item {
         anchors.leftMargin: 20
         y: optionList.y
         radius: 4
-        border.color: materialColors.grey_20
+        border.color: materialStatics.grey_20
         color: "transparent"
     }
 

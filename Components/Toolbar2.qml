@@ -3,13 +3,11 @@ import QtQuick.Window 2.12
 import QtQuick.Shapes 1.12
 
 import "../Drawables/"
-import "../"
+
 
 Item {
     property real toolbarHeight
-    Colors {
-        id: materialColors
-    }
+
     height: toolbar.height
 
     Rectangle {
@@ -18,7 +16,7 @@ Item {
         anchors.right: parent.right
         anchors.left: parent.left
         height: toolbarHeight
-        color: materialColors.grey_900
+        color: materialStatics.grey_900
 
         Ic_Menu {
             id: ic_menu

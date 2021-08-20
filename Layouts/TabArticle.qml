@@ -1,7 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 
-import "../"
+
 import "../Components/"
 
 Item {
@@ -9,9 +9,7 @@ Item {
     property var applyTheme: "Light"
     signal draggingDown(var value)
     signal draggingUp(var value)
-    Colors {
-        id: materialColors
-    }
+
 
     Flickable {
         anchors.fill: parent
@@ -53,7 +51,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.WordWrap
-                color: applyTheme === "Dark" ? "white" : materialColors.grey_90
+                color: applyTheme === "Dark" ? "white" : materialStatics.grey_90
             }
 
             Text {
@@ -67,7 +65,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.WordWrap
-                color: applyTheme === "Dark" ? "white" : materialColors.grey_90
+                color: applyTheme === "Dark" ? "white" : materialStatics.grey_90
             }
             Rectangle {
                 id: splitter
@@ -76,7 +74,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 height: 1
-                color: materialColors.grey_20
+                color: materialStatics.grey_20
             }
             Text {
                 id: text1
@@ -88,7 +86,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.WordWrap
-                color: applyTheme === "Dark" ? "white" : materialColors.grey_80
+                color: applyTheme === "Dark" ? "white" : materialStatics.grey_80
             }
             Rectangle {
                 id: imageBox
@@ -97,7 +95,7 @@ Item {
                 anchors.right: parent.right
                 anchors.left: parent.left
                 height: width / 1.8 > 266.66 ? 266.66 : width / 1.8
-                color: materialColors.colorPrimary
+                color: materialStatics.colorPrimary
                 radius: 20
                 clip: true
                 Image {
@@ -119,7 +117,7 @@ Item {
                 Text {
                     anchors.centerIn: parent
                     text: "Image source : pexels.com"
-                    color: materialColors.grey_40
+                    color: materialStatics.grey_40
                 }
             }
 
@@ -133,7 +131,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.WordWrap
-                color: applyTheme === "Dark" ? "white" : materialColors.grey_80
+                color: applyTheme === "Dark" ? "white" : materialStatics.grey_80
             }
 
             Text {
@@ -147,7 +145,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.WordWrap
-                color: applyTheme === "Dark" ? "white" : materialColors.grey_90
+                color: applyTheme === "Dark" ? "white" : materialStatics.grey_90
             }
 
             Text {
@@ -160,7 +158,7 @@ Item {
                 anchors.left: parent.left
                 anchors.right: parent.right
                 wrapMode: Text.WordWrap
-                color: applyTheme === "Dark" ? "white" : materialColors.grey_90
+                color: applyTheme === "Dark" ? "white" : materialStatics.grey_90
             }
         }
     }

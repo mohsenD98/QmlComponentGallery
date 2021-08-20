@@ -3,7 +3,7 @@ import QtQuick.Controls 2.12
 
 import "../Drawables/"
 import "../Tools/"
-import ".."
+
 
 Rectangle {
     height: 50
@@ -13,9 +13,6 @@ Rectangle {
     signal btnPressed(var value)
     property bool enableTxt: true
 
-    Colors {
-        id: materialColors
-    }
 
     Loader {
         id: btnIconLoader
