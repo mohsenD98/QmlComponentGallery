@@ -49,7 +49,7 @@ Item {
                 }
                 ListElement {
                     le_name: "SINGLE DIALOG"
-                    le_component: "qrc:/Components/CompDialogBasicConfirmation.qml"
+                    le_component: "qrc:/Components/CompDialogBasicRadios.qml"
                 }
                 ListElement {
                     le_name: "MULTIPLE CHOICE GIALOG"
@@ -79,11 +79,22 @@ Item {
                     opacity: 0.3
                 }
 
+                CompDialogBasicRadios {
+                    id: radioDialogs
+                    radioNames: "option1,option2,option3"
+                }
+
                 MouseArea {
                     id: optionMouseArea
                     anchors.fill: parent
 
                     onClicked: {
+
+                        if (le_name === "SINGLE DIALOG") {
+                            radioDialogs.popupController.open()
+                            return
+                        }
+
                         var component = Qt.createComponent(le_component)
                         if (component.status === Component.Ready) {
 
@@ -94,6 +105,7 @@ Item {
                                 dialog.btnAcceptText = "Discard"
                                 dialog.btnDiscardText = "Cancel"
                             }
+
                             dialog.popupController.open()
                         }
                     }
