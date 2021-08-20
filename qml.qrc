@@ -469,5 +469,6 @@
         <file>Layouts/Chips_Tag.qml</file>
         <file>Layouts/Chips_Basic.qml</file>
         <file>Layouts/Dialogs_MenuPayment.qml</file>
+        <file>Components/GeneralToolBar.qml</file>
     </qresource>
 </RCC>
