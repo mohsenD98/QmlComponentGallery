@@ -3,9 +3,9 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 import QtGraphicalEffects 1.0
 
-
+import "../../Drawables/"
 import "../../Components/"
-import "../Drawables/"
+import "../"
 
 Item {
     clip: true

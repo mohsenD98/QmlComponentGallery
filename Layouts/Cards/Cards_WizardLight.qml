@@ -3,12 +3,11 @@ import QtQuick.Controls 2.12
 import QtQuick.Controls.Material 2.12
 import QtGraphicalEffects 1.0
 
-
 import "../../Components/"
+import "../"
 
 Item {
     clip: true
-
 
     Rectangle {
         anchors.fill: parent
