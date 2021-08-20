@@ -6,7 +6,8 @@ import QtQuick.Controls.Material 2.12
 Item {
     property alias popupController: popup
     property var pWidth: mainWindow.width - 50
-    property var pHeight: mainWindow.height / 3 > 240 ? 240 : mainWindow.height / 3
+    property var pHeight: title.height + 10 + 10 + body.height + 10 + btns.height + 10
+    // mainWindow.height / 3 > 240 ? 240 : mainWindow.height / 3
     property var titleText: "Use Google's location services ?"
     property var bodyText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur ipsum in placerat molestie.  Fusce quis mauris a enim sollicitudin"
     property var backgroundColor: "white"
@@ -52,6 +53,7 @@ Item {
             }
 
             Row {
+                id: btns
                 width: parent.width / 2
                 anchors.bottom: parent.bottom
                 anchors.bottomMargin: 10

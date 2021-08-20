@@ -86,7 +86,14 @@ Item {
                     onClicked: {
                         var component = Qt.createComponent(le_component)
                         if (component.status === Component.Ready) {
+
                             var dialog = component.createObject(rootItem)
+                            if (le_name === "ALERT DIALOG") {
+                                dialog.bodyText = ""
+                                dialog.titleText = "Discard Draft?"
+                                dialog.btnAcceptText = "Discard"
+                                dialog.btnDiscardText = "Cancel"
+                            }
                             dialog.popupController.open()
                         }
                     }
