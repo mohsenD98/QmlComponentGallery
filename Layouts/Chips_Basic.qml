@@ -4,6 +4,7 @@ import QtQuick.Controls.Material 2.12
 
 import "../"
 import "../Components/"
+import "../Drawables/"
 
 Item {
     clip: true
@@ -13,11 +14,13 @@ Item {
     Colors {
         id: materialColors
     }
+
     Rectangle {
         anchors.fill: parent
         color: materialColors.grey_10
 
         GeneralToolBar {
+            id: toolbar
             backgroundColor: materialColors.colorPrimary
             iconsColor: "white"
             toolBarText: "BASIC"
@@ -28,6 +31,95 @@ Item {
             anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
+        }
+
+        TextEdit {
+            id: textEdit
+            anchors.top: toolbar.bottom
+            anchors.topMargin: 20
+            width: parent.width
+            leftPadding: 65
+            horizontalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
+            font.pixelSize: 18
+
+            Text {
+                text: qsTr("To ")
+                font.pixelSize: 18
+                horizontalAlignment: Text.AlignVCenter
+                anchors.left: parent.left
+                anchors.leftMargin: 22
+                anchors.top: parent.top
+                color: materialColors.grey_60
+            }
+            Ic_Contacts {
+                anchors.right: parent.right
+                anchors.rightMargin: 22
+                anchors.top: parent.top
+                controller.fillColor: materialColors.colorAccent
+            }
+        }
+        Rectangle {
+            id: splitter1
+            anchors.top: textEdit.bottom
+            anchors.topMargin: 10
+            anchors.left: parent.left
+            anchors.right: parent.right
+            color: materialColors.grey_20
+            height: 1
+        }
+        TextEdit {
+            id: subjectText
+            anchors.top: splitter1.bottom
+            anchors.topMargin: 10
+            width: parent.width
+            leftPadding: 22
+            horizontalAlignment: Text.AlignVCenter
+            wrapMode: Text.WordWrap
+            font.pixelSize: 18
+
+            Text {
+                text: qsTr("Subject : ")
+                font.pixelSize: 18
+                horizontalAlignment: Text.AlignVCenter
+                anchors.left: parent.left
+                anchors.leftMargin: 22
+                anchors.top: parent.top
+                color: materialColors.grey_60
+                visible: subjectText.text === ""
+            }
+        }
+        Rectangle {
+            id: splitter2
+            anchors.top: subjectText.bottom
+            anchors.topMargin: 10
+            anchors.left: parent.left
+            anchors.right: parent.right
+            color: materialColors.grey_20
+            height: 1
+        }
+        TextEdit {
+            id: mainText
+            anchors.top: splitter2.bottom
+            anchors.topMargin: 10
+            anchors.left: parent.left
+            anchors.right: parent.right
+            anchors.rightMargin: 10
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 10
+            leftPadding: 22
+            font.pixelSize: 18
+            wrapMode: Text.WordWrap
+            Text {
+                text: qsTr("Compose Mail : ")
+                font.pixelSize: 18
+                horizontalAlignment: Text.AlignVCenter
+                anchors.left: parent.left
+                anchors.leftMargin: 22
+                anchors.top: parent.top
+                color: materialColors.grey_60
+                visible: mainText.text === ""
+            }
         }
     }
 }
