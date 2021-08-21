@@ -180,12 +180,15 @@ Item {
                     }
                 }
                 CompDialogMaterialCustomDark {
-                    anchors.fill: parent
                     id: customDarkDialog
+                    anchors.fill: parent
 
                     onCallClose: {
                         customDarkDialog.popupController.close()
                     }
+                }
+                CompDialogMaterialHeaderPolygon {
+                    id: headerPolygonDarkDialog
                 }
 
                 MouseArea {
@@ -206,6 +209,9 @@ Item {
                             break
                         case 3:
                             customDarkDialog.popupController.open()
+                            break
+                        case 4:
+                            headerPolygonDarkDialog.popupController.open()
                             break
                         }
                     }

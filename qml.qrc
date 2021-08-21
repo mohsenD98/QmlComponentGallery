@@ -469,5 +469,6 @@
         <file>Components/CompDialogMaterialCustomWarning.qml</file>
         <file>Components/CompDialogMaterialCustomLight.qml</file>
         <file>Components/CompDialogMaterialCustomDark.qml</file>
+        <file>Components/CompDialogMaterialHeaderPolygon.qml</file>
     </qresource>
 </RCC>
