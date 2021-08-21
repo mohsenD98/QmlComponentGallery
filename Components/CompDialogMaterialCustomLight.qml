@@ -16,10 +16,12 @@ Item {
     property var accentColor: materialStatics.red_300
     property var btnAcceptText: "Follow"
 
+    signal callClose
+
     Popup {
         id: popup
         x: 80 / 2
-        y: 0 //mainWindow.height - (mainWindow.height / 1.5) / 2
+        y: -100 //mainWindow.height - (mainWindow.height / 1.5) / 2
         width: pWidth
         height: pHeight
         modal: true
@@ -45,6 +47,11 @@ Item {
                         anchors.margins: 16
                         controller.fillColor: materialStatics.blue_grey_600
                         baseShape.scale: 1.25
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: callClose()
+                        }
                     }
 
                     Rectangle {
@@ -123,6 +130,11 @@ Item {
                             color: "white"
                             font.bold: true
                             font.family: materialStatics.fontFamily
+                        }
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: callClose()
                         }
                     }
                 }

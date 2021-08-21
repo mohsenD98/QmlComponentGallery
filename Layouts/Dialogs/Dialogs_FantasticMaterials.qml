@@ -106,15 +106,29 @@ Item {
                     color: materialStatics.grey_60
                     opacity: 0.3
                 }
+
                 CompDialogMaterialCustomInfo {
                     id: customInfoDialog
                 }
+
                 CompDialogMaterialCustomWarning {
                     id: customWarningDialog
                 }
 
                 CompDialogMaterialCustomLight {
                     id: customLightDialog
+
+                    onCallClose: {
+                        customLightDialog.popupController.close()
+                    }
+                }
+                CompDialogMaterialCustomDark {
+                    anchors.fill: parent
+                    id: customDarkDialog
+
+                    onCallClose: {
+                        customDarkDialog.popupController.close()
+                    }
                 }
 
                 MouseArea {
@@ -132,6 +146,9 @@ Item {
                             break
                         case 2:
                             customLightDialog.popupController.open()
+                            break
+                        case 3:
+                            customDarkDialog.popupController.open()
                             break
                         }
                     }
