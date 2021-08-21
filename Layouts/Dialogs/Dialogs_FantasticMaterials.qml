@@ -110,7 +110,11 @@ Item {
                     id: customInfoDialog
                 }
                 CompDialogMaterialCustomWarning {
-                    id: customInfoDialogWarning
+                    id: customWarningDialog
+                }
+
+                CompDialogMaterialCustomLight {
+                    id: customLightDialog
                 }
 
                 MouseArea {
@@ -124,7 +128,10 @@ Item {
                             customInfoDialog.popupController.open()
                             break
                         case 1:
-                            customInfoDialogWarning.popupController.open()
+                            customWarningDialog.popupController.open()
+                            break
+                        case 2:
+                            customLightDialog.popupController.open()
                             break
                         }
                     }

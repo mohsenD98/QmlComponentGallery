@@ -467,5 +467,7 @@
         <file>Components/CompDialogBasicChackBox.qml</file>
         <file>Components/CompDialogMaterialCustomInfo.qml</file>
         <file>Components/CompDialogMaterialCustomWarning.qml</file>
+        <file>Components/CompDialogMaterialCustomLight.qml</file>
+        <file>Components/CompDialogMaterialCustomDark.qml</file>
     </qresource>
 </RCC>
