@@ -37,7 +37,7 @@ Item {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.bottom: parent.bottom
-
+            clip: true
             model: ListModel {
                 ListElement {
                     le_name: "CUSTOM INFO DIALOG"
@@ -60,28 +60,85 @@ Item {
                 }
 
                 ListElement {
-                    le_name: "HEADER DIALOG"
+                    le_name: "HEADER DIALOG (POLYGON)"
                     le_index: 4
                 }
 
                 ListElement {
-                    le_name: "IMAGE DIALOG"
+                    le_name: "HEADER DIALOG (PRODUCT BLUE)"
                     le_index: 5
                 }
 
                 ListElement {
-                    le_name: "MENU PAYMENT DIALOG"
+                    le_name: "HEADER DIALOG (PRODUCT YELLOW)"
                     le_index: 6
                 }
 
                 ListElement {
-                    le_name: "ACHIEVEMENT DIALOG"
+                    le_name: "HEADER DIALOG (PRODUCT NEWS)"
                     le_index: 7
                 }
 
                 ListElement {
-                    le_name: "CONTACT US DIALOG"
+                    le_name: "IMAGE DIALOG (FULL)"
                     le_index: 8
+                }
+                ListElement {
+                    le_name: "IMAGE DIALOG (CENTER)"
+                    le_index: 9
+                }
+                ListElement {
+                    le_name: "IMAGE DIALOG (SHARE)"
+                    le_index: 10
+                }
+                ListElement {
+                    le_name: "IMAGE DIALOG (QUOTES)"
+                    le_index: 11
+                }
+
+                ListElement {
+                    le_name: "CONTACT US DIALOG (PROJECT)"
+                    le_index: 12
+                }
+
+                ListElement {
+                    le_name: "CONTACT US DIALOG (DESIGNER)"
+                    le_index: 13
+                }
+
+                ListElement {
+                    le_name: "CONTACT US DIALOG (DARK)"
+                    le_index: 14
+                }
+
+                ListElement {
+                    le_name: "CONTACT US DIALOG (IMAGE)"
+                    le_index: 15
+                }
+
+                ListElement {
+                    le_name: "ACHIEVEMENT DIALOG (CONGRAT)"
+                    le_index: 16
+                }
+
+                ListElement {
+                    le_name: "ACHIEVEMENT DIALOG (CHAMPION)"
+                    le_index: 17
+                }
+
+                ListElement {
+                    le_name: "ACHIEVEMENT DIALOG (LEVEL)"
+                    le_index: 18
+                }
+
+                ListElement {
+                    le_name: "ACHIEVEMENT DIALOG (RUNNING)"
+                    le_index: 19
+                }
+
+                ListElement {
+                    le_name: "MENU PAYMENT DIALOG"
+                    le_index: 20
                 }
             }
 
