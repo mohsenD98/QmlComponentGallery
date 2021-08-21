@@ -43,16 +43,17 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] Wizard Overlap
     - [x] Chackable
 * Chips
-    - [ ] Basic    
-    - [ ] Tag
+    - [x] Basic    
+    - [x] Tag
+    - [ ] add tag component to both !
 * Dialog View
-    - [ ] Basic
+    - [x] Basic
     - [ ] FullScreen
     - [ ] Custom
-    - [ ] Custom Info
-    - [ ] Custom Warning
-    - [ ] Custom Light
-    - [ ] Custom Dark
+    - [x] Custom Info
+    - [x] Custom Warning
+    - [x] Custom Light
+    - [x] Custom Dark
     - [ ] Custom Add Post
     - [ ] Custom Add Review
     - [ ] GDPR Basic
