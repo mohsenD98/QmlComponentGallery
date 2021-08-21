@@ -39,6 +39,14 @@ Item {
                     height: parent.height / 3.25
                     color: "transparent"
 
+                    Ic_Close {
+                        anchors.top: parent.top
+                        anchors.right: parent.right
+                        anchors.margins: 16
+                        controller.fillColor: materialStatics.blue_grey_600
+                        baseShape.scale: 1.25
+                    }
+
                     Rectangle {
                         id: mask
                         color: "black"
