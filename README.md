@@ -58,11 +58,11 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [ ] Custom Add Review
     - [ ] GDPR Basic
     - [ ] Term of Services
-    - [ ] Header
-    - [ ] Image
+    - [ ] Header (polygon - product blue - product yellow - product news)
+    - [ ] Image (full - center - share - quotes)
     - [ ] Menu Payment
-    - [ ] Achivement
-    - [ ] Contact US
+    - [ ] Achivement (congrat - champion - level - running)
+    - [ ] Contact US (project - designer - dark - image)
 
 ### WIP :
 * Expansion Panels
