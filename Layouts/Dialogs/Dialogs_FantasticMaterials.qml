@@ -191,6 +191,17 @@ Item {
                     id: headerPolygonDarkDialog
                 }
 
+                CompDialogMaterialHeaderProductBlue {
+                    anchors.fill: parent
+                    id: headerProductBlueDialog
+                }
+
+                CompDialogMaterialHeaderProductYellow {
+                    id: headerProductYellowDialog
+                }
+                CompDialogMaterialHeaderProductNews {
+                    id: headerProductNewsDialog
+                }
                 MouseArea {
                     id: optionMouseArea
                     anchors.fill: parent
@@ -212,6 +223,15 @@ Item {
                             break
                         case 4:
                             headerPolygonDarkDialog.popupController.open()
+                            break
+                        case 5:
+                            headerProductBlueDialog.popupController.open()
+                            break
+                        case 6:
+                            headerProductYellowDialog.popupController.open()
+                            break
+                        case 7:
+                            headerProductNewsDialog.popupController.open()
                             break
                         }
                     }

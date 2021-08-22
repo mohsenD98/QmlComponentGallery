@@ -470,5 +470,8 @@
         <file>Components/CompDialogMaterialCustomLight.qml</file>
         <file>Components/CompDialogMaterialCustomDark.qml</file>
         <file>Components/CompDialogMaterialHeaderPolygon.qml</file>
+        <file>Components/CompDialogMaterialHeaderProductBlue.qml</file>
+        <file>Components/CompDialogMaterialHeaderProductNews.qml</file>
+        <file>Components/CompDialogMaterialHeaderProductYellow.qml</file>
     </qresource>
 </RCC>
