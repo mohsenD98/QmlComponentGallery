@@ -8,7 +8,7 @@ import "../Drawables/"
 Item {
     property alias popupController: popup
     property var pWidth: mainWindow.width - 140
-    property var pHeight: 380 //header.height + 16 + body.height + accept.height + 20 + 40 // 370
+    property var pHeight: mainWindow.height / 1.84 > 390 ? 390 : mainWindow.height / 1.84 //header.height + 16 + body.height + accept.height + 20 + 40 // 370
     property var titleText: "Quisque imperdiet"
     property var bodyText: "$ 9.22"
     property var backgroundColor: "white"
