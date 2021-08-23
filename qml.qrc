@@ -473,5 +473,9 @@
         <file>Components/CompDialogMaterialHeaderProductBlue.qml</file>
         <file>Components/CompDialogMaterialHeaderProductNews.qml</file>
         <file>Components/CompDialogMaterialHeaderProductYellow.qml</file>
+        <file>Components/CompDialogMaterialImageFull.qml</file>
+        <file>Components/CompDialogMaterialImageCenter.qml</file>
+        <file>Components/CompDialogMaterialImageShare.qml</file>
+        <file>Components/CompDialogMaterialImageQuotes.qml</file>
     </qresource>
 </RCC>

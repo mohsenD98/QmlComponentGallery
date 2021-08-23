@@ -199,8 +199,23 @@ Item {
                 CompDialogMaterialHeaderProductYellow {
                     id: headerProductYellowDialog
                 }
+
                 CompDialogMaterialHeaderProductNews {
                     id: headerProductNewsDialog
+                }
+
+                CompDialogMaterialImageFull {
+                    parent: parent
+                    id: imageFullDialog
+                }
+                CompDialogMaterialImageCenter {
+                    id: imageCenterDialog
+                }
+                CompDialogMaterialImageQuotes {
+                    id: imageQuotesDialog
+                }
+                CompDialogMaterialImageShare {
+                    id: imageShareDialog
                 }
                 MouseArea {
                     id: optionMouseArea
@@ -232,6 +247,18 @@ Item {
                             break
                         case 7:
                             headerProductNewsDialog.popupController.open()
+                            break
+                        case 8:
+                            imageFullDialog.popupController.open()
+                            break
+                        case 9:
+                            imageCenterDialog.popupController.open()
+                            break
+                        case 10:
+                            imageShareDialog.popupController.open()
+                            break
+                        case 11:
+                            imageQuotesDialog.popupController.open()
                             break
                         }
                     }
