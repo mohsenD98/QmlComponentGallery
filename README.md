@@ -65,6 +65,14 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [ ] Contact US (project - designer - dark - image)
 
 ### WIP :
+* github actions
+* github pages
+* theme management
+* components document
+* components screenshot
+* License
+* Build instruction  
+* 
 * Expansion Panels
 * Grid View
 * List View
