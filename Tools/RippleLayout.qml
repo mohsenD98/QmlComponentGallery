@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtGraphicalEffects 1.0
+import QtQuick 2.15
+import QtGraphicalEffects 1.15
 
 Item {
     id: control
@@ -59,9 +59,9 @@ Item {
 
             Connections {
                 target: mouseArea
-                onReleased: fadeIfApplicable()
-                onExited: fadeIfApplicable()
-                onCanceled: fadeIfApplicable()
+                function onReleased() {fadeIfApplicable()}
+                function onExited() {fadeIfApplicable()}
+                function onCanceled() {fadeIfApplicable()}
             }
 
             Component.onCompleted: {
@@ -79,7 +79,7 @@ Item {
 
     Connections {
         id: connections
-        onPressed: {
+        function onPressed () {
             var wave = ripple.createObject(container, {
                 startX: target.mouseX, startY: target.mouseY,
                 maxRadius: furthestDistance(target.mouseX, target.mouseY)
