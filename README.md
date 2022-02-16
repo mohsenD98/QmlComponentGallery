@@ -17,7 +17,9 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] MapBlue
     - [x] Light Simple
     - [x] Article
-    - [x] Main
+    - [x] Main      
+![image](https://user-images.githubusercontent.com/36326627/154313477-a322ab2b-cccf-4fad-b397-a6989c8519b1.png)
+
 * Bottom Sheet
     - [x] Basic
     - [x] List
