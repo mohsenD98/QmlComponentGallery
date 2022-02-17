@@ -24,18 +24,19 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] Basic
     - [x] List
     - [x] Map
-    - [ ] Floating
-    - [ ] Full
-    - [ ] Filter
-    - [ ] Menu
+    
+![image](https://user-images.githubusercontent.com/36326627/154544625-a3c54bbc-3e21-4a11-bf0f-7fd39c0c2786.png)
+
 * Buttons     
     - [x] Basic
     - [x] Button In Utilities
-    - [ ] Fab Middle
     - [x] Fab More
     - [x] Fab More Text
     - [x] Toggle Basic
     - [x] Fab Extend    
+      
+![image](https://user-images.githubusercontent.com/36326627/154545436-6db1b69f-7815-476b-a60a-b8eec7bd980c.png)
+     
 * Card View
     - [x] Basic
     - [x] Timeline    
@@ -51,6 +52,9 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] Basic    
     - [x] Tag
     - [ ] add tag component to both !
+
+![image](https://user-images.githubusercontent.com/36326627/154545806-91fb58e5-a87f-4335-9753-a859af6c656c.png)
+
 * Dialog View
     - [x] Basic
     - [ ] FullScreen
@@ -77,7 +81,6 @@ if you what to help me open an Issue about the part you want to work on so we ca
 * components screenshot
 * License
 * Build instruction  
-* 
 * Expansion Panels
 * Grid View
 * List View
