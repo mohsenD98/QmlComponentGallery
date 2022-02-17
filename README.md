@@ -18,14 +18,13 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] Light Simple
     - [x] Article
     - [x] Main      
-![image](https://user-images.githubusercontent.com/36326627/154313477-a322ab2b-cccf-4fad-b397-a6989c8519b1.png)
+    ![image](https://user-images.githubusercontent.com/36326627/154313477-a322ab2b-cccf-4fad-b397-a6989c8519b1.png)
 
 * Bottom Sheet
     - [x] Basic
     - [x] List
     - [x] Map
-    
-![image](https://user-images.githubusercontent.com/36326627/154544625-a3c54bbc-3e21-4a11-bf0f-7fd39c0c2786.png)
+    ![image](https://user-images.githubusercontent.com/36326627/154544625-a3c54bbc-3e21-4a11-bf0f-7fd39c0c2786.png)
 
 * Buttons     
     - [x] Basic
@@ -34,8 +33,7 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] Fab More Text
     - [x] Toggle Basic
     - [x] Fab Extend    
-      
-![image](https://user-images.githubusercontent.com/36326627/154545436-6db1b69f-7815-476b-a60a-b8eec7bd980c.png)
+    ![image](https://user-images.githubusercontent.com/36326627/154545436-6db1b69f-7815-476b-a60a-b8eec7bd980c.png)
      
 * Card View
     - [x] Basic
@@ -45,15 +43,13 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] Wizard Light
     - [x] Wizard Overlap
     - [x] Chackable     
-        
     ![image](https://user-images.githubusercontent.com/36326627/154541184-f58129c3-c23a-4a53-a05e-05d9fc5c8fde.png)
       
 * Chips
     - [x] Basic    
     - [x] Tag
     - [ ] add tag component to both !
-
-![image](https://user-images.githubusercontent.com/36326627/154545806-91fb58e5-a87f-4335-9753-a859af6c656c.png)
+    ![image](https://user-images.githubusercontent.com/36326627/154545806-91fb58e5-a87f-4335-9753-a859af6c656c.png)
 
 * Dialog View
     - [x] Basic
