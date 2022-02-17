@@ -43,7 +43,10 @@ if you what to help me open an Issue about the part you want to work on so we ca
     - [x] Wizard
     - [x] Wizard Light
     - [x] Wizard Overlap
-    - [x] Chackable
+    - [x] Chackable     
+        
+    ![image](https://user-images.githubusercontent.com/36326627/154541184-f58129c3-c23a-4a53-a05e-05d9fc5c8fde.png)
+      
 * Chips
     - [x] Basic    
     - [x] Tag
