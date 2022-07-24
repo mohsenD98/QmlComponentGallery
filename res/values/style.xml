@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <style name="custom_Translucent" parent="android:Theme">
+       <!-- Solve the problem that the startup screen is flashing black  -->
+       <item name="android:windowIsTranslucent">true</item>
+       <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

@@ -45,4 +45,5 @@ DISTFILES += \
     gradle/wrapper/gradle-wrapper.properties \
     gradlew \
     gradlew.bat \
-    res/values/libs.xml
+    res/values/libs.xml \
+    res/values/style.xml
