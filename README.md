@@ -95,6 +95,13 @@ if you what to help me open an Issue about the part you want to work on so we ca
 * Slider Image
 * Ripple Effect
 
+# Demo:   
+
+
+https://github.com/mohsenD98/QmlComponentGallery/assets/36326627/656cbae0-bdd7-42ea-918a-f0a458099465
+
+
+
 ### images:    
 ![image](https://user-images.githubusercontent.com/36326627/154541184-f58129c3-c23a-4a53-a05e-05d9fc5c8fde.png)
 ![image](https://user-images.githubusercontent.com/36326627/154545436-6db1b69f-7815-476b-a60a-b8eec7bd980c.png)
